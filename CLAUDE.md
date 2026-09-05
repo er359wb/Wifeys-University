@@ -12,10 +12,17 @@ Each subject gets its own top-level folder.
 
 - Commit and push directly on the branch this session is configured to use;
   do not create additional feature branches.
-- Open a pull request into `main` for review — do not push straight to
-  `main` unless a human explicitly confirms that direct-to-main pushes are
-  enabled for this session (some sessions are hard-restricted to a branch
-  and cannot do this regardless of what's asked in chat).
+- Open a pull request into `main` and enable GitHub's auto-merge on it —
+  this is standing policy, confirmed by the user, so it does not need to be
+  requested each time. Auto-merge still depends on the repository's own
+  "Allow auto-merge" setting; if GitHub reports it's off, say so rather than
+  merging any other way.
+  - This policy lives here in CLAUDE.md, not in any one session's memory —
+    a fresh session only knows about it by reading this file.
+- Do not push straight to `main` unless a human explicitly confirms that
+  direct-to-main pushes are enabled for this session (some sessions are
+  hard-restricted to a branch and cannot do this regardless of what's asked
+  in chat).
 - Use clear, descriptive commit messages.
 - Never force-push, rewrite history, or delete branches without being
   explicitly asked.
@@ -35,9 +42,12 @@ Each subject gets its own top-level folder.
 
 ## Actions requiring confirmation
 
-Ask before: deleting files or branches, force-pushing, rewriting history,
-merging pull requests, or any other hard-to-reverse action. A one-time
-approval does not carry forward to future, similarly-risky actions.
+Ask before: deleting files or branches, force-pushing, rewriting history, or
+any other hard-to-reverse action. A one-time approval does not carry forward
+to future, similarly-risky actions. Exception: merging pull requests via
+auto-merge is pre-approved standing policy (see Git workflow above) and does
+not need to be asked about again; a manual merge outside of auto-merge still
+does.
 
 ## Communication
 
