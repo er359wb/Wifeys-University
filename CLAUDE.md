@@ -41,6 +41,24 @@ Each subject gets its own top-level folder.
 - No emojis unless explicitly requested.
 - No comments in code unless they explain a non-obvious "why."
 
+## Privacy review before committing
+
+This repository is currently public, so anything committed to it is visible
+to anyone.
+
+- Before committing any file the user adds or asks to publish (notes,
+  worksheets, homework, photos, scans, etc.), read its actual content
+  first — never commit a file sight unseen.
+- Redact personal particulars before committing: full real names (this
+  repo already uses "Wifey" as a stand-in — keep it that way), home
+  addresses, phone numbers, email addresses, school/institution names,
+  dates of birth, ID or student numbers, photos of identifiable people,
+  and signatures.
+- Check filenames too, not just file contents — a filename can leak the
+  same information a redacted file body doesn't.
+- If it's unclear whether something counts as personal/sensitive, ask the
+  user rather than guessing either way.
+
 ## Actions requiring confirmation
 
 Ask before: deleting files or branches, force-pushing, rewriting history, or
