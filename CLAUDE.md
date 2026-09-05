@@ -84,6 +84,16 @@ This repository is currently public, so anything committed to it — on
 - No emojis unless explicitly requested.
 - No comments in code unless they explain a non-obvious "why."
 
+## Agent usage
+
+- Never spawn subagents or temporary agents (e.g. via a Task/Agent tool)
+  to do work in this repository — do all work directly in this session,
+  yourself.
+- This applies on every branch in this repo, not just `main`.
+- Multi-agent orchestration is an inefficient use of tokens for
+  repo-scale tasks like tutoring and repo housekeeping — it burns usage
+  unnecessarily for work a single session handles fine.
+
 ## Actions requiring confirmation
 
 Ask before: deleting files or branches, force-pushing, rewriting history,
