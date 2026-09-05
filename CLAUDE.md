@@ -12,14 +12,19 @@ Each subject gets its own top-level folder.
 
 - Commit and push directly on the branch this session is configured to use;
   do not create additional feature branches.
-- Open a pull request into `main` and merge it directly once opened — this
-  is standing policy, confirmed by the user, so it does not need to be
-  requested each time. Merge with the GitHub merge tool yourself; don't rely
-  on GitHub's native "auto-merge" checkbox — it requires the repo to be
-  public or on a paid plan, and doesn't apply while there are no required
-  status checks to wait on (both true here as of writing this).
+- Open a pull request into `main` and get it merged without asking the user
+  each time — this is standing policy, confirmed by the user. Try enabling
+  GitHub's native "Allow auto-merge" on the PR first. If GitHub reports
+  auto-merge isn't available for the repo (e.g. it's private on a free
+  plan), or that the PR is already mergeable with nothing to wait on (there
+  are no required status checks configured here, so this is the common
+  case), merge the PR directly instead — either path should end with the PR
+  merged, not left open.
   - This policy lives here in CLAUDE.md, not in any one session's memory —
     a fresh session only knows about it by reading this file.
+  - The repo's visibility (public/private) has changed hands multiple times
+    in the past; this rule is written to work either way so it doesn't need
+    editing every time visibility changes.
 - Do not push straight to `main` unless a human explicitly confirms that
   direct-to-main pushes are enabled for this session (some sessions are
   hard-restricted to a branch and cannot do this regardless of what's asked
@@ -63,9 +68,9 @@ to anyone.
 
 Ask before: deleting files or branches, force-pushing, rewriting history, or
 any other hard-to-reverse action. A one-time approval does not carry forward
-to future, similarly-risky actions. Exception: merging pull requests
-yourself is pre-approved standing policy (see Git workflow above) and does
-not need to be asked about again.
+to future, similarly-risky actions. Exception: getting pull requests merged
+(via auto-merge or directly, see Git workflow above) is pre-approved
+standing policy and does not need to be asked about again.
 
 ## Communication
 
