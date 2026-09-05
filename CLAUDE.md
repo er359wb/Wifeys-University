@@ -12,11 +12,12 @@ Each subject gets its own top-level folder.
 
 - Commit and push directly on the branch this session is configured to use;
   do not create additional feature branches.
-- Open a pull request into `main` and enable GitHub's auto-merge on it —
-  this is standing policy, confirmed by the user, so it does not need to be
-  requested each time. Auto-merge still depends on the repository's own
-  "Allow auto-merge" setting; if GitHub reports it's off, say so rather than
-  merging any other way.
+- Open a pull request into `main` and merge it directly once opened — this
+  is standing policy, confirmed by the user, so it does not need to be
+  requested each time. Merge with the GitHub merge tool yourself; don't rely
+  on GitHub's native "auto-merge" checkbox — it requires the repo to be
+  public or on a paid plan, and doesn't apply while there are no required
+  status checks to wait on (both true here as of writing this).
   - This policy lives here in CLAUDE.md, not in any one session's memory —
     a fresh session only knows about it by reading this file.
 - Do not push straight to `main` unless a human explicitly confirms that
@@ -44,10 +45,9 @@ Each subject gets its own top-level folder.
 
 Ask before: deleting files or branches, force-pushing, rewriting history, or
 any other hard-to-reverse action. A one-time approval does not carry forward
-to future, similarly-risky actions. Exception: merging pull requests via
-auto-merge is pre-approved standing policy (see Git workflow above) and does
-not need to be asked about again; a manual merge outside of auto-merge still
-does.
+to future, similarly-risky actions. Exception: merging pull requests
+yourself is pre-approved standing policy (see Git workflow above) and does
+not need to be asked about again.
 
 ## Communication
 
