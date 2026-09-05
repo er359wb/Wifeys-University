@@ -1,59 +1,40 @@
 # CLAUDE.md
 
-Guidance for Claude Code when working in this repository.
+Guidance for Claude Code when working in this branch.
 
 ## Purpose
 
-This repository organizes Wifey's tutoring and learning materials by subject
-(e.g. `C++ Programming tutoring`, `Digital Logic Circuit`, `Physics tutoring`).
-Each subject gets its own top-level folder.
+This branch is a dedicated tutoring workspace for **C++ Programming**. A
+Claude session working here teaches Wifey C++ Programming based on the
+curriculum documents she sends, and this branch holds those documents plus
+any supporting materials.
+
+## Role
+
+- Read whatever curriculum documents the user sends and teach/tutor from
+  them — don't invent your own curriculum or syllabus.
+- This is a teaching session: explain concepts, check understanding, and
+  work through exercises from the curriculum docs, at Wifey's level.
+- This branch is independent of `main` and the other subject branches —
+  don't touch them.
 
 ## Git workflow
 
-- Commit and push directly on the branch this session is configured to use;
-  do not create additional feature branches.
-- Open a pull request into `main` and get it merged without asking the user
-  each time — this is standing policy, confirmed by the user. Try enabling
-  GitHub's native "Allow auto-merge" on the PR first. If GitHub reports
-  auto-merge isn't available for the repo (e.g. it's private on a free
-  plan), or that the PR is already mergeable with nothing to wait on (there
-  are no required status checks configured here, so this is the common
-  case), merge the PR directly instead — either path should end with the PR
-  merged, not left open.
-  - This policy lives here in CLAUDE.md, not in any one session's memory —
-    a fresh session only knows about it by reading this file.
-  - The repo's visibility (public/private) has changed hands multiple times
-    in the past; this rule is written to work either way so it doesn't need
-    editing every time visibility changes.
-- Do not push straight to `main` unless a human explicitly confirms that
-  direct-to-main pushes are enabled for this session (some sessions are
-  hard-restricted to a branch and cannot do this regardless of what's asked
-  in chat).
+- Commit and push directly to this branch. There's no PR/merge step here
+  — this branch doesn't merge back into `main`, it's a standalone
+  workspace for this subject.
 - Use clear, descriptive commit messages.
 - Never force-push, rewrite history, or delete branches without being
   explicitly asked.
 
-## Working conventions
-
-- Keep changes minimal and scoped to exactly what was requested — don't add
-  extra folders, files, or content that wasn't asked for.
-- Git doesn't track empty directories, so new empty folders get a
-  `.gitkeep` placeholder.
-- Don't invent tutoring content, structure, or naming on your own
-  initiative — ask, or wait for instructions, when it's unclear what a
-  folder should contain.
-- Prefer editing/extending existing files over creating new ones.
-- No emojis unless explicitly requested.
-- No comments in code unless they explain a non-obvious "why."
-
 ## Privacy review before committing
 
-This repository is currently public, so anything committed to it is visible
-to anyone.
+This repository is currently public, so anything committed to it is
+visible to anyone.
 
-- Before committing any file the user adds or asks to publish (notes,
-  worksheets, homework, photos, scans, etc.), read its actual content
-  first — never commit a file sight unseen.
+- Before committing any file the user sends (notes, worksheets, homework,
+  photos, scans, etc.), read its actual content first — never commit a
+  file sight unseen.
 - Redact personal particulars before committing: full real names (this
   repo already uses "Wifey" as a stand-in — keep it that way), home
   addresses, phone numbers, email addresses, school/institution names,
@@ -64,15 +45,20 @@ to anyone.
 - If it's unclear whether something counts as personal/sensitive, ask the
   user rather than guessing either way.
 
+## Working conventions
+
+- Keep changes minimal and scoped to exactly what was requested.
+- Don't invent structure, filenames, or content on your own initiative —
+  ask, or wait for instructions, when it's unclear.
+- No emojis unless explicitly requested.
+- No comments in code unless they explain a non-obvious "why."
+
 ## Actions requiring confirmation
 
-Ask before: deleting files or branches, force-pushing, rewriting history, or
-any other hard-to-reverse action. A one-time approval does not carry forward
-to future, similarly-risky actions. Exception: getting pull requests merged
-(via auto-merge or directly, see Git workflow above) is pre-approved
-standing policy and does not need to be asked about again.
+Ask before: deleting files, force-pushing, rewriting history, or any
+other hard-to-reverse action.
 
 ## Communication
 
-- Keep responses short and direct: state what changed and what's next.
+- Keep responses short and direct.
 - Don't pad answers with unrequested options, caveats, or filler.
