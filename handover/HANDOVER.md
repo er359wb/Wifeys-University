@@ -38,6 +38,7 @@
 | C-strings (`\0`, strlen/strcpy/strcat/strcmp, manual versions) | Checks correct |
 | 2D arrays — reading and tracing | Checks correct, scored perfectly once "outer loop = row" framing given |
 | Pascal's triangle | Asked to be shown code outright, declined twice; built from a verbal structure, corrected after 3 named bugs |
+| `isPalindrome()` + POINTER_FUNCTION task 2 (m, m², m³) | 2026-09-06: wrote the whole program herself, all 3 previous bugs fixed. Compiles clean, outputs the correct 11 / 101 / 111. Saved `original` before the destructive loop **unprompted** — that is recurring mistake #2, handled correctly without a nudge |
 
 ### `homework_on_pointers.doc` — completed in full
 
@@ -61,9 +62,12 @@ All wrong answers were walked through individually afterward, at her request.
   1. Five students (ID + score): sort by score, highest scorer, above-average
      list. No `<algorithm>` allowed. **Not started.**
   2. Palindromes: all *m* in 11–999 where *m*, *m²*, *m³* are all palindromes.
-     **In progress** — mid-debug on the digit-reversal helper. Last attempt
-     had: `while` with no condition, no `n = n / 10`, and
-     `reverse = n * 10 + num` instead of `reverse = reverse * 10 + num`.
+     **Code is correct as of 2026-09-06** (see evidence table above). Only
+     outstanding item: she was asked why `return rev == original;` cannot be
+     `return rev == n;` — answer not yet received, so the underlying
+     preserve-a-variable rule is not yet confirmed as understood. Minor
+     cleanups pointed out, not yet applied: redundant `m>=11` in the loop
+     condition, redundant `int m=11;` before the loop, unused `<cmath>`.
   3. Bank account menu — pass balance by reference, no globals, loop until exit.
      **Not started.**
 - **`20260610_struct_.docx`** — structs. Not touched.
