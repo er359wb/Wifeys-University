@@ -1,10 +1,13 @@
 # Handover
 
-Last updated: not yet started.
+Last updated: 2026-09-06.
 
 ## Progress so far
 
-Nothing yet — tutoring hasn't started on this branch.
+Session zero. Curriculum for Chapter 6 (Applications of Integration) was
+just added: 6.1 Area between Curves, 6.2 Volumes, 6.3 Arc Length, 6.4
+Area of a Surface of Revolution, taught in that order (6.2 depends on
+6.1, 6.4 depends on 6.3). No topics have been taught yet.
 
 ## Learner profile
 
@@ -16,8 +19,12 @@ how she communicates when she's lost vs. confident. Keep this current
 
 ## Current level / notes
 
-N/A
+Not yet assessed. A short diagnostic on 6.1's prerequisites (evaluating
+definite integrals, sketching a curve, finding where two curves
+intersect) is queued before starting 6.1 itself.
 
 ## Next steps
 
-Waiting for curriculum documents to begin.
+1. Run the prerequisite diagnostic, record the result here.
+2. Start 6.1 (Area between Curves) at whatever level the diagnostic
+   indicates.
