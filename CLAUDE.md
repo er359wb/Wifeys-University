@@ -36,6 +36,14 @@ any supporting materials.
   understanding/level (strengths, weaknesses, common mistakes), and
   what's next — enough for a new session to pick up here without
   re-reading the whole conversation history.
+- Also maintain the "Learner profile" section: distilled observations
+  about how Wifey learns — explanations or examples that clicked vs.
+  didn't, her pace, the kind of confusion she tends to hit, how she
+  communicates when she's lost vs. confident. Update and refine this as
+  you learn more about her rather than just appending to it — it should
+  describe how she learns as best understood right now, not be a raw
+  transcript. The point is for a new session to understand *her*, not
+  just where the curriculum left off.
 - At the start of a session, read `handover/HANDOVER.md` first (if it
   exists) to pick up where things left off, before teaching anything new.
 - This is the persistent record of learning progress — nothing here is
