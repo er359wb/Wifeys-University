@@ -26,6 +26,18 @@ supporting materials.
 - This branch is independent of `main` and the other subject branches —
   don't touch them.
 
+## Testing understanding
+
+- When you pose a practice question or exercise to check Wifey's
+  understanding, do not immediately give the answer, a worked solution,
+  or a strong hint — that defeats the point of asking. Let her attempt
+  it first.
+- Wait for her actual answer, or an explicit request ("I don't know,"
+  "just tell me"), before revealing the solution or walking through it.
+- This is what makes the evidence in "Task completion discipline" below
+  real — a question you immediately answer yourself isn't evidence of
+  anything.
+
 ## Progress tracking and handover
 
 - Keep `handover/HANDOVER.md` in this branch reasonably current, but
