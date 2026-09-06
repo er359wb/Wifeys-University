@@ -63,9 +63,12 @@ All wrong answers were walked through individually afterward, at her request.
      list. No `<algorithm>` allowed. **Not started.**
   2. Palindromes: all *m* in 11–999 where *m*, *m²*, *m³* are all palindromes.
      **Code is correct as of 2026-09-06** (see evidence table above). Only
-     outstanding item: she was asked why `return rev == original;` cannot be
-     `return rev == n;` — answer not yet received, so the underlying
-     preserve-a-variable rule is not yet confirmed as understood. Minor
+     outstanding item: the why-check on `return rev == original;` vs
+     `return rev == n;`. The first attempt at that check was spoiled by her
+     client auto-suggesting the answer in the input box, so it was replaced
+     with a hand-trace of `n`/`num`/`rev`/`original` for n = 121 plus "what
+     would the function return without `original`". Until she answers that,
+     the preserve-a-variable rule is not confirmed as understood. Minor
      cleanups pointed out, not yet applied: redundant `m>=11` in the loop
      condition, redundant `int m=11;` before the loop, unused `<cmath>`.
   3. Bank account menu — pass balance by reference, no globals, loop until exit.
@@ -129,6 +132,14 @@ exercise). Less frequent now, but was the dominant error early on.
   says what she changed and that's taken on trust — she asked for this to
   save time and it has worked fine.
 - Interactive multiple-choice drilling works well for rules and traps.
+- **Her client auto-suggests a reply in the input box, and it can contain the
+  answer to a check question.** She flagged this and does not want it. It is
+  the app's own suggested-reply feature, not something a session emits, so it
+  can't be turned off from here — work around it instead: make check
+  questions require a trace, a table, or written code rather than a
+  one-sentence rule, so a suggested one-liner can't stand in for her own
+  reasoning. A question a suggestion has already answered is spent — replace
+  it, don't re-ask it.
 - Tutoring language is Russian; she switches to English freely. Follow her lead.
 - Sessions have run long. Short portions and real breaks work better than
   pushing on — quality drops off noticeably when she's tired, and stopping
