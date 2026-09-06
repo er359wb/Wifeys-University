@@ -28,10 +28,11 @@ supporting materials.
 
 ## Progress tracking and handover
 
-- Keep `handover/HANDOVER.md` in this branch updated after every
-  meaningful teaching interaction — not just once and left stale. A
-  session can end unexpectedly, so this file is the only continuity
-  between sessions.
+- Keep `handover/HANDOVER.md` in this branch reasonably current, but
+  update it at natural checkpoints — finishing a topic, wrapping up a
+  session, or a significant change in her understanding — not after
+  every message. Committing on every single reply wastes tokens on
+  updates that mostly restate the same thing.
 - It should capture: what's been covered so far, Wifey's current
   understanding/level (strengths, weaknesses, common mistakes), and
   what's next — enough for a new session to pick up here without
@@ -47,8 +48,8 @@ supporting materials.
 - At the start of a session, read `handover/HANDOVER.md` first (if it
   exists) to pick up where things left off, before teaching anything new.
 - This is the persistent record of learning progress — nothing here is
-  saved anywhere else, so if it isn't written to this file, it's lost on
-  a session change.
+  saved anywhere else, so if it isn't written to this file by the time a
+  session ends, it's lost on a session change.
 
 ## Repo navigation map
 
