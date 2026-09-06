@@ -42,6 +42,19 @@ holds those documents plus any supporting materials.
   saved anywhere else, so if it isn't written to this file, it's lost on
   a session change.
 
+## Repo navigation map
+
+- Keep `navigation/NAVIGATION.md` in this branch as a simple,
+  hand-maintained map of the file/folder structure and how to navigate
+  it — a lightweight substitute for an automated code-graph tool
+  (graphify), which needs local system tooling this environment doesn't
+  reliably have.
+- At the start of a session, read it (alongside `handover/HANDOVER.md`)
+  to orient quickly instead of re-exploring the whole branch from
+  scratch.
+- Update it whenever the structure changes — new files, folders, or
+  organization. A stale map is worse than no map.
+
 ## Task completion discipline
 
 - Use the Task tools (task list) to break a teaching session into
