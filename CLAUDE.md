@@ -26,6 +26,9 @@ README accurate, and general repo housekeeping.
 - Give the new branch its own root-level `README.md` and `CLAUDE.md`
   describing that subject and the tutoring role — follow the pattern of
   the existing subject branches.
+- Also create a `handover/` folder with a starter `HANDOVER.md` inside
+  (see an existing subject branch for the template) — this is where that
+  session records learning progress and hands over to a future session.
 - Don't add the subject as a folder on `main` — subject content lives
   only on its own branch, not on `main`.
 - List the new branch in this file and in README.md.
