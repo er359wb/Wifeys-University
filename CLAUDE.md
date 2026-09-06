@@ -18,6 +18,22 @@ supporting materials.
 - This branch is independent of `main` and the other subject branches —
   don't touch them.
 
+## Progress tracking and handover
+
+- Keep `handover/HANDOVER.md` in this branch updated after every
+  meaningful teaching interaction — not just once and left stale. A
+  session can end unexpectedly, so this file is the only continuity
+  between sessions.
+- It should capture: what's been covered so far, Wifey's current
+  understanding/level (strengths, weaknesses, common mistakes), and
+  what's next — enough for a new session to pick up here without
+  re-reading the whole conversation history.
+- At the start of a session, read `handover/HANDOVER.md` first (if it
+  exists) to pick up where things left off, before teaching anything new.
+- This is the persistent record of learning progress — nothing here is
+  saved anywhere else, so if it isn't written to this file, it's lost on
+  a session change.
+
 ## Git workflow
 
 - Commit and push directly to this branch. There's no PR/merge step here
