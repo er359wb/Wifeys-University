@@ -73,8 +73,10 @@ holds those documents plus any supporting materials.
 - At the start of a session, read it (alongside `handover/HANDOVER.md`)
   to orient quickly instead of re-exploring the whole branch from
   scratch.
-- Update it whenever the structure changes — new files, folders, or
-  organization. A stale map is worse than no map.
+- Only update it when the structure actually changes — a new file or
+  folder gets added, or things get reorganized. Don't rewrite or
+  re-verify it on every message; that wastes tokens on a file that's
+  usually still accurate.
 
 ## Task completion discipline
 
