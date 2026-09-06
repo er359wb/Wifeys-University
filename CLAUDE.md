@@ -42,6 +42,31 @@ any supporting materials.
   saved anywhere else, so if it isn't written to this file, it's lost on
   a session change.
 
+## Task completion discipline
+
+- Use the Task tools (task list) to break a teaching session into
+  explicit subtasks — e.g. one per topic/concept from the curriculum —
+  instead of treating "cover chapter 3" as one unverified block.
+- Don't mark a topic complete on your own assessment alone. Require
+  actual evidence: Wifey correctly working through practice questions on
+  it, or explicitly confirming she understands — not just "I explained
+  it."
+- If a topic turns out incomplete or she's still confused, keep its task
+  open (or reopen it) and reflect that honestly in
+  `handover/HANDOVER.md`, rather than reporting it as done.
+- Adapted from the open-source "unlazy" skill's core principle (verify
+  before declaring done) — the original's shell-command gates don't apply
+  here since there's no code to run; understanding checks are the
+  equivalent gate for tutoring.
+
+## Reading web resources
+
+- When a curriculum document references a webpage worth reading, prefer
+  fetching it via Jina Reader (prepend `https://r.jina.ai/` to the URL)
+  over fetching the raw page — it returns clean, LLM-ready markdown and
+  uses far fewer tokens than raw HTML. Free, no API key needed.
+- Fall back to normal fetching if Jina Reader fails for a given URL.
+
 ## Git workflow
 
 - Commit and push directly to this branch. There's no PR/merge step here
