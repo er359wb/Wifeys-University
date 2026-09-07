@@ -62,15 +62,16 @@ All wrong answers were walked through individually afterward, at her request.
   1. Five students (ID + score): sort by score, highest scorer, above-average
      list. No `<algorithm>` allowed. **Not started.**
   2. Palindromes: all *m* in 11–999 where *m*, *m²*, *m³* are all palindromes.
-     **Code is correct as of 2026-09-06** (see evidence table above). Only
-     outstanding item: the why-check on `return rev == original;` vs
-     `return rev == n;`. The first attempt at that check was spoiled by her
-     client auto-suggesting the answer in the input box, so it was replaced
-     with a hand-trace of `n`/`num`/`rev`/`original` for n = 121 plus "what
-     would the function return without `original`". Until she answers that,
-     the preserve-a-variable rule is not confirmed as understood. Minor
-     cleanups pointed out, not yet applied: redundant `m>=11` in the loop
-     condition, redundant `int m=11;` before the loop, unused `<cmath>`.
+     **Fully done, 2026-09-06.** Code correct (see evidence table above),
+     and the why-check is now answered correctly too: traced n=121 by hand
+     (n/num/rev all correct across 3 passes) and correctly explained that
+     `return rev==n;` would give `false` even for a real palindrome, because
+     `n` is always 0 by the time the loop exits — `original` is what
+     survives the loop's destruction of `n`. This is her recurring mistake
+     #2 (losing a variable before it's needed) explained in her own words,
+     not just avoided by luck. Minor cleanups pointed out, not yet applied:
+     redundant `m>=11` in the loop condition, redundant `int m=11;` before
+     the loop, unused `<cmath>` — cosmetic, not blocking.
   3. Bank account menu — pass balance by reference, no globals, loop until exit.
      **Not started.**
 - **`20260610_struct_.docx`** — structs. Not touched.
