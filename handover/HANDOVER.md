@@ -51,12 +51,19 @@ First pass: 4 clearly correct (2, 4, 7, 9), 2 wrong (5, 6), 1 blank (3),
 1 ambiguous (1), and 2 where she circled more than one option (8, 10).
 
 After being given the missing rule and asked to redo — **without being told
-the answers** — she self-corrected every one she retried: 3 → B, 5 → C,
-6 → 34, 8 → D, 9 → D. Only 10 is still open (she picked A, was told the
-`sizeof` rule, has not re-picked yet).
+the answers** — she self-corrected every single one she retried: 3 → B,
+5 → C, 6 → 34, 8 → D, 9 → D, 10 → C. Page 1 is now fully resolved, 10/10
+after correction. On Q1 she confirmed she counts `\t` as one character and
+added `\0` to reach 6 — the reasoning is sound and she avoided the paper's
+actual trap (counting `\t` as two); the question itself is ambiguous
+between strlen (5) and bytes in memory (6), so she was given the
+"look for the words length/strlen vs bytes/memory" tactic instead of a
+verdict.
 
-Pattern worth noting: she gets these right as soon as she has the rule.
-The failures were missing knowledge, not faulty reasoning.
+Pattern worth noting, and it is the strongest signal in this session: she
+gets these right as soon as she has the rule, and she asks for the rule
+rather than guessing. The failures were missing knowledge, not faulty
+reasoning.
 
 ### New gaps this paper exposed
 
