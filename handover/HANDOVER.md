@@ -40,6 +40,36 @@
 | Pascal's triangle | Asked to be shown code outright, declined twice; built from a verbal structure, corrected after 3 named bugs |
 | `isPalindrome()` + POINTER_FUNCTION task 2 (m, m², m³) | 2026-09-06: wrote the whole program herself, all 3 previous bugs fixed. Compiles clean, outputs the correct 11 / 101 / 111. Saved `original` before the destructive loop **unprompted** — that is recurring mistake #2, handled correctly without a nudge |
 
+### Second exam-format MCQ paper — 2026-09-06, page 1 of 4
+
+She produced a new mock paper (10 MCQs, "3 points each", followed by a
+"Write out the result" tracing section on pages 2–4 — **pages 2–4 not yet
+seen, ask for them**). This is the second document in exam format after
+`homework_on_pointers.doc` and is not in `curriculum/`.
+
+First pass: 4 clearly correct (2, 4, 7, 9), 2 wrong (5, 6), 1 blank (3),
+1 ambiguous (1), and 2 where she circled more than one option (8, 10).
+
+After being given the missing rule and asked to redo — **without being told
+the answers** — she self-corrected every one she retried: 3 → B, 5 → C,
+6 → 34, 8 → D, 9 → D. Only 10 is still open (she picked A, was told the
+`sizeof` rule, has not re-picked yet).
+
+Pattern worth noting: she gets these right as soon as she has the rule.
+The failures were missing knowledge, not faulty reasoning.
+
+### New gaps this paper exposed
+
+1. **`!` (logical NOT) was genuinely unknown**, and she had truth values
+   inverted — said "0 is true and 1 false". Corrected: 0 is false, non-zero
+   is true, `!` flips it. She then redid the question correctly.
+2. **`cout << charPointer` prints the string, not the address** — she read
+   `cout << s+2` as text arithmetic ("Hello+2"). The contrast with
+   `int*` (which does print an address) is now stated but not yet drilled.
+3. **`sizeof(array)` vs `sizeof(pointer)`** — still open, see above. Same
+   family as her `&pointer` vs `&element` cluster from the pointer homework:
+   an array is not a pointer.
+
 ### `homework_on_pointers.doc` — completed in full
 
 The one document in exam format:
