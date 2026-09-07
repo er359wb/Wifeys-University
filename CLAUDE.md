@@ -78,6 +78,24 @@ holds those documents plus any supporting materials.
   re-verify it on every message; that wastes tokens on a file that's
   usually still accurate.
 
+## Curriculum file formats
+
+- When a curriculum document arrives in a format that's expensive for
+  Claude to read directly (PPTX, DOCX, PDF, images, etc.), create a
+  reformatted, efficient markdown version of it and save it right beside
+  the original, same name, `.md` extension (e.g. `chapter1.pptx` →
+  `chapter1.md`). Use the relevant skill (pptx/docx/pdf) to extract the
+  content accurately rather than guessing at it.
+- Keep the original file too — it's the source of truth and Wifey may
+  want to view it directly — the `.md` version is a read-optimized
+  companion, not a replacement.
+- In this and future sessions, read the `.md` version by default; only
+  open the original when the `.md` is missing, stale (the original
+  changed since), or can't capture something you need (e.g. a diagram).
+- Note new curriculum files and their `.md` companions in
+  `navigation/NAVIGATION.md` so a session can find them without
+  re-scanning the folder.
+
 ## Task completion discipline
 
 - Use the Task tools (task list) to break a teaching session into
