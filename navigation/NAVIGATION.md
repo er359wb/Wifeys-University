@@ -34,26 +34,35 @@ The course worksheets. Filenames are dated `YYYYMMDD` by class date. These
 are the authoritative source of what has to be learned — don't substitute an
 invented curriculum for them.
 
-| File | Topic | Status |
-|---|---|---|
-| `20260402_if-else_statement.docx` | If/else | Covered |
-| `20260412_while_loop1.docx` | While loops | Covered |
-| `20260414_while_loop_2.doc` | While loops 2 | Covered |
-| `20260416_for_loop.docx` | For loops, GCD | Covered |
-| `20260420_nested_loop_2_.docx` | Nested loops, patterns | Covered |
-| `20260427_Array_Basics__.docx` | Arrays: search, sum, max/min, reverse, insert, delete, sorting | Covered |
-| `20260518__2-dimension_array.docx` | 2D arrays, Pascal's triangle | Covered |
-| `20260529_function_definition_and_calling_basic_2.docx` | Functions, GCD/LCM | Covered |
-| `20260612overloaded_function_.docx` | Overloading, default arguments | Covered |
-| `homework_on_pointers.doc` | Pointers — exam-format practice: blanks, MCQ, tracing | Completed in full |
-| `POINTER_FUNCTION.docx` | 3 tasks: student sorting, palindromes, bank menu | Task 2 in progress; 1 and 3 not started |
-| `20260610_struct_.docx` | Structs | Not started |
-| `20260617_recursion.docx` | Recursion | Not started — largest remaining topic |
-| `switch_statement_ATM_Simulator.docx` | Switch / ATM | Not started, low priority |
-| `palindrome_practice.docx` | Extra palindrome practice | Not started, low priority |
+Every file has a same-name `.md` companion (see CLAUDE.md's "Curriculum file
+formats" section) — **read the `.md`, not the original**, unless a
+discrepancy comes up, Wifey mentions something the `.md` doesn't cover, or
+she explicitly asks to check the original. The originals stay as source of
+truth and for her to view directly; don't re-extract them once the `.md`
+exists.
 
-`homework_on_pointers.doc` is the most useful document in the folder — it is
-the only one in the exam's own format.
+| File | .md companion | Topic | Status |
+|---|---|---|---|
+| `20260402_if-else_statement.docx` | ✅ | If/else | Covered |
+| `20260412_while_loop1.docx` | ✅ | While loops | Covered |
+| `20260414_while_loop_2.doc` | ✅ | While loops 2 | Covered |
+| `20260416_for_loop.docx` | ✅ | For loops, GCD | Covered |
+| `20260420_nested_loop_2_.docx` | ✅ | Nested loops, patterns | Covered |
+| `20260427_Array_Basics__.docx` | ✅ | Arrays: search, sum, max/min, reverse, insert, delete, sorting | Covered |
+| `20260518__2-dimension_array.docx` | ✅ | 2D arrays, Pascal's triangle | Covered |
+| `20260529_function_definition_and_calling_basic_2.docx` | ✅ | Functions, GCD/LCM | Covered |
+| `20260612overloaded_function_.docx` | ✅ | Overloading, default arguments | Covered |
+| `homework_on_pointers.doc` | ✅ | Pointers — exam-format practice: blanks, MCQ, tracing | Completed in full |
+| `POINTER_FUNCTION.docx` | ✅ | 3 tasks: student sorting, palindromes, bank menu | Task 2 (palindromes) done; 1 and 3 not started |
+| `20260610_struct_.docx` | ✅ | Structs | In progress |
+| `20260617_recursion.docx` | ✅ | Recursion | Not started — largest remaining topic |
+| `switch_statement_ATM_Simulator.docx` | ✅ | Switch / ATM | Not started, low priority |
+| `palindrome_practice.docx` | ✅ | Extra palindrome practice | Not started, low priority |
+
+`homework_on_pointers.md` is the most useful document in the folder — it is
+the only one in the exam's own format. Its MCQ section transcribes the
+source's own answer key exactly, including the questions the source leaves
+unmarked — don't fill those in with a guessed answer.
 
 `palindrome_practice.docx` was originally named `回文数练习.docx`; renamed for
 consistency, contents unchanged. Document metadata (author/last-modified-by
