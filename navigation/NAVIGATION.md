@@ -13,10 +13,12 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
 ├── README.md              — subject overview
 ├── CLAUDE.md              — rules for sessions working in this branch
 ├── curriculum/             — source lecture decks (image-based PDFs)
-│   ├── 6_1Area_between_Curves.pdf              (12 slides)
-│   ├── 6_2Volumes.pdf                          (26 slides)
-│   ├── 6_3_Arc_Length.pdf                      (20 slides)
-│   └── 6_4Area_of_asurface_of_revolution.pdf   (15 slides)
+│   │                          + read-optimized .md companions (see
+│   │                          CLAUDE.md's "Curriculum file formats" rule)
+│   ├── 6_1Area_between_Curves.pdf / .md              (12 slides)
+│   ├── 6_2Volumes.pdf / .md                          (26 slides)
+│   ├── 6_3_Arc_Length.pdf / .md                      (20 slides)
+│   └── 6_4Area_of_asurface_of_revolution.pdf / .md   (15 slides)
 ├── handover/
 │   └── HANDOVER.md        — progress so far, current level, next steps
 ├── navigation/
@@ -31,12 +33,15 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
 
 - New session start: read `CLAUDE.md` → `handover/HANDOVER.md` → this
   file, in that order.
-- Curriculum documents live in `curriculum/`, all image-based PDFs (text
-  extraction garbles the math — read pages visually). They are Chapter 6,
-  "Applications of Integration," taught in this order: 6.1 → 6.2 → 6.3 →
-  6.4. 6.2 depends on 6.1 (region-between-curves setup); 6.4 depends on
-  6.3 (both build on the same slicing/limit argument, arc length before
-  surface area).
+- Curriculum documents live in `curriculum/`, as image-based PDFs (text
+  extraction garbles the math) each with a `.md` companion transcribed by
+  hand from a visual read. Per CLAUDE.md, read the `.md` for normal
+  teaching use and only open the PDF for a discrepancy, a gap the `.md`
+  missed, or when Wifey asks for the original specifically. They are
+  Chapter 6, "Applications of Integration," taught in this order: 6.1 →
+  6.2 → 6.3 → 6.4. 6.2 depends on 6.1 (region-between-curves setup); 6.4
+  depends on 6.3 (both build on the same slicing/limit argument, arc
+  length before surface area).
 
 ## What each curriculum file covers
 
