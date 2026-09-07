@@ -29,6 +29,14 @@ README accurate, and general repo housekeeping.
 - Also create a `handover/` folder with a starter `HANDOVER.md` inside
   (see an existing subject branch for the template) — this is where that
   session records learning progress and hands over to a future session.
+- Also create a `navigation/` folder with a starter `NAVIGATION.md`
+  inside (see an existing subject branch for the template) — a
+  hand-maintained map of the branch's structure.
+- Curriculum documents in expensive-to-read formats (PPTX, DOCX, PDF,
+  images) should get a reformatted, efficient `.md` companion saved
+  right beside the original — see an existing subject branch's
+  CLAUDE.md "Curriculum file formats" section for the convention; carry
+  the same rule into any new branch's CLAUDE.md.
 - Don't add the subject as a folder on `main` — subject content lives
   only on its own branch, not on `main`.
 - List the new branch in this file and in README.md.
