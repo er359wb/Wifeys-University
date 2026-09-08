@@ -37,6 +37,10 @@ README accurate, and general repo housekeeping.
   right beside the original — see an existing subject branch's
   CLAUDE.md "Curriculum file formats" section for the convention; carry
   the same rule into any new branch's CLAUDE.md.
+- Carry over the "Teaching methodology" and "Answering directly, not
+  offloading to her" sections too — see an existing subject branch's
+  CLAUDE.md for the exact wording. These govern how the tutoring itself
+  is conducted and apply to every subject.
 - Don't add the subject as a folder on `main` — subject content lives
   only on its own branch, not on `main`.
 - List the new branch in this file and in README.md.
