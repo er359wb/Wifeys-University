@@ -144,10 +144,36 @@ All wrong answers were walked through individually afterward, at her request.
   input, average, and output all correct — 89 / 60 / 91 / 45, matching the
   expected output exactly.
 
-  **Still to do on this worksheet:** sorting (descending by average,
-  ascending ID tie-break), per-course averages, highest-average student,
-  below-60 list, and the optional invalid-score challenge. Output
-  formatting also needs separators — scores currently print run together.
+  - **Bubble sort by average, descending** — she said outright she no longer
+    remembered bubble sort (she wrote both sorts on 5 Sep; four days was
+    enough to lose it). Re-taught from the stated structure plus a
+    fill-in-the-blanks skeleton. Across three rounds she got the swap
+    (`Student temp`, three lines) correct, the counters consistent, the
+    `.average` on both sides of the comparison, and the semicolon. **The
+    sort logic is now correct.** Only the loop bounds are wrong *relative to
+    the 4-student array* — she has `c<6`/`b<5`, which is internally correct
+    for a 6-element array but must be 3/3 for this worksheet.
+
+  ### Where she actually left off, and the thing to fix first next session
+
+  Partway through the sorting work she **retyped the whole program from
+  scratch** instead of adding the sort to the file that already worked, and
+  the rewrite silently reintroduced errors she had already fixed:
+  `student list[6]` (lowercase type name), `double sum` declared *outside*
+  the per-student loop so it never resets, `cin >> list[n].name >> ' ' >>
+  list[n].id >> endl`, and 6 students where the worksheet has 4. She was
+  told twice to go back to the working file and did not — a tiredness
+  signal, not a comprehension one.
+
+  **Next session, start here:** get her back into the version that compiles
+  (input + average + output, verified working), paste the sort block in,
+  change the two bounds to 3, run it. That is ~15 minutes and closes
+  sorting. Do not let her retype the program.
+
+  **Still to do on this worksheet after that:** per-course averages,
+  highest-average student, below-60 list, ID tie-break, and the optional
+  invalid-score challenge — all droppable per the cut list in section 5.
+  Output formatting also needs separators.
 - **`20260617_recursion.docx`** — recursion. Not touched. Largest remaining topic.
 - **`switch_statement_ATM_Simulator.docx`** — never opened. Low priority.
 - **`palindrome_practice.docx`** — never opened. Low priority.
@@ -205,7 +231,20 @@ exercise). Less frequent now, but was the dominant error early on.
 - **Photos only for genuinely new material.** For small repeat fixes she
   says what she changed and that's taken on trust — she asked for this to
   save time and it has worked fine.
-- Interactive multiple-choice drilling works well for rules and traps.
+- Interactive multiple-choice drilling works well for rules and traps —
+  confirmed again 8 Sep: when she said she wasn't understanding structs, a
+  blank-form analogy plus five lettered multiple-choice questions got 4/5,
+  and the one she missed was exactly the one that mattered (she thought
+  sorting swaps only the `average` field, not whole records). Use this
+  format when she says she's lost; it locates the gap far faster than more
+  explanation does.
+- **Analogies land better than code for a new concept.** The struct only
+  clicked when described as a blank paper form, with the array as a stack
+  of forms and sorting as reshuffling whole sheets.
+- **She retypes whole programs from scratch instead of editing.** This
+  reintroduces bugs she already fixed and burns her energy. Watch for it and
+  redirect her to the working file — and note that when tired she may not
+  act on that redirection even when told twice.
 - **Her client auto-suggests a reply in the input box, and it can contain the
   answer to a check question.** She flagged this and does not want it. It is
   the app's own suggested-reply feature, not something a session emits, so it
