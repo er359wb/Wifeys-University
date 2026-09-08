@@ -125,13 +125,18 @@ All wrong answers were walked through individually afterward, at her request.
     worth watching, it was a real conceptual mixup, not a typo).
   - `average` computed as `double sum` / 3 — she fixed the integer-division
     trap herself when pointed at it.
-  - Output loop: written on her own initiative, currently has one compile
-    error (`list[n].average` where `n` is out of scope and is the wrong
-    index anyway — should be the student index). Pointed at, not fixed;
-    awaiting her correction.
+  - Output loop: written on her own initiative. Took 3 rounds on one line
+    (`list[n].average`): round 1 wouldn't compile (`n` out of scope), round
+    2 she fixed the scope by moving the line inside the inner loop's braces
+    — which compiled but printed three other students' averages per
+    student. Showing her the actual wrong output was what landed it; round
+    3 correct (`list[i].average`, placed after the inner loop). **This is
+    the recurring two-indices-doing-the-wrong-jobs mistake again** — worth
+    leading with next time she has nested loops.
 
-  Verified by compiling: with that one index corrected the program runs and
-  produces the worksheet's expected averages (89.00 / 60.00 / 91.00 / 45.00).
+  **Verified by compiling and running** on the worksheet's sample data:
+  input, average, and output all correct — 89 / 60 / 91 / 45, matching the
+  expected output exactly.
 
   **Still to do on this worksheet:** sorting (descending by average,
   ascending ID tie-break), per-course averages, highest-average student,
