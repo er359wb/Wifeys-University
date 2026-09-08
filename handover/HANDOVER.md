@@ -111,7 +111,32 @@ All wrong answers were walked through individually afterward, at her request.
      the loop, unused `<cmath>` — cosmetic, not blocking.
   3. Bank account menu — pass balance by reference, no globals, loop until exit.
      **Not started.**
-- **`20260610_struct_.docx`** — structs. Not touched.
+- **`20260610_struct_.docx`** — structs. **Started 2026-09-06, in progress.**
+  Done so far, all written by her:
+  - `struct Student` definition — correct after 3 rounds. Round 1 used
+    `string name` and `int score[] = {A,B,c}`; round 2 wrote `cstring name`
+    as if `cstring` were a type keyword (it isn't — she'd taken the word
+    literally); round 3 correct with `char name[20]` and `int score[3]`.
+    She got the trailing `};` right unprompted from the first attempt.
+  - Input loop with **nested loops and two distinct indices**
+    (`n` = student, `j` = score) plus a `sum` accumulator — 3 of 4 blanks
+    right first try after one round where she'd used a single counter for
+    both jobs and wrote `cin >> "prompt"` (cin/cout direction confusion —
+    worth watching, it was a real conceptual mixup, not a typo).
+  - `average` computed as `double sum` / 3 — she fixed the integer-division
+    trap herself when pointed at it.
+  - Output loop: written on her own initiative, currently has one compile
+    error (`list[n].average` where `n` is out of scope and is the wrong
+    index anyway — should be the student index). Pointed at, not fixed;
+    awaiting her correction.
+
+  Verified by compiling: with that one index corrected the program runs and
+  produces the worksheet's expected averages (89.00 / 60.00 / 91.00 / 45.00).
+
+  **Still to do on this worksheet:** sorting (descending by average,
+  ascending ID tie-break), per-course averages, highest-average student,
+  below-60 list, and the optional invalid-score challenge. Output
+  formatting also needs separators — scores currently print run together.
 - **`20260617_recursion.docx`** — recursion. Not touched. Largest remaining topic.
 - **`switch_statement_ATM_Simulator.docx`** — never opened. Low priority.
 - **`palindrome_practice.docx`** — never opened. Low priority.
