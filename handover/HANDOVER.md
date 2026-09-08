@@ -1,7 +1,13 @@
 # HANDOVER — C++ Tutoring
 
-**Last updated:** 2026-09-06 (Sunday)
-**Exam:** Friday 11 September 2026 — 5 days out
+**Last updated:** 2026-09-08 (Tuesday evening)
+**Exam:** Friday 11 September 2026 — **3 days out**
+
+> Date correction: earlier versions of this file said "Sunday 6 September,
+> 5 days out". That came from the session setup instructions and was wrong;
+> the system date confirms Tuesday 8 September. Monday and Tuesday daytime
+> are already spent. Plan from the table in section 5, not from memory of
+> the old one.
 **Status:** Ahead of the original plan on arrays/pointers; structs and recursion untouched.
 
 > Supersedes `archive/handover_2026-08-29_STALE.md`. That file predates a full
@@ -250,31 +256,30 @@ sort — both have now been taught.
 
 ## 5. Time left, and the risk
 
-She stated her available time per weekday (dates corrected — today is
-Sunday 6 September, exam is Friday 11 September):
+As of Tuesday evening 8 September, what is actually left:
 
 | Day | Time |
 |---|---|
-| Mon 7 Sep | 30–60 min |
-| Tue 8 Sep | 2+ hours |
+| Tue 8 Sep (evening, in progress) | whatever remains of tonight |
 | Wed 9 Sep | ~1.5 hours |
-| Thu 10 Sep | less than Monday |
+| Thu 10 Sep | less than an hour |
 | **Fri 11 Sep** | **EXAM** |
 
-Roughly 4–5 working hours remain for: three `POINTER_FUNCTION` tasks,
-structs, recursion, and revision. That does not all fit.
+Roughly 3–4 working hours total. Recursion is still completely untouched.
+That does not all fit, and she has been told so plainly.
 
-**Suggested priority if it has to be cut:**
+**Agreed cut list — this is the plan, not a suggestion:**
 
-1. Recursion — it's on the worksheets, it's the largest untouched topic, and
-   she named it as the last topic of the course.
-2. Structs — smaller, and the worksheet task (ranking students by average) is
-   close in shape to the `POINTER_FUNCTION` student task.
-3. Mixed tracing practice — highest value per minute, since tracing is a whole
-   exam section and she is already good at it.
-4. `POINTER_FUNCTION` tasks 1 and 3 — realistically may not fit. Task 2
-   (palindromes) is already underway and should be finished.
+1. **Finish struct sorting** (she is mid-flow, ~15 min).
+2. **Recursion** — the single biggest risk, a whole exam topic never opened.
+   Core only: base case vs. recursive case, two or three functions, and
+   hand-tracing a call stack (examinable in both the MCQ and tracing
+   sections). Do not attempt all nine worksheet functions.
+3. **Tracing practice** — pages 2–4 of her second mock paper. Highest value
+   per minute: tracing is a whole exam section and it is her strongest skill.
 
-The ATM/switch worksheet and the extra palindrome-practice worksheet are
-almost certainly out of reach and can be dropped without much loss — switch
-is simple and she has seen the pattern.
+**Dropped, deliberately:** `POINTER_FUNCTION` tasks 1 and 3, the ATM/switch
+worksheet, the extra palindrome worksheet, the struct optional challenge,
+and — if time runs short — the struct worksheet's three "added functions"
+(course averages, highest student, below-60 list). Those three are simpler
+than the sorting she will already have done and are the same shape.
