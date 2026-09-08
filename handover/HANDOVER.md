@@ -165,10 +165,17 @@ All wrong answers were walked through individually afterward, at her request.
   told twice to go back to the working file and did not — a tiredness
   signal, not a comprehension one.
 
-  **Next session, start here:** get her back into the version that compiles
-  (input + average + output, verified working), paste the sort block in,
-  change the two bounds to 3, run it. That is ~15 minutes and closes
-  sorting. Do not let her retype the program.
+  **Resolved at the end of the session:** she asked outright for the working
+  version ("send me how it should be, I don't understand your explanation"),
+  so the complete program was assembled *from her own already-correct lines*
+  and sent to her as a file — compiled and verified to output
+  Wang 91 / Zhang 89 / Li 60 / Zhao 45. Not a handed-over solution: every
+  line was hers, written earlier the same day; the rewrite had lost them.
+
+  **Next session, start here:** she just needs to paste that file into a
+  fresh project, run it, and check the order matches. ~5 minutes, then
+  structs are closed and recursion starts. She does not need to hunt for her
+  old file — it is superseded. Do not let her retype the program.
 
   **Still to do on this worksheet after that:** per-course averages,
   highest-average student, below-60 list, ID tie-break, and the optional
