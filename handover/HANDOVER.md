@@ -181,7 +181,45 @@ All wrong answers were walked through individually afterward, at her request.
   highest-average student, below-60 list, ID tie-break, and the optional
   invalid-score challenge — all droppable per the cut list in section 5.
   Output formatting also needs separators.
-- **`20260617_recursion.docx`** — recursion. Not touched. Largest remaining topic.
+- **`20260617_recursion.docx`** — recursion. **Started 2026-09-09.**
+  **Tracing is now unlocked** — this was a real breakthrough and the route
+  to it matters more than the result.
+
+  What did *not* work: analogies (queue, stack diagrams), instrumented
+  program output, and asking her to produce a whole trace. Three attempts,
+  three failures, ending in "I can't read the code and say what comes out."
+
+  What did work, and what to reuse: **give her a mechanical 3-rule
+  procedure and ask for exactly one line at a time.** The rules used were
+  (1) check the `if`; true → base, write the value and stop; false → write
+  the second line with the inner call left unresolved, (2) repeat one level
+  down, (3) from the base, substitute upward. She then produced each line
+  correctly on request.
+
+  Two prerequisite gaps surfaced and were fixed on the way, both worth
+  re-checking if she wobbles:
+  - **She did not know what `return` does.** Taught from scratch,
+    non-recursively: `return X` both hands back a value and ends the
+    function, and the call site is *replaced* by the returned value.
+  - **She thought `f(0)` was still being called** at the base and asked,
+    reasonably, how anything could come back if it was zero. The fix was
+    seeing that `return 1` exits before the second line ever runs — the
+    `if`/`return` means only one of the two paths executes.
+
+  She also asked, unprompted, how the machine "knows" the next `n` is 2.
+  Answered by connecting to pass-by-value, which she has solid from session
+  1 — each call gets its own copy — and shown empirically by printing `&n`
+  per level. That landed.
+
+  **Evidence:** traced `f(3)` (factorial shape) correctly with guidance one
+  line at a time, then traced `g(3)` (`n + g(n-1)`, base `n==0` returning 0)
+  **completely on her own, first try, descent and ascent both correct** —
+  including correctly descending one level further than the previous example
+  because the base condition differed. Verified by compiling: `g(3) = 6`.
+
+  **Still to do:** she has only *read* recursion, never *written* one.
+  Writing is the next portion, then the worksheet's own functions. Per the
+  section 5 cut list: core only, not all nine.
 - **`switch_statement_ATM_Simulator.docx`** — never opened. Low priority.
 - **`palindrome_practice.docx`** — never opened. Low priority.
 - Mixed revision / cold recall before the exam.
@@ -245,9 +283,21 @@ exercise). Less frequent now, but was the dominant error early on.
   sorting swaps only the `average` field, not whole records). Use this
   format when she says she's lost; it locates the gap far faster than more
   explanation does.
-- **Analogies land better than code for a new concept.** The struct only
-  clicked when described as a blank paper form, with the array as a stack
-  of forms and sorting as reshuffling whole sheets.
+- **Analogies land better than code for a new concept** — *but only for
+  what a thing IS, not for how to do it.* The struct clicked as a blank
+  paper form. Recursion did **not** click from analogies at all; what she
+  needed there was a mechanical step-by-step procedure. Rule of thumb: use
+  an analogy to answer "what is this", give a procedure to answer "how do I
+  do this".
+- **When she says she can't do something, ask for one line, not the whole
+  thing.** Repeatedly asking for a full trace failed three times; asking
+  for a single line at a time worked immediately and got her to a correct
+  independent trace within a few exchanges. This is probably the single
+  most useful thing learned about teaching her.
+- **Check the prerequisites before blaming the topic.** Her recursion
+  block was stuck on not knowing what `return` does — nothing to do with
+  recursion. She has used `return` correctly for weeks without having the
+  model for it. Expect more of these: assume nothing is known, ask early.
 - **She retypes whole programs from scratch instead of editing.** This
   reintroduces bugs she already fixed and burns her energy. Watch for it and
   redirect her to the working file — and note that when tired she may not
