@@ -58,6 +58,14 @@ exists.
 | `20260617_recursion.docx` | ✅ | Recursion | Not started — largest remaining topic |
 | `switch_statement_ATM_Simulator.docx` | ✅ | Switch / ATM | Not started, low priority |
 | `palindrome_practice.docx` | ✅ | Extra palindrome practice | Not started, low priority |
+| `mock_paper_2026-06.docx` | ✅ | **Full mock exam paper** — MCQ, tracing, fill-in-the-blank | Worked through in full |
+
+`mock_paper_2026-06.md` is now the most useful document here, ahead of
+`homework_on_pointers.md`: it is the only one covering the whole exam shape
+(all three section types) rather than pointers alone. Its answers were
+derived and verified by compiling, not copied from a key — the paper ships
+without one. It also contains a genuine flaw worth knowing about (a function
+called with no prototype), noted in the `.md`.
 
 `homework_on_pointers.md` is the most useful document in the folder — it is
 the only one in the exam's own format. Its MCQ section transcribes the

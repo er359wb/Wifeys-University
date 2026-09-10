@@ -46,6 +46,36 @@
 | Pascal's triangle | Asked to be shown code outright, declined twice; built from a verbal structure, corrected after 3 named bugs |
 | `isPalindrome()` + POINTER_FUNCTION task 2 (m, m², m³) | 2026-09-06: wrote the whole program herself, all 3 previous bugs fixed. Compiles clean, outputs the correct 11 / 101 / 111. Saved `original` before the destructive loop **unprompted** — that is recurring mistake #2, handled correctly without a nudge |
 
+### Mock paper worked in full — 2026-09-10 (day before the exam)
+
+She sent the whole paper as a `.docx` (`curriculum/mock_paper_2026-06.docx`),
+which turned out to be the same document she had photographed — section I is
+the 10 MCQs already done on 6 Sep. Sections II and III were new and are now
+done in full.
+
+**Section II (tracing, 4 programs, 7 points each):**
+
+| Q | Her answer | Correct | Note |
+|---|---|---|---|
+| 1 | `6 6` | `6 6` | **Right first try, and she cleared the `switch` fall-through trap** (`case 3` has no `break`) |
+| 2 | `70 3 10` | `10 7` then `70 3 10` | Every value right, including the reference semantics; she **omitted the `cout` inside the function** |
+| 3 | `33` | `25` | Counted `a[2][1]=8`, which satisfies neither condition |
+| 4 | — | `He!lo` | Not attempted; she asked to move on |
+
+**Section III** (fill in the blanks: pointer-returning search, and Goldbach)
+was given as worked answers with explanations, all verified by compiling.
+Also flagged a genuine flaw in the paper itself: `findFirstGreater` is called
+before it is declared and there is no prototype, so the code as printed will
+not compile.
+
+**The one gap that cost her real marks, worth leading with if there is any
+time left:** she believed a function only *returns*, and did not expect it to
+*print* on the way. She asked twice, and what finally landed was running the
+same program with the function's `cout` deleted — the output then became
+exactly what she had predicted. The rule she needs at the exam: when a
+tracing question calls a function, open its body and check for `cout` inside;
+that output comes before anything `main` prints on the same line.
+
 ### Second exam-format MCQ paper — 2026-09-06, page 1 of 4
 
 She produced a new mock paper (10 MCQs, "3 points each", followed by a
