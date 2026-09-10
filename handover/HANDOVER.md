@@ -46,6 +46,24 @@
 | Pascal's triangle | Asked to be shown code outright, declined twice; built from a verbal structure, corrected after 3 named bugs |
 | `isPalindrome()` + POINTER_FUNCTION task 2 (m, m², m³) | 2026-09-06: wrote the whole program herself, all 3 previous bugs fixed. Compiles clean, outputs the correct 11 / 101 / 111. Saved `original` before the destructive loop **unprompted** — that is recurring mistake #2, handled correctly without a nudge |
 
+### Exam-eve cheat sheet — 2026-09-10
+
+Published for her to read on her phone before the exam:
+**https://claude.ai/code/artifact/23c08f35-4766-45a2-988b-658130369a6c**
+
+Organised by the exam's four question types, built only from mistakes she
+actually made this week, with honest markers per item (hers vs. seen on the
+mock vs. already solid). Ends with an eight-point pre-submission checklist
+of her recurring bugs. If a later session needs it, that URL is the only
+place it lives.
+
+Worth knowing for planning: **the mock paper has no "write a program from
+scratch" section, but the real exam does.** She spotted this herself and was
+right — an earlier read of mine implied the exam leans toward reading over
+writing, which was wrong. The real paper has all four types: fill-in-blanks,
+multiple choice, tracing, and three hand-written programs. Her week of
+writing full programs targets the section the mock simply omits.
+
 ### Mock paper worked in full — 2026-09-10 (day before the exam)
 
 She sent the whole paper as a `.docx` (`curriculum/mock_paper_2026-06.docx`),
