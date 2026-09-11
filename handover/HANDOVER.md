@@ -51,7 +51,24 @@
 **Cheat sheet (2026-09-10):**
 https://claude.ai/code/artifact/23c08f35-4766-45a2-988b-658130369a6c
 
-**Practice paper (2026-09-11, exam morning):**
+**Practice paper №2 (2026-09-11) — answers are readable by Claude:**
+https://claude.ai/code/artifact/cafa9153-c48e-4125-b9af-e90fbdebca07 —
+same format again, 16 new questions, published with `capabilities: {db: {}}`
+so her answers persist server-side. Read them with the Artifact tool:
+`action: read_db`, `db_op: list`, `collection: "attempt2"` on that URL.
+Each doc is `{question, answer, revealed, at}`, one per question, ids
+`I-01`…`I-10`, `II-1`…`II-4`, `III-1`, `III-2`. Verified the read path
+works (returns cleanly, empty until she answers). **No wake notification
+fires when she finishes** — the subscription could not be registered in
+this environment — so she has to say so, then go and read.
+
+Questions aimed at: `sizeof` of an array parameter (I-3), the stray
+semicolon plus loop-variable scope (I-6, her own recent bug), a recursive
+step of `n-2` rather than `n-1` (I-7), her own insert-with-shift (II-3),
+and recursive array sum (III-2) — the exact task the session was on when
+teaching stopped.
+
+**Practice paper №1 (2026-09-11, exam morning) — answers NOT visible:**
 https://claude.ai/code/artifact/6eb0b2ab-2911-46f0-b281-9d610ba0ae8e —
 she asked for a test in the same format as the June mock. 16 fresh
 questions across the same three sections, answers hidden behind a reveal
