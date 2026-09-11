@@ -46,10 +46,25 @@
 | Pascal's triangle | Asked to be shown code outright, declined twice; built from a verbal structure, corrected after 3 named bugs |
 | `isPalindrome()` + POINTER_FUNCTION task 2 (m, m², m³) | 2026-09-06: wrote the whole program herself, all 3 previous bugs fixed. Compiles clean, outputs the correct 11 / 101 / 111. Saved `original` before the destructive loop **unprompted** — that is recurring mistake #2, handled correctly without a nudge |
 
+### Two artifacts published for her — links live nowhere else
+
+**Cheat sheet (2026-09-10):**
+https://claude.ai/code/artifact/23c08f35-4766-45a2-988b-658130369a6c
+
+**Practice paper (2026-09-11, exam morning):**
+https://claude.ai/code/artifact/6eb0b2ab-2911-46f0-b281-9d610ba0ae8e —
+she asked for a test in the same format as the June mock. 16 fresh
+questions across the same three sections, answers hidden behind a reveal
+button with a self-marked tally. Every answer was verified by compiling and
+running, not reasoned out. Questions were aimed deliberately at her known
+gaps: a function that prints before returning (II.2), `switch` fall-through
+firing twice (II.1), `*p + 2` vs `*(p+2)` (I.7), `&&` where the last paper
+had `||` (II.3). **Her results on it are not known** — it was published and
+the session had no further contact.
+
 ### Exam-eve cheat sheet — 2026-09-10
 
-Published for her to read on her phone before the exam:
-**https://claude.ai/code/artifact/23c08f35-4766-45a2-988b-658130369a6c**
+The cheat sheet itself:
 
 Organised by the exam's four question types, built only from mistakes she
 actually made this week, with honest markers per item (hers vs. seen on the
