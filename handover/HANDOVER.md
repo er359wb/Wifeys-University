@@ -81,6 +81,75 @@ again, third time across the record. And on III-2 she lost the array argument
 in the recursive call (`sumArr(n-1)` instead of `sumArr(arr, n-1)`) — the same
 two-parameter slip as `power(x, n)`.
 
+### Exam-day session — 2026-09-11 morning, exam moved to 16:00
+
+The exam was not Friday morning; she reported it at 16:00 with ~6 hours left.
+Session plan agreed: write-from-scratch drill, since Section II showed tracing
+is solid and the blank page is not.
+
+**Struct program, cold, from a blank page — failed, and the failure is
+informative.** Second time writing a program she had already written
+correctly on 2026-09-06. What came back:
+
+- `struct student[4] { ... }` — put the array size in the *type definition*,
+  so `list` was never declared at all. Everything downstream failed to
+  compile. This is a **type vs. variable** confusion, and it recurred within
+  the same hour (`Student[j].average` instead of `list[j].average`). New
+  entry for the recurring-mistakes list, and the most damaging one: it kills
+  the whole program, not one line.
+- `n < 3` for 4 students; `c < 4` over `score[3]`; `total` never zeroed
+  (recurring #3, again); two `cout` after a `for` with no braces (recurring
+  #4, again).
+- What was right, unprompted: all struct fields and types, `char name[20]`,
+  the trailing `};`, the nested input loop with two distinct indices, and
+  `double total / 3` avoiding integer division. The parts she got right are
+  exactly the parts she got right in September; the parts she lost are
+  structural.
+
+**Bubble sort — taught from zero, by hand first, and this worked.** She had
+never been able to write one ("i dont know how to make a bubble sort").
+Walked 5 2 9 1 pair by pair, asking one comparison at a time. She got every
+step right: no-swap on (5,2), swap on (2,9) giving `5 9 2 1`, no-swap on
+(2,1), and she identified unprompted that 1 had reached its final place.
+Pass 2 she did in one move: `9 5 2 1`. **She can do the algorithm on paper.**
+
+**Then the code failed anyway**, and the reason is a separate gap worth
+recording: asked for the body of the `if`, she wrote `double max = ...`.
+She reached for the *find-the-maximum* template — a program she knows —
+because it is the nearest thing in memory to "sorting". Nothing in her code
+moved anything. Named it for her: sorting is not finding, it is moving.
+
+**Swap re-taught with runnable evidence.** Compiled and showed
+`a=b; b=a;` producing `a=9 b=9` next to the three-line version producing
+`x=9 y=5`. The two-glasses analogy. Recurring mistake #2, now shown rather
+than asserted.
+
+She then asked outright for the answer twice (`blya just give me correct
+answer`) and was given the complete compiled program, plus the file itself.
+Under exam-day pressure the guided route was costing more than it returned —
+switching to give-then-drill was the right call and should be the default
+for the rest of today only.
+
+### Program cheat sheet — 2026-09-11, exam day
+
+https://claude.ai/code/artifact/e19af8dd-7866-48ab-baf2-65ab35b8ff79
+
+Fifteen program skeletons for the write-a-program section: array sum/average,
+max/min, sequential search, bubble sort, the three-line swap, reverse, insert,
+delete, C-string length/palindrome/vowels, 2D row sums, star triangle, prime
+check, `swap`-by-reference + gcd + lcm, four recursive functions plus a
+trace procedure, the full struct program, and a switch/ATM menu. Then her own
+six recurring bugs as a pre-submission checklist, plus the MCQ habit and the
+truth-values rule.
+
+**Every one of the fifteen was compiled with g++ and run** — the output block
+under each program is real output, not expected output. Worth preserving:
+that property is what makes the sheet trustworthy, and a future edit should
+keep it (rebuild and re-run rather than hand-editing a code block).
+
+Not registered for republish wakes — the session gateway refused the
+subscription, so nothing notifies this session if she edits or comments.
+
 ### Three artifacts published for her — links live nowhere else
 
 **Cheat sheet (2026-09-10):**
@@ -367,6 +436,15 @@ rounds of correction on any new program shape.
 5. **`=` vs `==`** in conditions.
 6. **Loop counter used as an accumulator.** Tried to use the `for` index as
    the count of positives.
+7. **Type name used as a variable.** `struct Student[4]` in the definition,
+   `Student[j].average` in the body. The type is the blueprint; the array is
+   `list`. Twice in one hour on 2026-09-11, and it is the costliest of the
+   seven because nothing compiles afterwards. Rule given to her: after
+   `struct`, the type's name appears exactly twice in the program — the
+   definition and the declaration `Student list[4];` — and never again.
+8. **Reaches for the nearest remembered template instead of the needed one.**
+   Asked for a swap, she wrote find-the-maximum. Check that her code actually
+   *moves* something when the task is to move something.
 
 ### Older pattern (from session 1, still worth watching)
 
