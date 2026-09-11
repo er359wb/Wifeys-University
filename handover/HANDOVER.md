@@ -46,7 +46,42 @@
 | Pascal's triangle | Asked to be shown code outright, declined twice; built from a verbal structure, corrected after 3 named bugs |
 | `isPalindrome()` + POINTER_FUNCTION task 2 (m, m², m³) | 2026-09-06: wrote the whole program herself, all 3 previous bugs fixed. Compiles clean, outputs the correct 11 / 101 / 111. Saved `original` before the destructive loop **unprompted** — that is recurring mistake #2, handled correctly without a nudge |
 
-### Two artifacts published for her — links live nowhere else
+### Measured result — practice paper №2, 2026-09-11, 9 / 16
+
+**The only clean measurement in this whole record.** She sat it unaided and
+confirmed unprompted that she revealed each answer only *after* committing
+her own. Answers read back from the artifact db.
+
+| Section | Score |
+|---|---|
+| I — multiple choice | **4 / 10** |
+| II — tracing | **4 / 4** |
+| III — completing code | 1 / 2 (III-2: one blank of three) |
+
+**Section II is solid and that is the expensive section.** All four exact,
+including whitespace in the triangle and the negative in `9 -1`. On II-2 she
+wrote out the full recursion descent (`2+g(406)` … `4+g(0)`) rather than just
+the total — 5 minutes and 48 saves on that one question. Two days earlier she
+could not trace recursion at all.
+
+**Section I is where marks go, and the pattern is sharp.** Misses: 17%5 given
+as 3; `*p` called "an address"; `sizeof`/`strlen` inverted; stray `;` after
+`for` plus loop-variable scope; `NULL` treated as true; `sizeof` of an array
+parameter (the one genuinely new item). **She knows four of these rules — she
+has explained two of them to me.** They were answered by eye with nothing
+written down. Where she writes, 4/4; where she can point, 4/10. The gap is
+method, not knowledge.
+
+Actionable and told to her: spend twenty seconds computing on paper for MCQs —
+long-divide `17 % 5`, draw `a b c \0` before answering `sizeof` vs `strlen`.
+That single habit recovers roughly four of the six lost marks.
+
+Still-live weak spot confirmed: **truth values** (`NULL`/0 as false) missed
+again, third time across the record. And on III-2 she lost the array argument
+in the recursive call (`sumArr(n-1)` instead of `sumArr(arr, n-1)`) — the same
+two-parameter slip as `power(x, n)`.
+
+### Three artifacts published for her — links live nowhere else
 
 **Cheat sheet (2026-09-10):**
 https://claude.ai/code/artifact/23c08f35-4766-45a2-988b-658130369a6c
