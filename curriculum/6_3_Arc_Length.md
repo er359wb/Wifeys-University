@@ -81,5 +81,10 @@ convention, not a contradiction.)
 (a) $y=1+6x^{3/2},\ 0\le x\le1$
 (b) $x=\tfrac13\sqrt{y}(y-3),\ 1\le y\le9$
 (c) $y=\ln(\cos x),\ 0\le x\le\tfrac{\pi}{3}$
-(d) $y=\tfrac12x^2$, from $P$ to $Q(1,\tfrac12)$ — $P$'s coordinates are
-partially cut off in the source slide; check the original PDF for this one.
+(d) $y=\tfrac12x^2$, from $P$ to $Q(1,\tfrac12)$ — the source slide itself
+has a typo/rendering defect here: it literally shows "$P-\tfrac12$" with no
+x-coordinate and no parentheses (confirmed by re-checking the original PDF,
+this isn't an extraction error). Best inference: $P=(-1,\tfrac12)$, the
+symmetric point to $Q$ under this even function ($\tfrac12(-1)^2=\tfrac12$
+checks out). Treat as $P=(-1,\tfrac12)$ unless Wifey's actual source says
+otherwise.
