@@ -1,102 +1,147 @@
 # Handover
 
-Last updated: 2026-09-06 (repo setup session — curriculum, conversation
-history, and syllabus added; no new tutoring done yet this session).
+Last updated: 2026-09-21 (session: Unit 1 BCD/Gray partial, Unit 2
+Boolean algebra rules largely mastered; session ended when she ran out
+of time/energy before a test).
 
 ## Progress so far
 
-Curriculum now fully in place: `curriculum/slides/` (6 decks),
-`curriculum/textbook/`, and `curriculum/SYLLABUS.md` (topic breakdown
-per unit, with textbook cross-references). See `curriculum/SYLLABUS.md`
-for the full topic list per unit — this section only tracks
-completion status.
+Curriculum in place: `curriculum/slides/` (6 decks, each with a `.md`
+companion — read those, not the PDFs), `curriculum/textbook/`, and
+`curriculum/SYLLABUS.md`. Prior tutoring transcripts in
+`conversation_history/`.
 
-Tutoring itself started before this branch existed, in prior claude.ai
-chats. Transcripts are preserved in `conversation_history/`:
-- `2026-08-31_pomoshch-s-pervym-urokom.md` — first lesson: radix/base,
-  positional notation, binary<->octal conversion (grouping method).
-- `2026-09-02_bystrye-voprosy-po-prezentatsii.md` — quiz attempt on
-  Unit 1 topics; table-memorization drilling for octal/hex; the
-  8-4-2-1 shortcut was introduced here, then abandoned after confusing
-  her (see Learner profile). Session cut off before the planned
-  randomized drill happened.
-- `2026-09-07_perenos-v-claude-code-setup.md` — migration to this
-  Claude Code branch/repo.
+### Unit 1 — Number Systems and Codes: in progress
 
-**Unit 1 — Number Systems and Codes: in progress.**
-- Done / solid: radix/base concept, positional notation formula,
-  binary<->octal conversion (grouping method, incl. why grouping is
-  right-to-left but the written result is left-to-right), binary<->hex
-  conversion, memorizing the octal->binary and hex->binary tables by
-  rote (not the 8-4-2-1 shortcut — that's rejected, see below).
-- Not yet drilled to fluency: randomized recall of the octal/hex
-  tables (asked out of order, not just top-to-bottom).
-- Not started within Unit 1: signed numbers (sign-magnitude, 1's/2's
-  complement), addition/subtraction via complements, BCD, Excess-3,
-  Gray code, parity, ASCII.
+**Solid:**
+- Radix/base, positional notation.
+- binary <-> octal, binary <-> hex conversion (grouping method), incl.
+  the direction point (group right-to-left, write left-to-right).
+- Octal/hex tables memorized by rote.
+- **BCD**: what it is, digit-by-digit encoding, valid vs invalid 4-bit
+  codes. Verified: (39)₁₀ → 0011 1001 correct; identified 1100/1011 as
+  invalid.
+- **BCD addition, single digit**: the plus-6 correction, both branches
+  (result lands in 1010-1111, or carry-out of the 4-bit group).
+  Verified 3/3 (3+4 no correction, 6+7 → 0001 0011, 9+9 → 0001 1000),
+  including remembering the tens group.
 
-**Units 2-6: not started.**
+**Taught but NOT verified:**
+- **Multi-digit BCD addition** (carry propagates into the next BCD
+  group, each group checked separately). Worked example 27+35 shown;
+  her exercise **48 + 27 was never answered** — open.
+- **Gray code**: why it exists (avoids instantaneous errors — only 1
+  bit changes between adjacent values), the "differs in 1 bit" property
+  shown column-by-column, MSB/LSB explained (she did not know these
+  terms — that was a real gap, now covered). **XOR introduced** (rule:
+  1 if bits differ, 0 if same) but her answers were never given.
+- **B → G conversion formula (G_n = B_n; G_i = B_{i+1} ⊕ B_i)** — not
+  reached. This is where Gray code stopped.
+
+**Not started in Unit 1:** signed numbers (sign-magnitude, 1's/2's
+complement), addition/subtraction via complements, Excess-3, parity,
+ASCII.
+
+### Unit 2 — Boolean Algebra: in progress
+
+**2.1 Variables and functions** — she stated she understands it
+(AND/OR/NOT, the 1+1=1 point). Taken on her word, not drilled.
+
+**2.4 Rules — largely mastered, all verified by practice:**
+- Single-variable theorems — 
+  initially confused `x + x = x` with `x + x̄ = 1`, and answered
+  `C·C̄ = C̄`. Fixed by splitting into three groups (with constant / with
+  itself / with its complement). Re-verified 5/5.
+- **Absorption** (`x + xy = x`, `x(x+y) = x`) — 3/3 incl. recognising
+  when it does NOT apply (`M + N`).
+- **Bar-forms** (`x + x̄y = x + y`, `x(x̄+y) = xy`) — full 4-shape
+  discrimination matrix 4/4.
+- **DeMorgan** — 3/3 incl. `(C̄D)‾ = C + D̄`.
+- **Combining** (`xy + xȳ = x`) — 3/3 incl. spotting when the common
+  factor is the *second* variable.
+- **Duality & Inverse** — 3/3 after fixing a clean label swap (she
+  executed both transformations perfectly but had the names attached to
+  the wrong procedures).
+
+**2.4 Consensus — NOT solid.** First explanation failed ("не поняла").
+Re-taught concretely (when the third term would fire, one of the first
+two already gives 1). She then gave the right verdict but the **wrong
+reason** ("потому что даёт ноль"). Needs redoing.
+
+**2.5 Canonical SOP — FAILED, needs a fresh approach.** Her lecture hit
+it mid-session. Minterm definition + the (x+x̄) expansion trick were
+explained twice (once long, once as a compact 3-step recipe); her
+response was "нихуя не понятно". Do not simply re-present the same
+explanation. She never got to Σm notation.
+
+**2.7 K-map — barely started.** Got as far as: it's a redrawn truth
+table, 2-variable layout, adjacent cells differ by one variable, and
+merging two adjacent 1s = applying combining visually. She disengaged
+before answering anything. Nothing verified.
+
+**Not started in Unit 2:** 2.2 truth tables, 2.3 gates, 2.6 algebraic
+simplification, 2.8 don't-cares, 2.9 cost, 2.10 multiple-output.
+
+**Units 3-6: not started.**
 
 ## Learner profile
 
-- **Language**: Russian, casual/informal tone. All technical
-  terminology stays in English (course is taught in English), with a
-  short Russian gloss the first time a term appears — don't
-  permanently translate terms into Russian afterward.
-- **Explanation length**: short. No walls of text, no lecture dumps.
-  One idea at a time, small chunks.
-- **Learns by doing, not reading**: default pattern is one short
-  worked example, then immediately hand her problems to solve. Ask
-  for her answer before explaining further — per CLAUDE.md's testing
-  rule, never give the answer/solution/strong hint before she attempts
-  it or explicitly asks.
+- **Language**: Russian, casual/informal. Technical terms stay in
+  English with a short Russian gloss on first appearance. She answers in
+  clipped transliterated shorthand ("не а плюс б", "ху", "де") — read it
+  loosely, it's fine.
+- **Message length is the single biggest failure mode.** Long, dense
+  blocks cause a hard shutdown ("нихуя не понятно", "да похуй"). Short
+  blocks — one idea, a worked line or two, then 2-4 questions — work
+  reliably. When she stalls, the fix is almost always *shorter*, not
+  *more*.
+- **Mechanics are reliable; labels and form-selection are not.** This
+  was the pattern all session: she swapped duality/inverse names while
+  executing both perfectly; she swapped the OR-form and AND-form
+  answers of the same theorem pair. Her algebra is sound — what breaks
+  is picking *which* rule applies. Teach the discrimination explicitly
+  (side-by-side tables of near-identical cases work very well).
+- **Derive, don't decree.** Rules presented as consequences of things
+  she already verified (e.g. combining derived from `y+ȳ=1` and `x·1=x`)
+  land immediately. Rules presented as a list to memorize don't.
+- **Substitution is her best self-check.** Plugging x=0 and x=1 to test
+  a theorem clicked hard and she can run it independently. Lean on it —
+  it also disproves wrong answers convincingly.
+- **"Open the bracket" beats formula recall.** For any `x(...)`
+  expression she does better distributing than pattern-matching a
+  formula. Give her procedures over lookups where possible.
+- **She jumps to whatever the live lecture is showing.** Mid-session she
+  sent slide photos (BCD addition, Gray code, canonical SOP) and wanted
+  those *now*. Follow her lead; the planned order is secondary.
+- **Under time pressure she abandons rather than pushes through.** When
+  a test is close and something isn't landing, a compact written
+  reference is worth more than continued drilling.
 - **Table memorization over shortcuts**: the 8-4-2-1 bit-weight
-  shortcut was tried for octal/hex-to-binary conversion and confused
-  her across several re-explanations (2026-09-02 session) — she
-  couldn't connect "which weights add up to this digit" back to the
-  positional-notation idea she'd just learned. She explicitly said "я
-  не поняла" repeatedly and asked to drop it. Abandoned; do not
-  reintroduce it in any form. She uses direct table memorization only
-  (rote, "learn it like the alphabet").
-- **Direction confusion is a recurring sticking point**: when grouping
-  bits (e.g. binary->octal, binary->hex), she gets confused about why
-  groups are formed right-to-left (from the LSB) but the final answer
-  is written left-to-right. This needs to be stated explicitly every
-  time it comes up in a new context, not assumed as "already learned."
-- **Notation preference**: always wants explicit subscript notation
-  for number bases, e.g. (101)₂, (7)₈, (2F)₁₆, rendered as actual
-  subscripts — she asked for this herself and it should be applied
-  everywhere from here on, not just where originally introduced.
-- **Communication when lost vs. confident**: when lost, she asks
-  short, sometimes garbled/typo'd questions ("Тип в байнари? Все равно
-  странный лайфхак он не работает") rather than staying silent — that
-  is a real signal to slow down and change approach, not push forward.
-  When confident, she asks for practice directly ("Может задание
-  даш") or requests drilling out of order ("погоняй вразнобой").
-- **Pace**: prefers moving through material quickly once a concept
-  clicks (asked to "пройтись по всему уроку" / go through the whole
-  lesson), but needs the step-by-step breakdown when something doesn't
-  land — don't compress explanations further just because she wants
-  speed; compress *scope* (fewer sub-topics at once), not depth per
-  sub-topic.
-- **No emojis** (explicit repo-wide instruction, also matches her own
-  style in the transcripts).
+  shortcut was tried long ago, confused her badly, and is **abandoned —
+  do not reintroduce it in any form.**
+- **Direction confusion** (group right-to-left, write left-to-right)
+  recurs; restate it explicitly in every new context.
+- **Notation**: always use proper subscripts — (101)₂, (7)₈, (2F)₁₆.
+- **No emojis.**
 
 ## Next steps
 
-1. Resume Unit 1: drill octal/hex table recall in randomized order
-   (this was planned and never completed — session cut off right
-   before it, per the 2026-09-02 transcript).
-2. Once table recall is fluent, move to signed numbers (sign-magnitude,
-   1's/2's complement) and addition/subtraction, then the remaining
-   codes (BCD, Excess-3, Gray, parity, ASCII) to finish Unit 1.
-3. Proceed to Unit 2 (Boolean Algebra) only after Unit 1 is confirmed
-   complete via actual practice, not assumption.
-4. See `curriculum/SYLLABUS.md` for the full per-unit topic list, and
-   the session's task list (Units 1-6, one task per topic) for
-   fine-grained tracking.
+1. **Unit 2 first** — that's where her course and tests are. Open items
+   in priority order:
+   - **Canonical SOP (2.5)** — needs a genuinely different approach, not
+     a re-explanation. Consider building it from a truth table she fills
+     in herself rather than from expanding an algebraic expression.
+   - **K-map (2.7)** — highest test value, barely begun. The hook that
+     worked: a K-map is just combining done visually. Continue from the
+     2-variable map.
+   - **Consensus (2.4)** — verdict right, reasoning wrong; redo.
+   - Then 2.2/2.3 (quick), 2.6, 2.8, 2.9, 2.10.
+2. **Unit 1 leftovers** when there's slack: the 48+27 multi-digit BCD
+   exercise, XOR check, Gray code B→G formula, then signed numbers and
+   the remaining codes.
+3. Ask early what a test actually covers — she was asked twice this
+   session and never answered, which made prioritising guesswork.
 
-Per CLAUDE.md: don't mark a topic/task done on assessment alone —
-require her to solve problems correctly or explicitly confirm
-understanding. Nothing above should be read as "done" unless stated as
-such.
+Per CLAUDE.md: nothing above is "done" unless it says verified with her
+own correct answers. Consensus, canonical SOP and K-map are explicitly
+not done.
