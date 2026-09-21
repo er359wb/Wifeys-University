@@ -59,6 +59,7 @@ exists.
 | `switch_statement_ATM_Simulator.docx` | ✅ | Switch / ATM | Not started, low priority |
 | `palindrome_practice.docx` | ✅ | Extra palindrome practice | Not started, low priority |
 | `mock_paper_2026-06.docx` | ✅ | **Full mock exam paper** — MCQ, tracing, fill-in-the-blank | Worked through in full |
+| `Complex_Class_.docx` | ✅ | **New semester** — classes, constructors, copy constructor, `const` members | Just started 2026-09-21 |
 
 `mock_paper_2026-06.md` is now the most useful document here, ahead of
 `homework_on_pointers.md`: it is the only one covering the whole exam shape
@@ -66,6 +67,13 @@ exists.
 derived and verified by compiling, not copied from a key — the paper ships
 without one. It also contains a genuine flaw worth knowing about (a function
 called with no prototype), noted in the `.md`.
+
+`Complex_Class_.md` is the current assignment (autumn semester, first
+class/constructor task). Its `.md` lists four inconsistencies in the source
+sheet — a `display()` format that contradicts its own test sample, an
+incomplete expected output, a non-const reference parameter on `add`, and a
+missing `const` on `conjugate()`. They are flagged there rather than fixed;
+the specified signatures are what gets marked.
 
 `homework_on_pointers.md` is the most useful document in the folder — it is
 the only one in the exam's own format. Its MCQ section transcribes the
@@ -75,7 +83,7 @@ unmarked — don't fill those in with a guessed answer.
 `palindrome_practice.docx` was originally named `回文数练习.docx`; renamed for
 consistency, contents unchanged. Document metadata (author/last-modified-by
 fields embedded in the `.docx` files, not visible in the document body) has
-been stripped from all 13 `.docx` files as part of the privacy pass — see
+been stripped from all 14 `.docx` files as part of the privacy pass — see
 `handover/HANDOVER.md`'s session log / the commit history for details. The
 two legacy `.doc` files (`20260414_while_loop_2.doc`,
 `homework_on_pointers.doc`) still carry short author initials in their OLE
