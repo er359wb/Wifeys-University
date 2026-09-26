@@ -1,0 +1,23 @@
+{
+  "name": "PrisonEscape",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "Shared": {
+        "$path": "src/shared"
+      }
+    },
+    "ServerScriptService": {
+      "PrisonEscapeServer": {
+        "$path": "src/server"
+      }
+    },
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "PrisonEscapeClient": {
+          "$path": "src/client"
+        }
+      }
+    }
+  }
+}
