@@ -1,292 +1,298 @@
-# Size Duel - Roblox Game Design (Draft)
+# Size Duel - дизайн игры для Roblox (черновик)
 
-Working title only. Every section is tagged:
+Название рабочее. Каждый раздел помечен:
 
-- **[Decided]** - came directly from your idea.
-- **[Proposed]** - my suggestion, needs your yes/no.
-- **[Open]** - you still need to choose.
-
----
-
-## 1. Core idea [Decided]
-
-A multiplayer height-guessing game in the style of Magnitudle / "Size It
-Up". Each round shows a **reference object** whose height everyone knows,
-and a **mystery object**. Players guess how tall the mystery object is by
-scaling it against the reference. The player whose guess is **closer to the
-real height than their opponents'** wins the round and gets points.
-
-There are two table types:
-
-- **1v1 table** - two players duel.
-- **4-player table** - four players compete.
-
-There is an **elimination system** (shape still open - see section 6).
-
-> Note: I could not open magnitudle.com from this environment, so the
-> mechanics below are based on your description, not the site itself.
-> Tell me anything that differs from how the original plays.
+- **[Решено]** - взято прямо из твоей идеи.
+- **[Предложение]** - моё предложение, нужно твоё "да" или "нет".
+- **[Открыто]** - тебе ещё нужно выбрать.
 
 ---
 
-## 2. How it looks
+## 1. Основная идея [Решено]
 
-### 2.1 Lobby [Proposed]
+Многопользовательская игра на угадывание высоты в стиле Magnitudle /
+"Size It Up". В каждом раунде показывается **эталонный объект**, высоту
+которого все знают, и **загадочный объект**. Игроки угадывают, какой высоты
+загадочный объект, масштабируя его относительно эталона. Игрок, чья догадка
+**ближе к настоящей высоте, чем у соперников**, выигрывает раунд и получает
+очки.
 
-A single hub world with physical tables. Players walk up and sit down to
-join - no menus needed to queue.
+Есть два типа столов:
+
+- **Стол 1 на 1** - дуэль двух игроков.
+- **Стол на 4 игрока** - соревнуются четыре игрока.
+
+Есть **система выбывания** (её форма пока открыта - см. раздел 6).
+
+> Примечание: сайт magnitudle.com не открылся из этой среды, поэтому
+> механика ниже основана на твоём описании, а не на самом сайте. Скажи,
+> если что-то отличается от оригинала.
+
+---
+
+## 2. Как это выглядит
+
+### 2.1 Лобби [Предложение]
+
+Один общий мир с настоящими столами. Игрок подходит и садится, чтобы
+присоединиться, - никаких меню для поиска игры.
 
 ```
 +-----------------------------------------------------------+
-|                         LOBBY                             |
+|                         ЛОББИ                             |
 |                                                           |
 |   [1v1]     [1v1]     [1v1]          +-----------+        |
-|   o---o     o---o     o---o          | LEADER-   |        |
-|                                      | BOARD     |        |
+|   o---o     o---o     o---o          | ТАБЛИЦА   |        |
+|                                      | ЛИДЕРОВ   |        |
 |                                      +-----------+        |
 |      o               o                                    |
-|    o[4P]o          o[4P]o          (spawn)                |
+|    o[4P]o          o[4P]o          (точка появления)      |
 |      o               o                                    |
 |                                                           |
 +-----------------------------------------------------------+
-  o = seat      [1v1] = 2-seat table      [4P] = 4-seat table
+  o = место     [1v1] = стол на 2 места     [4P] = стол на 4 места
 ```
 
-- A table starts a countdown (e.g. 5 s) once all its seats are full.
-- Standing up during the countdown cancels it.
+- Когда все места за столом заняты, начинается обратный отсчёт (например,
+  5 секунд).
+- Если кто-то встаёт во время отсчёта, он отменяется.
 
-### 2.2 The table stage [Proposed]
+### 2.2 Сцена на столе [Предложение]
 
-The middle of every table is a small stage where the objects appear, so the
-whole match happens right at the table and spectators can watch.
+В центре каждого стола есть маленькая сцена, где появляются объекты. Весь
+матч проходит прямо за столом, и зрители могут смотреть.
 
 ```
-            reference        mystery
+            эталон          загадка
                ___            ?  ?
               |   |          ? ?? ?
-              | R |          ? ?? ?      <- mystery object, drawn at
-              |   |          ? ?? ?         the size YOU are guessing
+              | Э |          ? ?? ?      <- загадочный объект такого
+              |   |          ? ?? ?         размера, какой ТЫ угадываешь
          =====|___|==========?=??=?=====
-                  table stage
+                сцена на столе
 ```
 
-### 2.3 Guessing screen (per player) [Proposed]
+### 2.3 Экран угадывания (у каждого игрока) [Предложение]
 
 ```
 +---------------------------------------------------------+
-|  Round 3                                     Time: 12   |
+|  Раунд 3                                    Время: 12   |
 |                                                         |
-|  Reference:  Door  (2.0 m)                              |
-|  Mystery:    Giraffe                                    |
+|  Эталон:   Дверь  (2,0 м)                               |
+|  Загадка:  Жираф                                        |
 |                                                         |
-|     [ camera view of reference + mystery on the stage ] |
+|     [ вид камеры на эталон и загадку на сцене ]         |
 |                                                         |
-|  smaller <==========|=============================> bigger|
-|                    0.1x    1x     10x     100x          |
+|  меньше <===========|===========================> больше|
+|                    0,1x    1x     10x     100x          |
 |                                                         |
-|  Your guess:  2.6x the door   =  5.2 m                  |
+|  Твоя догадка:  2,6x двери   =  5,2 м                   |
 |                                                         |
-|                        [ LOCK IN ]                      |
+|                     [ ЗАФИКСИРОВАТЬ ]                  |
 +---------------------------------------------------------+
 ```
 
-- Dragging the slider resizes the mystery object live, next to the
-  reference.
-- The slider is **logarithmic** (each notch multiplies, not adds), because
-  objects range from an ant to a skyscraper.
-- The readout shows both "x times the reference" and the real unit
-  (metres, with feet as a setting).
+- Когда двигаешь ползунок, загадочный объект меняет размер прямо рядом с
+  эталоном.
+- Ползунок **логарифмический** (каждое деление умножает, а не прибавляет),
+  потому что объекты бывают от муравья до небоскрёба.
+- Показывается и "во сколько раз больше эталона", и реальная единица
+  (метры, футы - в настройках).
 
-### 2.4 Reveal [Proposed]
+### 2.4 Раскрытие ответа [Предложение]
 
-After everyone locks in (or time runs out):
+Когда все зафиксировали ответ (или время вышло):
 
-1. Each player's guess appears as a coloured, see-through "ghost" of the
-   object at the size they chose.
-2. The real object grows/shrinks into its true size.
-3. The closest ghost flashes, and points / damage are shown above each
-   player's head.
+1. Догадка каждого игрока появляется как цветной полупрозрачный "призрак"
+   объекта выбранного размера.
+2. Настоящий объект вырастает или уменьшается до своего реального размера.
+3. Самый близкий призрак мигает, а очки / урон показываются над головой
+   каждого игрока.
 
 ---
 
-## 3. Round flow [Proposed]
+## 3. Ход раунда [Предложение]
 
 ```
- Table full -> Countdown -> Round start -> Guess phase -> Reveal
-                               ^                            |
-                               |                            v
-                               +---- next round <---- Score + elimination
-                                                            |
-                                        one player left --> Match end
+ Стол заполнен -> Отсчёт -> Начало раунда -> Угадывание -> Раскрытие
+                                  ^                             |
+                                  |                             v
+                                  +--- следующий раунд <--- Очки + выбывание
+                                                                |
+                                         остался один игрок --> Конец матча
 ```
 
-| Phase        | Length          | What happens                              |
-|--------------|-----------------|-------------------------------------------|
-| Round start  | 3 s             | Reference + mystery names shown           |
-| Guess        | 20 s            | Players scale and lock in                 |
-| Reveal       | 5 s             | Ghosts, true size, round winner           |
-| Score        | 2 s             | Points / damage / eliminations applied    |
+| Фаза           | Длительность | Что происходит                               |
+|----------------|--------------|----------------------------------------------|
+| Начало раунда  | 3 с          | Показываются названия эталона и загадки      |
+| Угадывание     | 20 с         | Игроки масштабируют объект и фиксируют ответ |
+| Раскрытие      | 5 с          | Призраки, настоящий размер, победитель раунда|
+| Очки           | 2 с          | Начисляются очки / урон / выбывания          |
 
-A player who does not lock in in time keeps whatever the slider was on when
-the timer hit zero.
+Если игрок не успел зафиксировать ответ, засчитывается положение ползунка
+в момент, когда таймер дошёл до нуля.
 
 ---
 
-## 4. Measuring accuracy [Proposed]
+## 4. Как измеряется точность [Предложение]
 
-Because sizes span huge ranges, error is measured as a **ratio**, not a
-difference in metres. Guessing 2 m for a 1 m object is exactly as wrong as
-guessing 0.5 m.
+Размеры бывают очень разные, поэтому ошибка считается как **отношение**, а
+не как разница в метрах. Сказать 2 м для объекта высотой 1 м - так же
+неправильно, как сказать 0,5 м.
 
 ```
-error = | log10(guess / actual) |
+ошибка = | log10(догадка / настоящая высота) |
 ```
 
-| Guess vs actual | error | Shown to player  |
-|-----------------|-------|------------------|
-| exact           | 0.00  | "Perfect!"       |
-| 1.25x off       | 0.10  | "Off by 1.3x"    |
-| 2x off          | 0.30  | "Off by 2x"      |
-| 10x off         | 1.00  | "Off by 10x"     |
+| Догадка относительно ответа | ошибка | Что видит игрок       |
+|-----------------------------|--------|-----------------------|
+| точно                       | 0,00   | "Идеально!"           |
+| ошибка в 1,25 раза          | 0,10   | "Ошибка в 1,3 раза"   |
+| ошибка в 2 раза             | 0,30   | "Ошибка в 2 раза"     |
+| ошибка в 10 раз             | 1,00   | "Ошибка в 10 раз"     |
 
-The player with the **lowest error** wins the round. Ties (same error to
-2 decimals) both count as winners.
-
----
-
-## 5. Scoring [Proposed]
-
-- **1v1:** closest player wins the round.
-- **4-player:** placement points each round - 1st = 3, 2nd = 2, 3rd = 1,
-  4th = 0.
-- **Perfect bonus:** error under 0.02 gives +1 extra point.
-
-Points feed the elimination system and the lobby leaderboard.
+Раунд выигрывает игрок с **наименьшей ошибкой**. При ничьей (одинаковая
+ошибка до 2 знаков после запятой) побеждают оба.
 
 ---
 
-## 6. Elimination system [Open]
+## 5. Очки [Предложение]
 
-You said you are not sure how elimination should work. Here are four
-options; pick one per table type, or mix.
+- **1 на 1:** раунд выигрывает тот, кто ближе.
+- **4 игрока:** очки за место в каждом раунде - 1-е = 3, 2-е = 2,
+  3-е = 1, 4-е = 0.
+- **Бонус за идеальный ответ:** ошибка меньше 0,02 даёт +1 очко.
 
-### Option A - Health bar (damage by how far off you were)
-
-- Everyone starts with 100 HP.
-- Each round, every player except the winner loses HP equal to how much
-  worse their error was than the winner's (e.g. `(yourError - bestError) x 100`).
-- 0 HP = eliminated.
-- Good for: **1v1** - feels like a fighting-game duel; a bad miss hurts
-  more than a near miss.
-
-### Option B - Lives, worst guess loses one
-
-- Everyone has 3 lives.
-- Each round, the **furthest** guess loses a life.
-- 0 lives = eliminated.
-- Good for: **4-player** - simple to understand, always one loser per round.
-
-### Option C - Knockout every round
-
-- Each round, the furthest guess is eliminated immediately.
-- 4 players -> 3 -> 2 -> final.
-- Good for: fast **4-player** matches (3 rounds before a final).
-
-### Option D - Accuracy threshold
-
-- Any guess worse than a set error (e.g. more than 2x off) loses a life,
-  regardless of the others.
-- Can eliminate several players at once, or nobody.
-- Good for: a harder mode; not recommended as the only system.
-
-### My recommendation
-
-- **1v1:** Option A (health bar).
-- **4-player:** Option B (3 lives) until two players remain, then those two
-  switch to Option A for a **final duel**. This reuses the 1v1 rules, so the
-  4-player table naturally ends in a 1v1.
+Очки влияют на систему выбывания и на таблицу лидеров в лобби.
 
 ---
 
-## 7. Object library [Proposed]
+## 6. Система выбывания [Открыто]
 
-Each object entry holds:
+Ты написал, что не уверен, как должно работать выбывание. Вот четыре
+варианта; можно выбрать один для каждого типа стола или смешать.
 
-| Field       | Example                  |
-|-------------|--------------------------|
-| Name        | "Giraffe"                |
-| Model       | 3D model in ServerStorage|
-| Real height | 5.2 (metres)             |
-| Category    | Animals                  |
-| Difficulty  | Easy / Medium / Hard     |
+### Вариант A - Полоска здоровья (урон зависит от того, насколько ошибся)
 
-Reference objects are a small fixed set everyone knows (door, Roblox
-avatar, car, house). The game picks a reference that is not too far from
-the mystery object's size, so both fit on the stage.
+- У всех в начале 100 HP.
+- В каждом раунде все, кроме победителя, теряют HP в зависимости от того,
+  насколько их ошибка больше, чем у победителя
+  (например, `(твояОшибка - лучшаяОшибка) x 100`).
+- 0 HP = выбыл.
+- Подходит для: **1 на 1** - похоже на дуэль из файтинга; сильный промах
+  бьёт больнее, чем небольшой.
 
----
+### Вариант B - Жизни, худшая догадка теряет одну
 
-## 8. Technical components (Roblox) [Proposed]
+- У всех по 3 жизни.
+- В каждом раунде **самая далёкая** догадка теряет жизнь.
+- 0 жизней = выбыл.
+- Подходит для: **4 игроков** - легко понять, в каждом раунде ровно один
+  проигравший.
 
-### 8.1 Where things live
+### Вариант C - Выбывание каждый раунд
 
-| Location              | Component            | Job                                           |
-|-----------------------|----------------------|-----------------------------------------------|
-| Workspace             | Tables (Seats, Stage)| Physical tables players sit at                |
-| ServerStorage         | Object models        | Hidden until a round needs them               |
-| ServerScriptService   | TableManager         | Detects full tables, starts/cancels matches   |
-| ServerScriptService   | MatchController      | Runs one match: rounds, timers, phases        |
-| ServerScriptService   | ScoringModule        | Error, points, round winner                   |
-| ServerScriptService   | EliminationModule    | HP / lives / knockouts                        |
-| ServerScriptService   | ObjectLibrary        | Object list with real heights                 |
-| ServerScriptService   | DataService          | DataStore: wins, points, leaderboard          |
-| ReplicatedStorage     | RemoteEvents         | Client <-> server messages                    |
-| StarterPlayerScripts  | GuessUI              | Slider, lock-in button, timer                 |
-| StarterPlayerScripts  | StageView            | Camera + live resize of the mystery object    |
+- В каждом раунде самая далёкая догадка сразу выбывает.
+- 4 игрока -> 3 -> 2 -> финал.
+- Подходит для: быстрых матчей **на 4 игрока** (3 раунда до финала).
 
-### 8.2 Messages (RemoteEvents)
+### Вариант D - Порог точности
 
-| Event          | Direction        | Carries                                  |
-|----------------|------------------|------------------------------------------|
-| RoundStart     | server -> client | Reference name/height, mystery model id  |
-| SubmitGuess    | client -> server | Scale factor                             |
-| RoundReveal    | server -> client | True height, every player's guess, winner|
-| StateUpdate    | server -> client | HP / lives / points per player           |
-| MatchEnd       | server -> client | Final standings                          |
+- Любая догадка хуже заданной ошибки (например, ошибка больше чем в 2 раза)
+  теряет жизнь, независимо от других игроков.
+- Может выбить сразу нескольких игроков или никого.
+- Подходит для: сложного режима; как единственную систему не советую.
 
-### 8.3 Cheating protection
+### Моя рекомендация
 
-- The **server** owns the real heights; the client only gets the true
-  height inside `RoundReveal`, after guessing closes.
-- The mystery model is sent at a neutral display size so its starting size
-  gives nothing away.
-- The server ignores guesses that arrive after the timer or from players not
-  at that table.
-
-### 8.4 Edge cases
-
-- Player leaves mid-match -> treated as eliminated; if only one player is
-  left, they win.
-- Nobody locks in -> slider value at time-out is used.
-- Tie on the final elimination -> sudden-death round.
+- **1 на 1:** Вариант A (полоска здоровья).
+- **4 игрока:** Вариант B (3 жизни), пока не останутся двое, затем эти двое
+  переходят на Вариант A для **финальной дуэли**. Так правила 1 на 1
+  используются повторно, и стол на 4 игрока естественно заканчивается
+  дуэлью 1 на 1.
 
 ---
 
-## 9. Later ideas (not in first version) [Proposed]
+## 7. Библиотека объектов [Предложение]
 
-- Coins for wins, spent on slider skins / seat effects.
-- Themed object packs (animals, buildings, space).
-- Ranked tables with a skill rating.
-- Private tables with invite codes.
+Каждая запись об объекте содержит:
+
+| Поле             | Пример                        |
+|------------------|-------------------------------|
+| Название         | "Жираф"                       |
+| Модель           | 3D-модель в ServerStorage     |
+| Настоящая высота | 5,2 (метра)                   |
+| Категория        | Животные                      |
+| Сложность        | Лёгкая / Средняя / Сложная    |
+
+Эталонные объекты - небольшой постоянный набор, который все знают (дверь,
+аватар Roblox, машина, дом). Игра выбирает эталон, не слишком далёкий по
+размеру от загадочного объекта, чтобы оба помещались на сцене.
 
 ---
 
-## 10. Decisions needed from you
+## 8. Технические компоненты (Roblox) [Предложение]
 
-1. Elimination: accept the recommendation in section 6, or choose other
-   options?
-2. Guess input: slider only, or slider plus typing a number?
-3. Units: metres, feet, or "x times the reference" only?
-4. Guess timer / starting HP / starting lives - happy with the
-   suggested numbers?
-5. Working title - keep "Size Duel" or name it yourself?
+### 8.1 Где что находится
+
+| Место                 | Компонент              | Задача                                          |
+|-----------------------|------------------------|-------------------------------------------------|
+| Workspace             | Столы (Seats, сцена)   | Настоящие столы, за которые садятся игроки      |
+| ServerStorage         | Модели объектов        | Спрятаны, пока не нужны в раунде                |
+| ServerScriptService   | TableManager           | Видит заполненные столы, запускает/отменяет матч|
+| ServerScriptService   | MatchController        | Ведёт один матч: раунды, таймеры, фазы          |
+| ServerScriptService   | ScoringModule          | Ошибка, очки, победитель раунда                 |
+| ServerScriptService   | EliminationModule      | HP / жизни / выбывания                          |
+| ServerScriptService   | ObjectLibrary          | Список объектов с настоящими высотами           |
+| ServerScriptService   | DataService            | DataStore: победы, очки, таблица лидеров        |
+| ReplicatedStorage     | RemoteEvents           | Сообщения клиент <-> сервер                     |
+| StarterPlayerScripts  | GuessUI                | Ползунок, кнопка фиксации, таймер               |
+| StarterPlayerScripts  | StageView              | Камера + изменение размера загадочного объекта  |
+
+### 8.2 Сообщения (RemoteEvents)
+
+| Событие        | Направление      | Что передаёт                                  |
+|----------------|------------------|-----------------------------------------------|
+| RoundStart     | сервер -> клиент | Название/высота эталона, id модели загадки    |
+| SubmitGuess    | клиент -> сервер | Коэффициент масштаба                          |
+| RoundReveal    | сервер -> клиент | Настоящая высота, догадки всех, победитель    |
+| StateUpdate    | сервер -> клиент | HP / жизни / очки каждого игрока              |
+| MatchEnd       | сервер -> клиент | Итоговые места                                |
+
+### 8.3 Защита от читов
+
+- Настоящие высоты хранит **сервер**; клиент получает настоящую высоту
+  только в `RoundReveal`, после окончания угадывания.
+- Загадочная модель отправляется в нейтральном размере, чтобы начальный
+  размер ничего не подсказывал.
+- Сервер игнорирует догадки, пришедшие после таймера или от игроков, которые
+  не сидят за этим столом.
+
+### 8.4 Особые случаи
+
+- Игрок вышел посреди матча -> считается выбывшим; если остался один игрок,
+  он побеждает.
+- Никто не зафиксировал ответ -> берётся положение ползунка на момент конца
+  времени.
+- Ничья при последнем выбывании -> дополнительный раунд "до первой ошибки".
+
+---
+
+## 9. Идеи на потом (не в первой версии) [Предложение]
+
+- Монеты за победы, которые тратятся на скины ползунка / эффекты мест.
+- Тематические наборы объектов (животные, здания, космос).
+- Рейтинговые столы с уровнем мастерства.
+- Приватные столы с кодом приглашения.
+
+---
+
+## 10. Что нужно решить тебе
+
+1. Выбывание: принять рекомендацию из раздела 6 или выбрать другие
+   варианты?
+2. Ввод догадки: только ползунок или ползунок плюс ввод числа?
+3. Единицы: метры, футы или только "во сколько раз больше эталона"?
+4. Таймер угадывания / начальное HP / начальные жизни - подходят
+   предложенные числа?
+5. Рабочее название - оставить "Size Duel" или придумаешь своё?
