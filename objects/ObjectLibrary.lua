@@ -12,7 +12,7 @@ ObjectLibrary.Objects = {
 	{ id = "pencil", name = "Pencil", category = "Everyday", guess = "length", height = 0.00705, length = 0.19, difficulty = "easy", reference = true, image = "", imageFile = "pencil.png" },
 	{ id = "paperclip", name = "Paperclip", category = "Everyday", guess = "length", height = 0.0152, length = 0.033, difficulty = "medium", reference = false, image = "", imageFile = "paperclip.png" },
 	{ id = "aa_battery", name = "AA Battery", category = "Everyday", guess = "length", height = 0.0145, length = 0.0505, difficulty = "medium", reference = true, image = "", imageFile = "aa_battery.png" },
-	{ id = "smartphone", name = "Smartphone", category = "Everyday", guess = "height", height = 0.147, length = 0.0721, difficulty = "easy", reference = true, image = "", imageFile = "smartphone.png" },
+	{ id = "iphone_18", name = "iPhone 18", category = "Everyday", guess = "height", height = 0.15, length = 0.0721, difficulty = "easy", reference = true, image = "", imageFile = "iphone_18.png" },
 	{ id = "coffee_mug", name = "Coffee Mug", category = "Everyday", guess = "height", height = 0.095, length = 0.12, difficulty = "easy", reference = false, image = "", imageFile = "coffee_mug.png" },
 	{ id = "toothbrush", name = "Toothbrush", category = "Everyday", guess = "length", height = 0.02, length = 0.19, difficulty = "easy", reference = false, image = "", imageFile = "toothbrush.png" },
 	{ id = "tennis_ball", name = "Tennis Ball", category = "Everyday", guess = "height", height = 0.067, length = 0.067, difficulty = "medium", reference = false, image = "", imageFile = "tennis_ball.png" },
@@ -155,7 +155,7 @@ ObjectLibrary.Objects = {
 	{ id = "moai_statue", name = "Moai Statue", category = "Buildings", guess = "height", height = 4, length = 1.6, difficulty = "hard", reference = false, image = "", imageFile = "moai_statue.png" },
 	{ id = "hollywood_sign", name = "Hollywood Sign", category = "Buildings", guess = "height", height = 13.7, length = 107, difficulty = "hard", reference = false, image = "", imageFile = "hollywood_sign.png" },
 
-	{ id = "mount_everest", name = "Mount Everest", category = "Nature", guess = "height", height = 8849, length = 16200, difficulty = "medium", reference = false, image = "", imageFile = "mount_everest.png" },
+	{ id = "mount_everest", name = "Mount Everest", category = "Nature", guess = "height", height = 8849, length = 15000, difficulty = "medium", reference = false, image = "", imageFile = "mount_everest.png" },
 	{ id = "mount_fuji", name = "Mount Fuji", category = "Nature", guess = "height", height = 3776, length = 35000, difficulty = "hard", reference = false, image = "", imageFile = "mount_fuji.png" },
 	{ id = "mount_kilimanjaro", name = "Mount Kilimanjaro", category = "Nature", guess = "height", height = 5895, length = 40000, difficulty = "hard", reference = false, image = "", imageFile = "mount_kilimanjaro.png" },
 	{ id = "angel_falls", name = "Angel Falls", category = "Nature", guess = "height", height = 979, length = 150, difficulty = "hard", reference = false, image = "", imageFile = "angel_falls.png" },
