@@ -1,6 +1,6 @@
 # Набор объектов - Guess Its Size
 
-В этой папке 158 объектов для игры. Один общий список: любой объект можно
+В этой папке 138 объектов для игры. Один общий список: любой объект можно
 угадывать, а 15 обычных, всем знакомых объектов (`reference = true`) ещё и
 показываются как эталон.
 
@@ -67,7 +67,7 @@
 - `ObjectLibrary.lua` is a ModuleScript. Put it in **ServerScriptService**
   (or ServerStorage), never in ReplicatedStorage: the true sizes must not
   reach clients before the reveal (GAME_DESIGN.md, section 8.3).
-- `ObjectLibrary.Objects` - one list of 158 objects. Every object can be
+- `ObjectLibrary.Objects` - one list of 138 objects. Every object can be
   the mystery object. Objects with `reference = true` (15 everyday,
   well-known things) can also be the reference.
 - Fields: `id`, `name` (shown in UI), `category`, `guess` (`"height"` or
@@ -155,7 +155,7 @@
 | 46 | `grain_of_rice.png` | Grain of Rice | длину | 0.2 cm | 0.6 cm |  | есть |
 | 47 | `pumpkin.png` | Pumpkin | высоту | 30 cm | 39.3 cm |  | есть |
 
-### Животные (Animals) - 38
+### Животные (Animals) - 24
 
 | # | Файл картинки | Название | Угадываем | Высота | Длина | Эталон | Картинка |
 |---|---------------|----------|-----------|--------|-------|--------|----------|
@@ -164,129 +164,109 @@
 | 50 | `ladybug.png` | Ladybug | длину | 0.621 cm | 0.7 cm |  | есть |
 | 51 | `monarch_butterfly.png` | Monarch Butterfly | длину | 6.91 cm | 10 cm |  | есть |
 | 52 | `hummingbird.png` | Hummingbird | длину | 4.51 cm | 8 cm |  | есть |
-| 53 | `house_mouse.png` | House Mouse | длину | 3.63 cm | 17 cm |  | есть |
-| 54 | `hamster.png` | Hamster | длину | 7.52 cm | 15 cm |  | есть |
-| 55 | `chicken.png` | Chicken | высоту | 40 cm | 32.7 cm |  | есть |
-| 56 | `house_cat.png` | House Cat | высоту | 30 cm | 53.3 cm |  | есть |
-| 57 | `chihuahua.png` | Chihuahua | высоту | 25 cm | 29.3 cm |  | есть |
-| 58 | `labrador_retriever.png` | Labrador Retriever | высоту | 80 cm | 1.17 m |  | есть |
-| 59 | `emperor_penguin.png` | Emperor Penguin | высоту | 1.15 m | 47.7 cm |  | есть |
-| 60 | `ostrich.png` | Ostrich | высоту | 2.5 m | 1.63 m |  | есть |
-| 61 | `red_kangaroo.png` | Red Kangaroo | высоту | 1.6 m | 1.17 m |  | есть |
-| 62 | `horse.png` | Horse | высоту | 2.3 m | 2.69 m |  | есть |
-| 63 | `cow.png` | Cow | высоту | 1.5 m | 2.29 m |  | есть |
-| 64 | `grizzly_bear_standing.png` | Grizzly Bear (standing) | высоту | 2.4 m | 1.35 m |  | есть |
-| 65 | `gorilla_standing.png` | Gorilla (standing) | высоту | 1.7 m | 96.4 cm |  | есть |
-| 66 | `giraffe.png` | Giraffe | высоту | 5.5 m | 5.19 m |  | есть |
-| 67 | `african_elephant.png` | African Elephant | высоту | 3.4 m | 3.85 m |  | есть |
-| 68 | `hippopotamus.png` | Hippopotamus | длину | 1.88 m | 4 m |  | есть |
-| 69 | `white_rhinoceros.png` | White Rhinoceros | длину | 2.01 m | 4 m |  | есть |
-| 70 | `grevys_zebra.png` | Grevy's Zebra | длину | 2.44 m | 2.7 m |  | есть |
-| 71 | `saltwater_crocodile.png` | Saltwater Crocodile | длину | 77.6 cm | 5 m |  | есть |
-| 72 | `reticulated_python.png` | Reticulated Python | длину | 81.5 cm | 6 m |  | есть |
-| 73 | `great_white_shark.png` | Great White Shark | длину | 1.55 m | 4.5 m |  | есть |
-| 74 | `orca.png` | Orca | длину | 2.88 m | 7.5 m |  | есть |
-| 75 | `blue_whale.png` | Blue Whale | длину | 3.15 m | 25 m |  | есть |
-| 76 | `japanese_spider_crab.png` | Japanese Spider Crab | длину | 2.46 m | 3 m |  | есть |
-| 77 | `giant_squid.png` | Giant Squid | длину | 2.74 m | 12 m |  | есть |
-| 78 | `bald_eagle_wingspan.png` | Bald Eagle (wingspan) | длину | 74.3 cm | 2 m |  | есть |
-| 79 | `flamingo.png` | Flamingo | высоту | 1.4 m | 1.15 m |  | есть |
-| 80 | `moose.png` | Moose | высоту | 2.5 m | 3.79 m |  | есть |
-| 81 | `dromedary_camel.png` | Dromedary Camel | высоту | 2.2 m | 2.24 m |  | есть |
-| 82 | `bengal_tiger.png` | Bengal Tiger | длину | 1.75 m | 3 m |  | есть |
-| 83 | `polar_bear.png` | Polar Bear | длину | 1.17 m | 2.5 m |  | есть |
-| 84 | `komodo_dragon.png` | Komodo Dragon | длину | 40.7 cm | 2.6 m |  | есть |
-| 85 | `atlantic_salmon.png` | Atlantic Salmon | длину | 23.5 cm | 75 cm |  | есть |
+| 53 | `hamster.png` | Hamster | длину | 7.52 cm | 15 cm |  | есть |
+| 54 | `chicken.png` | Chicken | высоту | 40 cm | 32.7 cm |  | есть |
+| 55 | `house_cat.png` | House Cat | высоту | 30 cm | 53.3 cm |  | есть |
+| 56 | `emperor_penguin.png` | Emperor Penguin | высоту | 1.15 m | 47.7 cm |  | есть |
+| 57 | `ostrich.png` | Ostrich | высоту | 2.5 m | 1.63 m |  | есть |
+| 58 | `giraffe.png` | Giraffe | высоту | 5.5 m | 5.19 m |  | есть |
+| 59 | `saltwater_crocodile.png` | Saltwater Crocodile | длину | 77.6 cm | 5 m |  | есть |
+| 60 | `reticulated_python.png` | Reticulated Python | длину | 81.5 cm | 6 m |  | есть |
+| 61 | `great_white_shark.png` | Great White Shark | длину | 1.55 m | 4.5 m |  | есть |
+| 62 | `orca.png` | Orca | длину | 2.88 m | 7.5 m |  | есть |
+| 63 | `blue_whale.png` | Blue Whale | длину | 3.15 m | 25 m |  | есть |
+| 64 | `japanese_spider_crab.png` | Japanese Spider Crab | длину | 2.46 m | 3 m |  | есть |
+| 65 | `giant_squid.png` | Giant Squid | длину | 2.74 m | 12 m |  | есть |
+| 66 | `bald_eagle_wingspan.png` | Bald Eagle (wingspan) | длину | 74.3 cm | 2 m |  | есть |
+| 67 | `flamingo.png` | Flamingo | высоту | 1.4 m | 1.15 m |  | есть |
+| 68 | `moose.png` | Moose | высоту | 2.5 m | 3.79 m |  | есть |
+| 69 | `bengal_tiger.png` | Bengal Tiger | длину | 1.75 m | 3 m |  | есть |
+| 70 | `komodo_dragon.png` | Komodo Dragon | длину | 40.7 cm | 2.6 m |  | есть |
+| 71 | `atlantic_salmon.png` | Atlantic Salmon | длину | 23.5 cm | 75 cm |  | есть |
 
 ### Динозавры (Dinosaurs) - 10
 
 | # | Файл картинки | Название | Угадываем | Высота | Длина | Эталон | Картинка |
 |---|---------------|----------|-----------|--------|-------|--------|----------|
-| 86 | `tyrannosaurus_rex.png` | Tyrannosaurus Rex | высоту | 4.5 m | 4.08 m |  | есть |
-| 87 | `triceratops.png` | Triceratops | длину | 3.49 m | 9 m |  | есть |
-| 88 | `stegosaurus.png` | Stegosaurus | длину | 3.55 m | 9 m |  | есть |
-| 89 | `velociraptor.png` | Velociraptor | длину | 63.9 cm | 2 m |  | есть |
-| 90 | `brachiosaurus.png` | Brachiosaurus | высоту | 12.5 m | 22 m |  | есть |
-| 91 | `argentinosaurus.png` | Argentinosaurus | длину | 8.21 m | 35 m |  | есть |
-| 92 | `woolly_mammoth.png` | Woolly Mammoth | высоту | 3.3 m | 3.71 m |  | есть |
-| 93 | `pteranodon_wingspan.png` | Pteranodon (wingspan) | длину | 2.04 m | 6 m |  | есть |
-| 94 | `megalodon.png` | Megalodon | длину | 5.65 m | 15 m |  | есть |
-| 95 | `spinosaurus.png` | Spinosaurus | длину | 5.36 m | 14 m |  | есть |
+| 72 | `tyrannosaurus_rex.png` | Tyrannosaurus Rex | высоту | 4.5 m | 4.08 m |  | есть |
+| 73 | `triceratops.png` | Triceratops | длину | 3.49 m | 9 m |  | есть |
+| 74 | `stegosaurus.png` | Stegosaurus | длину | 3.55 m | 9 m |  | есть |
+| 75 | `velociraptor.png` | Velociraptor | длину | 63.9 cm | 2 m |  | есть |
+| 76 | `brachiosaurus.png` | Brachiosaurus | высоту | 12.5 m | 22 m |  | есть |
+| 77 | `argentinosaurus.png` | Argentinosaurus | длину | 8.21 m | 35 m |  | есть |
+| 78 | `woolly_mammoth.png` | Woolly Mammoth | высоту | 3.3 m | 3.71 m |  | есть |
+| 79 | `pteranodon_wingspan.png` | Pteranodon (wingspan) | длину | 2.04 m | 6 m |  | есть |
+| 80 | `megalodon.png` | Megalodon | длину | 5.65 m | 15 m |  | есть |
+| 81 | `spinosaurus.png` | Spinosaurus | длину | 5.36 m | 14 m |  | есть |
 
 ### Транспорт (Transport) - 24
 
 | # | Файл картинки | Название | Угадываем | Высота | Длина | Эталон | Картинка |
 |---|---------------|----------|-----------|--------|-------|--------|----------|
-| 96 | `car.png` | Car | длину | 1.47 m | 4.5 m | да | есть |
-| 97 | `school_bus.png` | School Bus | длину | 4.29 m | 12 m | да | есть |
-| 98 | `motorcycle.png` | Motorcycle | длину | 1.15 m | 2.1 m |  | есть |
-| 99 | `pickup_truck.png` | Pickup Truck | длину | 1.9 m | 5.9 m |  | есть |
-| 100 | `double_decker_bus.png` | Double-Decker Bus | высоту | 4.4 m | 11 m |  | есть |
-| 101 | `semi_truck_with_trailer.png` | Semi Truck with Trailer | длину | 4.2 m | 21 m |  | есть |
-| 102 | `m1_abrams_tank.png` | M1 Abrams Tank | длину | 2.42 m | 9.8 m |  | есть |
-| 103 | `hot_air_balloon.png` | Hot Air Balloon | высоту | 25 m | 17.7 m |  | есть |
-| 104 | `cessna_172.png` | Cessna 172 | длину | 2.78 m | 8.3 m |  | есть |
-| 105 | `boeing_747.png` | Boeing 747 | длину | 13.1 m | 70.7 m | да | есть |
-| 106 | `airbus_a380.png` | Airbus A380 | длину | 23.2 m | 72.7 m |  | есть |
-| 107 | `space_shuttle.png` | Space Shuttle | длину | 15.5 m | 37.2 m |  | есть |
-| 108 | `saturn_v_rocket.png` | Saturn V Rocket | высоту | 111 m | 17.2 m |  | есть |
-| 109 | `falcon_9_rocket.png` | Falcon 9 Rocket | высоту | 70 m | 4.96 m |  | есть |
-| 110 | `titanic.png` | Titanic | длину | 51.4 m | 269 m |  | есть |
-| 111 | `nimitz_aircraft_carrier.png` | Nimitz Aircraft Carrier | длину | 59.7 m | 333 m |  | есть |
-| 112 | `largest_container_ship.png` | Largest Container Ship | длину | 70.3 m | 400 m |  | есть |
-| 113 | `ohio_class_submarine.png` | Ohio-Class Submarine | длину | 19.7 m | 170 m |  | есть |
-| 114 | `icon_of_the_seas_cruise_ship.png` | Icon of the Seas Cruise Ship | длину | 73.4 m | 365 m |  | есть |
-| 115 | `canoe.png` | Canoe | длину | 50.1 cm | 5 m |  | есть |
-| 116 | `venetian_gondola.png` | Venetian Gondola | длину | 1.74 m | 11 m |  | есть |
-| 117 | `subway_car.png` | Subway Car | длину | 3.82 m | 18 m |  | есть |
-| 118 | `formula_1_car.png` | Formula 1 Car | длину | 92 cm | 5.6 m |  | есть |
-| 119 | `monster_truck.png` | Monster Truck | высоту | 3.5 m | 5.75 m |  | есть |
+| 82 | `car.png` | Car | длину | 1.47 m | 4.5 m | да | есть |
+| 83 | `school_bus.png` | School Bus | длину | 4.29 m | 12 m | да | есть |
+| 84 | `motorcycle.png` | Motorcycle | длину | 1.15 m | 2.1 m |  | есть |
+| 85 | `pickup_truck.png` | Pickup Truck | длину | 1.9 m | 5.9 m |  | есть |
+| 86 | `double_decker_bus.png` | Double-Decker Bus | высоту | 4.4 m | 11 m |  | есть |
+| 87 | `semi_truck_with_trailer.png` | Semi Truck with Trailer | длину | 4.2 m | 21 m |  | есть |
+| 88 | `m1_abrams_tank.png` | M1 Abrams Tank | длину | 2.42 m | 9.8 m |  | есть |
+| 89 | `hot_air_balloon.png` | Hot Air Balloon | высоту | 25 m | 17.7 m |  | есть |
+| 90 | `cessna_172.png` | Cessna 172 | длину | 2.78 m | 8.3 m |  | есть |
+| 91 | `boeing_747.png` | Boeing 747 | длину | 13.1 m | 70.7 m | да | есть |
+| 92 | `airbus_a380.png` | Airbus A380 | длину | 23.2 m | 72.7 m |  | есть |
+| 93 | `space_shuttle.png` | Space Shuttle | длину | 15.5 m | 37.2 m |  | есть |
+| 94 | `saturn_v_rocket.png` | Saturn V Rocket | высоту | 111 m | 17.2 m |  | есть |
+| 95 | `falcon_9_rocket.png` | Falcon 9 Rocket | высоту | 70 m | 4.96 m |  | есть |
+| 96 | `titanic.png` | Titanic | длину | 51.4 m | 269 m |  | есть |
+| 97 | `nimitz_aircraft_carrier.png` | Nimitz Aircraft Carrier | длину | 59.7 m | 333 m |  | есть |
+| 98 | `largest_container_ship.png` | Largest Container Ship | длину | 70.3 m | 400 m |  | есть |
+| 99 | `ohio_class_submarine.png` | Ohio-Class Submarine | длину | 19.7 m | 170 m |  | есть |
+| 100 | `icon_of_the_seas_cruise_ship.png` | Icon of the Seas Cruise Ship | длину | 73.4 m | 365 m |  | есть |
+| 101 | `canoe.png` | Canoe | длину | 50.1 cm | 5 m |  | есть |
+| 102 | `venetian_gondola.png` | Venetian Gondola | длину | 1.74 m | 11 m |  | есть |
+| 103 | `subway_car.png` | Subway Car | длину | 3.82 m | 18 m |  | есть |
+| 104 | `formula_1_car.png` | Formula 1 Car | длину | 92 cm | 5.6 m |  | есть |
+| 105 | `monster_truck.png` | Monster Truck | высоту | 3.5 m | 5.75 m |  | есть |
 
-### Здания (Buildings) - 26
-
-| # | Файл картинки | Название | Угадываем | Высота | Длина | Эталон | Картинка |
-|---|---------------|----------|-----------|--------|-------|--------|----------|
-| 120 | `statue_of_liberty.png` | Statue of Liberty | высоту | 46 m | 16 m | да | есть |
-| 121 | `eiffel_tower.png` | Eiffel Tower | высоту | 330 m | 190 m | да | есть |
-| 122 | `great_pyramid_of_giza.png` | Great Pyramid of Giza | высоту | 139 m | 170 m |  | есть |
-| 123 | `burj_khalifa.png` | Burj Khalifa | высоту | 828 m | 196 m | да | есть |
-| 124 | `empire_state_building.png` | Empire State Building | высоту | 443 m | 119 m |  | есть |
-| 125 | `big_ben.png` | Big Ben | высоту | 96 m | 30.9 m |  | есть |
-| 126 | `leaning_tower_of_pisa.png` | Leaning Tower of Pisa | высоту | 56 m | 30.3 m |  | есть |
-| 127 | `christ_the_redeemer_with_pedestal.png` | Christ the Redeemer (with pedestal) | высоту | 38 m | 27.1 m |  | есть |
-| 128 | `colosseum.png` | Colosseum | высоту | 48 m | 113 m |  | есть |
-| 129 | `taj_mahal.png` | Taj Mahal | высоту | 73 m | 99 m |  | есть |
-| 130 | `sydney_opera_house.png` | Sydney Opera House | высоту | 65 m | 152 m |  | есть |
-| 131 | `golden_gate_bridge_tower_height.png` | Golden Gate Bridge (tower height) | высоту | 227 m | 2.64 km |  | есть |
-| 132 | `tower_bridge.png` | Tower Bridge | высоту | 65 m | 169 m |  | есть |
-| 133 | `cn_tower.png` | CN Tower | высоту | 553 m | 57.7 m |  | есть |
-| 134 | `oriental_pearl_tower.png` | Oriental Pearl Tower | высоту | 468 m | 213 m |  | есть |
-| 135 | `petronas_towers.png` | Petronas Towers | высоту | 452 m | 139 m |  | есть |
-| 136 | `one_world_trade_center.png` | One World Trade Center | высоту | 541 m | 99.4 m |  | есть |
-| 137 | `tokyo_skytree.png` | Tokyo Skytree | высоту | 634 m | 68.3 m |  | есть |
-| 138 | `space_needle.png` | Space Needle | высоту | 184 m | 80 m |  | есть |
-| 139 | `gateway_arch.png` | Gateway Arch | высоту | 192 m | 199 m |  | есть |
-| 140 | `mount_rushmore_one_head.png` | Mount Rushmore (one head) | высоту | 18 m | 16.3 m |  | есть |
-| 141 | `great_sphinx_of_giza.png` | Great Sphinx of Giza | длину | 21.8 m | 73 m |  | есть |
-| 142 | `london_eye.png` | London Eye | высоту | 135 m | 109 m |  | есть |
-| 143 | `pont_du_gard.png` | Pont du Gard | высоту | 49 m | 166 m |  | есть |
-| 144 | `moai_statue.png` | Moai Statue | высоту | 4 m | 1.7 m |  | есть |
-| 145 | `hollywood_sign.png` | Hollywood Sign | высоту | 13.7 m | 107 m |  | есть |
-
-### Природа (Nature) - 13
+### Здания (Buildings) - 22
 
 | # | Файл картинки | Название | Угадываем | Высота | Длина | Эталон | Картинка |
 |---|---------------|----------|-----------|--------|-------|--------|----------|
-| 146 | `mount_everest.png` | Mount Everest | высоту | 8.85 km | 15 km |  | есть |
-| 147 | `mount_fuji.png` | Mount Fuji | высоту | 3.78 km | 15 km |  | есть |
-| 148 | `mount_kilimanjaro.png` | Mount Kilimanjaro | высоту | 5.89 km | 31.7 km |  | есть |
-| 149 | `angel_falls.png` | Angel Falls | высоту | 979 m | 558 m |  | есть |
-| 150 | `niagara_falls_horseshoe.png` | Niagara Falls (Horseshoe) | высоту | 51 m | 124 m |  | есть |
-| 151 | `hyperion_tallest_tree.png` | Hyperion (tallest tree) | высоту | 116 m | 44.4 m |  | есть |
-| 152 | `general_sherman_tree.png` | General Sherman Tree | высоту | 84 m | 26.5 m |  | есть |
-| 153 | `baobab_tree.png` | Baobab Tree | высоту | 25 m | 23.3 m |  | есть |
-| 154 | `sunflower.png` | Sunflower | высоту | 3 m | 91.9 cm |  | есть |
-| 155 | `coconut_palm.png` | Coconut Palm | высоту | 25 m | 9.95 m |  | есть |
-| 156 | `saguaro_cactus.png` | Saguaro Cactus | высоту | 12 m | 5.72 m |  | есть |
-| 157 | `rafflesia_flower.png` | Rafflesia Flower | длину | 74 cm | 1 m |  | есть |
-| 158 | `giant_bamboo.png` | Giant Bamboo | высоту | 30 m | 7.29 m |  | есть |
+| 106 | `statue_of_liberty.png` | Statue of Liberty | высоту | 46 m | 16 m | да | есть |
+| 107 | `eiffel_tower.png` | Eiffel Tower | высоту | 330 m | 190 m | да | есть |
+| 108 | `great_pyramid_of_giza.png` | Great Pyramid of Giza | высоту | 139 m | 170 m |  | есть |
+| 109 | `burj_khalifa.png` | Burj Khalifa | высоту | 828 m | 196 m | да | есть |
+| 110 | `empire_state_building.png` | Empire State Building | высоту | 443 m | 119 m |  | есть |
+| 111 | `big_ben.png` | Big Ben | высоту | 96 m | 30.9 m |  | есть |
+| 112 | `leaning_tower_of_pisa.png` | Leaning Tower of Pisa | высоту | 56 m | 30.3 m |  | есть |
+| 113 | `colosseum.png` | Colosseum | высоту | 48 m | 113 m |  | есть |
+| 114 | `taj_mahal.png` | Taj Mahal | высоту | 73 m | 99 m |  | есть |
+| 115 | `sydney_opera_house.png` | Sydney Opera House | высоту | 65 m | 152 m |  | есть |
+| 116 | `golden_gate_bridge_tower_height.png` | Golden Gate Bridge (tower height) | высоту | 227 m | 2.64 km |  | есть |
+| 117 | `tower_bridge.png` | Tower Bridge | высоту | 65 m | 169 m |  | есть |
+| 118 | `cn_tower.png` | CN Tower | высоту | 553 m | 57.7 m |  | есть |
+| 119 | `oriental_pearl_tower.png` | Oriental Pearl Tower | высоту | 468 m | 213 m |  | есть |
+| 120 | `petronas_towers.png` | Petronas Towers | высоту | 452 m | 139 m |  | есть |
+| 121 | `one_world_trade_center.png` | One World Trade Center | высоту | 541 m | 99.4 m |  | есть |
+| 122 | `tokyo_skytree.png` | Tokyo Skytree | высоту | 634 m | 68.3 m |  | есть |
+| 123 | `space_needle.png` | Space Needle | высоту | 184 m | 80 m |  | есть |
+| 124 | `gateway_arch.png` | Gateway Arch | высоту | 192 m | 199 m |  | есть |
+| 125 | `london_eye.png` | London Eye | высоту | 135 m | 109 m |  | есть |
+| 126 | `pont_du_gard.png` | Pont du Gard | высоту | 49 m | 166 m |  | есть |
+| 127 | `hollywood_sign.png` | Hollywood Sign | высоту | 13.7 m | 107 m |  | есть |
+
+### Природа (Nature) - 11
+
+| # | Файл картинки | Название | Угадываем | Высота | Длина | Эталон | Картинка |
+|---|---------------|----------|-----------|--------|-------|--------|----------|
+| 128 | `mount_everest.png` | Mount Everest | высоту | 8.85 km | 15 km |  | есть |
+| 129 | `mount_fuji.png` | Mount Fuji | высоту | 3.78 km | 15 km |  | есть |
+| 130 | `mount_kilimanjaro.png` | Mount Kilimanjaro | высоту | 5.89 km | 31.7 km |  | есть |
+| 131 | `angel_falls.png` | Angel Falls | высоту | 979 m | 558 m |  | есть |
+| 132 | `hyperion_tallest_tree.png` | Hyperion (tallest tree) | высоту | 116 m | 44.4 m |  | есть |
+| 133 | `general_sherman_tree.png` | General Sherman Tree | высоту | 84 m | 26.5 m |  | есть |
+| 134 | `sunflower.png` | Sunflower | высоту | 3 m | 91.9 cm |  | есть |
+| 135 | `coconut_palm.png` | Coconut Palm | высоту | 25 m | 9.95 m |  | есть |
+| 136 | `saguaro_cactus.png` | Saguaro Cactus | высоту | 12 m | 5.72 m |  | есть |
+| 137 | `rafflesia_flower.png` | Rafflesia Flower | длину | 74 cm | 1 m |  | есть |
+| 138 | `giant_bamboo.png` | Giant Bamboo | высоту | 30 m | 7.29 m |  | есть |
