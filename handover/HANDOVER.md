@@ -1,35 +1,56 @@
 # Handover
 
-Last updated: 2026-09-14.
+Last updated: 2026-10-05.
 
 ## Progress so far
 
-The prerequisite diagnostic (task #1) was started but never finished in
-its original form — Wifey moved straight into curriculum exercises
-before answering the intersection question, and the session followed
-her lead rather than forcing the diagnostic to close first. Nothing has
-been formally marked complete under "Task completion discipline" (no
-topic has full independent correct work from her yet — see below), but
-substantial guided work has happened across three of the four decks:
+The prerequisite diagnostic (task #1) was never finished in its original
+form — Wifey moved straight into curriculum exercises before answering
+the intersection question, and the session followed her lead rather
+than forcing the diagnostic to close first. Substantial guided and
+partially-independent work has happened across three of the four decks,
+plus a fair amount of supplementary material:
 
-- **6.1 Area between Curves** — Exercises 1(a)-(d) all solved with full
-  worked steps, graphs, and value tables at her request. (d) introduced
-  splitting the integral when curves cross inside the given bounds.
-- **6.2 Volumes** — Example 1 (sphere) revisited via a question about
-  where a factor of 2 comes from (even-function symmetry). Example 3
-  (y=x³ about y-axis) fully walked through. Exercises 1(a) (x-axis,
-  simple disk) and 1(b) (y-axis, split washer) solved in full, each with
-  2D/3D diagrams. Example 6 (triangular cross-sections, not a solid of
-  revolution) explained in depth including a from-scratch derivation of
-  the equilateral-triangle height formula. Exercises 3 (pyramid,
-  A(x)=(Lx/h)²) was handed to her as an independent attempt — she was
-  given the proportional-scaling setup and asked to find A(x) herself,
-  but never answered; **this is still open, pick it back up**.
-- **6.3 Arc Length** — About to start Exercises 1(a)-(d). Found and fixed
-  a genuine typo in the source slide for 1(d) (point P's coordinates are
-  cut off in the original PDF, not just in our .md); inferred and
-  recorded P=(-1, 1/2) by symmetry in `curriculum/6_3_Arc_Length.md`.
+- **6.1 Area between Curves** — Exercises 1(a)-(d) solved, then later
+  **fully redone/verified a second time** with Wifey doing the actual
+  arithmetic herself while I pointed at specific wrong steps rather than
+  solving them: (b) had two independent errors (antiderivative of `3x`
+  written as `x³` instead of `3x²/2`; then `24+16` arithmetic as `43`
+  instead of `40`) — she corrected both and reached the right `125/6`.
+  (d) had three independent errors across two redo attempts (axis order
+  reversed on her hand sketch; `cos(π/4)` value swapped with
+  `cos(π/6)`'s; missing the `1/2` factor on the `cos 2x` antiderivative
+  term, `cos(π/3)` value swapped with `cos(π/6)`'s, and the `cos π = -1`
+  sign error) — she corrected all of them and reached the right `1/2`.
+  This is real evidence of engagement and error-correction ability, but
+  see the learner-profile note below on *which* errors recur.
+- **6.2 Volumes** — Example 1 (sphere), Example 3 (y=x³ about y-axis),
+  Exercises 1(a)/(b) (disk, then split washer about y-axis), and Example
+  6 (triangular cross-sections — not a solid of revolution, with a
+  from-scratch equilateral-triangle height derivation) all covered in
+  depth with diagrams. **Exercises 3 (pyramid, A(x)=(Lx/h)²) is still
+  open** — she was given the setup and asked to find A(x) herself, never
+  answered, then moved on; pick it back up.
+- **6.3 Arc Length** — Exercises 1(a) and 1(b) solved in full (with a
+  long, necessary deep-dive into what `du`/`dx` actually mean, why
+  substitution bounds change, and the general u-substitution recipe —
+  see learner profile). **1(c) and 1(d) are still open.** Fixed a typo
+  in the source slide for 1(d)'s point P (confirmed against the original
+  PDF, not an extraction error); recorded P=(-1, 1/2) by symmetry in
+  `curriculum/6_3_Arc_Length.md`.
 - **6.4** — not touched yet.
+- **Supplementary (not from our curriculum decks, brought in because it
+  helps or because she asked):** the general u-substitution method
+  (6-step recipe, verified across 3 different integral types); why
+  `sin(2x) ≠ (sin x)/2`; the power-reduction identity `sin²x=(1-cos2x)/2`
+  (flagged honestly as not covered in any of our 4 decks); a volume
+  problem from one of her actual course's video lectures (washer about
+  `y=-2`, needs the power-reduction identity) — solved in full, two
+  errors caught (`cos π` sign again; `π·π` miscomputed as `2π` instead
+  of `π²`); finding a parabola's vertex (two methods: `-b/2a`, and via
+  the derivative); three alternative methods for solving a quadratic
+  (quadratic formula, completing the square, AC/grouping method) on top
+  of simple factoring.
 
 ## Learner profile
 
@@ -38,46 +59,77 @@ substantial guided work has happened across three of the four decks:
   of revolution, unit-circle references, step-by-step point-plotting)
   consistently helped her get unstuck. Default to including a diagram
   for anything spatial (graphs, solids, geometric derivations).
-- **Mixes up related-but-different conventions.** Confused the unit
-  circle's (cos θ, sin θ) point-coordinates with a function graph's
-  (x=input, y=output) axes; confused sin(2x) with (sin x)/2 (order of
-  operations — doubles the angle before taking sine, doesn't halve the
-  result); drew y=x² with an extra, incorrect negative mirror image.
-  These aren't carelessness so much as genuinely not-yet-settled
-  fundamentals — worth double-checking similar conventions explicitly
-  before assuming they're solid.
+- **Two specific facts recur as errors across unrelated problems** —
+  these look like genuinely unsettled facts, not one-off slips, and are
+  worth proactively double-checking whenever they come up rather than
+  assuming they're fixed after one correction:
+  - `cos(π) = -1`, so `-cos(π) = +1`. Got this wrong at least 3 separate
+    times (the `y=-2` volume problem, and twice more in 6.1 Exercises
+    1(d)), after it was explained in detail via the unit circle each
+    time.
+  - `cos(π/6) = √3/2` vs `cos(π/3) = 1/2` — she repeatedly swaps these
+    two (uses the π/6 value where π/3 is needed, and vice versa).
+  Good news: once either is pointed out specifically, she fixes it
+  correctly herself — the reasoning and arithmetic are fine, it's
+  specific recall that's shaky. Consider a short, standalone drill on
+  standard angle values (just sin/cos at 0, π/6, π/4, π/3, π/2) at some
+  point rather than only catching it inline.
+- **Differential/substitution notation (`du`, `dx`, implied
+  multiplication) needed a long, from-scratch explanation** — she didn't
+  have a working mental model for why bounds change under substitution,
+  why `du/2` and `(1/2)du` are the same thing, or that `du` disappears
+  once you actually integrate (vs. just rearranging it). This is now
+  reasonably well covered (see the 6.3 Exercises 1(a) discussion in this
+  conversation) but is foundational enough to watch for regressions.
+- Also still mixes up the unit circle's (cos θ, sin θ) point-coordinates
+  with a function graph's (x=input, y=output) axes, and confused
+  sin(2x) with (sin x)/2 early on — both addressed, not retested since.
 - **Communicates in short, often garbled (likely voice-to-text) Russian
   messages** — terse questions like "куда делась 2" or "почему это 1"
   usually point at one specific step, not the whole problem; asking
   "which step" back isn't necessary, the specific step is usually
-  identifiable from what she quotes.
+  identifiable from what she quotes. When it's genuinely ambiguous which
+  problem/step she means, she responds well to being asked directly
+  rather than guessed at repeatedly.
 - **Jumps between topics/decks non-sequentially** and sometimes leaves
   an exercise mid-way when she moves to the next thing (see 6.2
-  Exercises 3 above) — worth periodically circling back to open items
-  rather than assuming abandonment means she's done with it.
-- Responds well to full step-by-step worked solutions with explicit
-  "why" at each algebraic step (signs, exponent rules, evaluating
-  standard angles) — these targeted "why did X become Y" questions have
-  been the most common and productive interaction pattern.
+  Exercises 3 — still open since the last checkpoint) — worth
+  periodically circling back to open items rather than assuming
+  abandonment means she's done with it. She also sometimes brings in
+  problems from her actual course's video lectures, not our curriculum
+  decks — treat as legitimate supplementary material per CLAUDE.md, and
+  say plainly when something isn't covered in our 4 decks.
+- Responds very well to being handed a worked method/checklist (the
+  u-substitution 6-step table, the "always check these things" area-
+  between-curves checklist) and then asked to apply it herself with me
+  checking — this produced her best independent work this session,
+  better than pure step-by-step narration.
 
 ## Current level / notes
 
-Prerequisites (definite integrals, curve sketching, intersections) were
-never cleanly diagnosed in isolation, but she's been actively using all
-three throughout 6.1/6.2/6.3 exercise work with heavy guidance. Genuine
-independent-exercise evidence (per Task completion discipline) is still
-thin — most problems so far were solved by me with her following along
-and asking clarifying questions, not solved by her independently. Real
-comprehension checks (not just "did she follow the explanation") are
-still needed before marking any task complete.
+Prerequisites were never cleanly diagnosed in isolation, but she's used
+definite integrals, curve sketching, and intersection-finding
+extensively across 6.1/6.2/6.3 work. The clearest independent-work
+evidence so far: 6.1 Exercises 1(b) and 1(d), redone by her from scratch
+with me only pointing at which step was wrong (not solving it) — she
+found and fixed every error herself and reached the correct final
+answers both times. That's real evidence for "Task completion
+discipline" on 6.1's core method (set up the integral, find
+intersections when needed, handle a mid-interval crossing by splitting).
+It's not yet enough to call 6.1 fully mastered given how often the two
+flagged recurring errors above showed up along the way — but it's
+meaningfully stronger than "she followed my explanation."
 
 ## Next steps
 
 1. Finish 6.2 Exercises 3 (pyramid) — she has the setup (A(x)=(Lx/h)²)
    but hasn't computed the integral yet.
-2. Continue 6.3 Exercises 1(a)-(d) (arc length), starting from wherever
-   she picks up.
-3. At some point, deliberately hand her a full problem to solve
-   independently (not narrated step-by-step) to get real evidence for
-   Task completion discipline — none of tasks #2-4 should be marked
-   done on guided-explanation evidence alone.
+2. Continue 6.3 Exercises 1(c) and 1(d) (arc length) — (a) and (b) are
+   done.
+3. Consider a short standalone drill on standard angle values (sin/cos
+   at 0, π/6, π/4, π/3, π/2) and on cos(π)=-1 specifically, given how
+   often they've recurred — don't just keep correcting them inline
+   forever.
+4. Keep leaning on the "hand her a checklist, let her apply it, correct
+   only the specific wrong step" pattern — it's producing the best
+   evidence of real understanding so far.
