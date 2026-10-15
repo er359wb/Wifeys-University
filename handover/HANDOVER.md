@@ -1,148 +1,125 @@
 # Handover
 
-Last updated: 2026-10-05.
+Last updated: 2026-10-15.
 
 ## Progress so far
 
-**Task #1 (prerequisite diagnostic) and task #2 (6.1 Area between
-Curves) are now marked complete.** The original standalone diagnostic
-(3 short questions before starting 6.1) was never finished in that
-form — Wifey moved straight into curriculum exercises instead, and the
-session followed her lead. But the three prerequisite skills it was
-meant to check (definite integrals, curve sketching, intersection-
-finding) plus the core 6.1 method have since been demonstrated
-thoroughly through actual exercise work, including three **fully
-independent, fully correct** solutions in a row with zero guidance from
-me: Exercises 2(a) (parabola/line area), 2(b) (area by y, right-minus-
-left), and 3(a) (vertex-finding for two parabolas + intersection via
-`18=2x²` + value tables + sketch + split-free area integral, evaluated
-correctly including signs at the negative bound). That's real,
-repeated, unprompted evidence — the strongest kind under "Task
-completion discipline" — so both tasks are closed on that basis.
-
-- **6.1 Area between Curves — COMPLETE.** Exercises 1(a)-(d) solved,
-  then **redone/verified a second time** with Wifey doing the actual
-  arithmetic herself while I pointed at specific wrong steps rather than
-  solving them: (b) had two independent errors (antiderivative of `3x`
-  written as `x³` instead of `3x²/2`; then `24+16` arithmetic as `43`
-  instead of `40`) — she corrected both and reached the right `125/6`.
-  (d) had three independent errors across two redo attempts (axis order
-  reversed on her hand sketch; `cos(π/4)` value swapped with
-  `cos(π/6)`'s; missing the `1/2` factor on the `cos 2x` antiderivative
-  term, `cos(π/3)` value swapped with `cos(π/6)`'s, and the `cos π = -1`
-  sign error) — she corrected all of them and reached the right `1/2`.
-  Then Exercises 2(a), 2(b), and 3(a) were each solved **fully
-  independently and correctly, first try, no guidance** — see above.
-  Exercises 3(b)-(d) remain unattempted but are optional extra practice
-  now, not required for the topic to count as done.
-- **6.2 Volumes** — Example 1 (sphere), Example 3 (y=x³ about y-axis),
-  Exercises 1(a)/(b) (disk, then split washer about y-axis), and Example
-  6 (triangular cross-sections — not a solid of revolution, with a
-  from-scratch equilateral-triangle height derivation) all covered in
-  depth with diagrams. **Exercises 3 (pyramid, A(x)=(Lx/h)²) is still
-  open** — she was given the setup and asked to find A(x) herself, never
-  answered, then moved on; pick it back up.
-- **6.3 Arc Length** — Exercises 1(a) and 1(b) solved in full (with a
-  long, necessary deep-dive into what `du`/`dx` actually mean, why
-  substitution bounds change, and the general u-substitution recipe —
-  see learner profile). **1(c) and 1(d) are still open.** Fixed a typo
-  in the source slide for 1(d)'s point P (confirmed against the original
-  PDF, not an extraction error); recorded P=(-1, 1/2) by symmetry in
+- **6.1 Area between Curves: COMPLETE** (the prerequisite diagnostic is
+  closed too). Exercises 1(a)-(d) solved, then redone a second time with
+  Wifey doing the arithmetic while I pointed at specific wrong steps: (b)
+  had two errors (antiderivative of `3x` written as `x³`; `24+16` as `43`);
+  (d) had several (axis order on her sketch; `cos(π/4)` vs `cos(π/6)` values
+  swapped; missing the `1/2` on the `cos 2x` antiderivative; `cos(π/3)` vs
+  `cos(π/6)` swapped; the `cos π = -1` sign). She fixed all of them herself.
+  Then Exercises 2(a), 2(b) and 3(a) were each solved **fully independently
+  and correctly, first try**. That repeated, unprompted evidence is why the
+  topic is closed. Exercises 3(b)-(d) are optional extra practice.
+- **6.2 Volumes.** Example 1 (sphere), Example 3 (`y=x³` about the y-axis),
+  Example 6 (equilateral-triangle cross-sections) covered with diagrams.
+  Exercises 1(a)/(b) done. Exercises 1(c) (about `y=-1`) and 1(d) (about
+  `x=3`) were guided, not independent: in 1(c) she wrote the radius as `x²-1`
+  instead of `x²+1` (distance to a line below the axis is `y+1`) and left out
+  the inner radius of the washer; in 1(d) her split into two y-zones was
+  right but zone 2's outer radius was wrong (should be `3-√y`). Final answers
+  were given when she asked for them. **Exercises 2(a) and 2(b)** (`y=2x`,
+  `y=0`, `x=1` about the x-axis and about `x=1`) were solved by her fully
+  correctly (`4π/3` and `2π/3`; for (b) I set up the radius `1-y/2` and the
+  bounds, she did the rest). **Exercises 3 (pyramid, A(x)=(Lx/h)²) is still
+  open.**
+- **6.3 Arc Length.** Exercises 1(a) and 1(b) solved in full (with a long
+  deep-dive into what `du`/`dx` mean, why substitution bounds change, and a
+  6-step u-substitution recipe). **1(c) and 1(d) still open.** The slide for
+  1(d) has a typo in point P; `P=(-1, 1/2)` is recorded by symmetry in
   `curriculum/6_3_Arc_Length.md`.
-- **6.4** — not touched yet.
-- **Supplementary (not from our curriculum decks, brought in because it
-  helps or because she asked):** the general u-substitution method
-  (6-step recipe, verified across 3 different integral types); why
-  `sin(2x) ≠ (sin x)/2`; the power-reduction identity `sin²x=(1-cos2x)/2`
-  (flagged honestly as not covered in any of our 4 decks); a volume
-  problem from one of her actual course's video lectures (washer about
-  `y=-2`, needs the power-reduction identity) — solved in full, two
-  errors caught (`cos π` sign again; `π·π` miscomputed as `2π` instead
-  of `π²`); finding a parabola's vertex (two methods: `-b/2a`, and via
-  the derivative); three alternative methods for solving a quadratic
-  (quadratic formula, completing the square, AC/grouping method) on top
-  of simple factoring.
+- **6.4**: not touched yet.
+- **8.2 Vectors (new deck, Chapter 8 of her course; `curriculum/8.2_Vectors.md`,
+  original PDF deliberately not committed for privacy).** Taught in small
+  steps:
+  - Step 1, what a vector is (slides 2-5): done. Scalar vs vector: she first
+    called temperature a vector, corrected it after a nudge, and asked a good
+    question (a thermometer goes "up/down", isn't that direction?). That was
+    answered as "up/down = bigger/smaller, the sign of a number, not a
+    direction in space". Equal vectors: picked the right ones from a picture
+    with the right reason (same length and same direction).
+  - Step 2, combining vectors: Triangle Law (answered correctly), Parallelogram
+    Law, sums in component notation `⟨2,3⟩+⟨4,1⟩=⟨6,4⟩` (correct). Scalar
+    multiplication explained (`c⟨a,b⟩=⟨ca,cb⟩`, `c<0` flips direction);
+    **pending question: `2v` and `-v` for `v=⟨3,-1⟩`.**
+- **Supplementary (from her own course, not in our decks):**
+  - 2nd-order linear homogeneous ODEs with constant coefficients (her slide
+    from the course): what "order" and "linear" mean; why we guess `y=e^{rx}`
+    and get the characteristic equation; the three discriminant cases; the
+    `D/4=(b/2)²-ac` shortcut for even `b`; why complex roots give cos/sin
+    (Euler's formula plus superposition); why there are two constants. She
+    solved her three problems correctly: `y''+4y'-5y=0` →
+    `C₁e^{-5x}+C₂e^{x}`; `y''+9y=0` → `C₁cos3x+C₂sin3x` (first wrote `r=±3`,
+    then self-corrected to `0±3i`); `4y''-4y'+y=0` → `C₁xe^{x/2}+C₂e^{x/2}`
+    (remembered the `x` factor).
+  - Earlier: the general u-substitution method; why `sin(2x) ≠ (sin x)/2`;
+    the power-reduction identity `sin²x=(1-cos2x)/2` (not in our decks); a
+    volume problem from her course's video lectures (washer about `y=-2`);
+    finding a parabola's vertex two ways; three ways to solve a quadratic.
 
 ## Learner profile
 
-- **Needs heavy visual scaffolding.** Text/formula explanations alone
-  repeatedly weren't enough — matplotlib diagrams (2D regions, 3D solids
-  of revolution, unit-circle references, step-by-step point-plotting)
-  consistently helped her get unstuck. Default to including a diagram
-  for anything spatial (graphs, solids, geometric derivations).
-- **Two specific facts recur as errors across unrelated problems** —
-  these look like genuinely unsettled facts, not one-off slips, and are
-  worth proactively double-checking whenever they come up rather than
-  assuming they're fixed after one correction:
-  - `cos(π) = -1`, so `-cos(π) = +1`. Got this wrong at least 3 separate
-    times (the `y=-2` volume problem, and twice more in 6.1 Exercises
-    1(d)), after it was explained in detail via the unit circle each
-    time.
-  - `cos(π/6) = √3/2` vs `cos(π/3) = 1/2` — she repeatedly swaps these
-    two (uses the π/6 value where π/3 is needed, and vice versa).
-  Good news: once either is pointed out specifically, she fixes it
-  correctly herself — the reasoning and arithmetic are fine, it's
-  specific recall that's shaky. Consider a short, standalone drill on
-  standard angle values (just sin/cos at 0, π/6, π/4, π/3, π/2) at some
-  point rather than only catching it inline.
-- **Differential/substitution notation (`du`, `dx`, implied
-  multiplication) needed a long, from-scratch explanation** — she didn't
-  have a working mental model for why bounds change under substitution,
-  why `du/2` and `(1/2)du` are the same thing, or that `du` disappears
-  once you actually integrate (vs. just rearranging it). This is now
-  reasonably well covered (see the 6.3 Exercises 1(a) discussion in this
-  conversation) but is foundational enough to watch for regressions.
-- Also still mixes up the unit circle's (cos θ, sin θ) point-coordinates
-  with a function graph's (x=input, y=output) axes, and confused
-  sin(2x) with (sin x)/2 early on — both addressed, not retested since.
-- **Communicates in short, often garbled (likely voice-to-text) Russian
-  messages** — terse questions like "куда делась 2" or "почему это 1"
-  usually point at one specific step, not the whole problem; asking
-  "which step" back isn't necessary, the specific step is usually
-  identifiable from what she quotes. When it's genuinely ambiguous which
-  problem/step she means, she responds well to being asked directly
-  rather than guessed at repeatedly.
-- **Jumps between topics/decks non-sequentially** and sometimes leaves
-  an exercise mid-way when she moves to the next thing (see 6.2
-  Exercises 3 — still open since the last checkpoint) — worth
-  periodically circling back to open items rather than assuming
-  abandonment means she's done with it. She also sometimes brings in
-  problems from her actual course's video lectures, not our curriculum
-  decks — treat as legitimate supplementary material per CLAUDE.md, and
-  say plainly when something isn't covered in our 4 decks.
-- Responds very well to being handed a worked method/checklist (the
-  u-substitution 6-step table, the "always check these things" area-
-  between-curves checklist) and then asked to apply it herself with me
-  checking — this produced her best independent work this session,
-  better than pure step-by-step narration.
+- **Speed matters to her more than extras.** On 2026-10-15 she asked to
+  speed things up: generated diagrams take too long, and she has the slides
+  open herself. Default now: **no generated diagrams**; point at the slide
+  number for the picture, and draw only when the needed picture is not on
+  any slide. (In 6.1/6.2, diagrams of regions and solids did help her get
+  unstuck, so keep that option for genuinely spatial problems.)
+- **One small idea per message, then one quick question.** She gets
+  frustrated with long, all-at-once explanations ("не надо все сразу
+  объяснять") and brushes off side questions ("это не важно"); don't push
+  tangents she has dismissed.
+- **Use her course's notation and methods**, not invented devices: counting
+  grid squares annoyed her ("мы тут таким не занимаемся"); component
+  notation `⟨a,b⟩` worked straight away.
+- **When she sends her own solution, check her steps explicitly**, line by
+  line against what she wrote. She got angry when a check looked like a
+  generic re-solve instead of a check of her work.
+- **Negative signs are her most persistent weak spot**: `cos π = -1` (wrong
+  at least 3 times), the radius to `y=-1` written as `x²-1` instead of
+  `x²+1`, and `r²=-9` first solved as `r=±3`. Also swaps `cos(π/6)=√3/2` and
+  `cos(π/3)=1/2`. Once the specific spot is pointed out she fixes it herself:
+  the reasoning is fine, the recall and sign handling are shaky. Check signs
+  proactively whenever a negative number or a line below an axis appears.
+- **Washer setups**: she can forget the inner radius when the region doesn't
+  touch the axis of rotation; ask "is there a hole?" before she integrates.
+- **Differential/substitution notation** (`du`, `dx`, why bounds change)
+  needed a from-scratch explanation; now reasonably covered, but foundational.
+  Also once mixed up the unit circle's `(cos θ, sin θ)` with a graph's axes,
+  and `sin(2x)` with `(sin x)/2`; both addressed, not retested.
+- **Communicates in short, often garbled (voice-to-text) Russian messages**,
+  and swears when frustrated; that signals pace or format problems, not that
+  she's giving up. Terse questions like "куда делась 2" point at one specific
+  step. When genuinely ambiguous, asking her directly works. "Какой ответ"
+  is an explicit request for the solution.
+- **Jumps between topics and decks** and sometimes leaves an exercise
+  half-done; circle back to open items rather than assuming she's finished
+  with them. She brings in material from her actual course (lecture videos,
+  slides); treat it as legitimate supplementary material and say plainly
+  when it isn't in our decks.
+- **Responds well to a worked checklist** (the u-substitution table, the
+  area checklist) that she then applies herself while I check; this produced
+  her best independent work.
 
 ## Current level / notes
 
-**6.1 (area between curves) is solid.** She's independently handled
-every piece of it correctly in a row: setting up top-minus-bottom (and
-right-minus-left when the curves are given as x=g(y)) integrals, finding
-intersection points (including via a full quadratic solve), finding a
-parabola's vertex, splitting an integral when curves cross mid-interval,
-sketching, and evaluating definite integrals correctly including sign
-handling at negative bounds. The two previously-flagged recurring errors
-(cos π sign, cos π/6 vs π/3) showed up during 6.1 Exercises 1 but not
-during the three fully-independent problems that followed — worth
-watching whether they're actually fading or just didn't come up (none
-of 2a/2b/3a happened to need those specific values).
-
-Next up is 6.2 (tasks #3-4, volumes) and 6.3 (tasks #5-6, arc length) —
-both still open, with specific unfinished exercises noted below.
+6.1 is solid. 6.2 is mostly fine; the weak spots are setups where the axis of
+rotation isn't a coordinate axis (sign of the distance, the inner radius).
+ODE basics (characteristic equation, three cases) went well: all three
+problems right. Vectors: Step 1 done, Step 2 in progress; she handles
+component arithmetic easily.
 
 ## Next steps
 
-1. Finish 6.2 Exercises 3 (pyramid) — she has the setup (A(x)=(Lx/h)²)
-   but hasn't computed the integral yet. This is the next concrete item.
-2. Continue 6.3 Exercises 1(c) and 1(d) (arc length) — (a) and (b) are
-   done.
-3. Given 6.1 is now solid, consider giving her more fully-independent
-   problems (not guided) for 6.2/6.3 too, rather than walking through
-   examples step-by-step by default — that's what produced the
-   strongest evidence in 6.1.
-4. Still watch for the cos(π)=-1 sign error and the cos(π/6)/cos(π/3)
-   mixup if trig values come up again in 6.2/6.3/6.4 — not yet confirmed
-   fixed, just untested recently.
+1. 8.2 Vectors: get her answer to the pending `2v`, `-v` question, then the
+   negative vector and subtraction (slide 10). After that she can do the
+   slide 25 exercises independently (they need only the Triangle Law and
+   negatives). Then components, position vectors and `AB` from two points
+   (slides 12-16), length (17), algebraic operations (19-20), unit vectors
+   (21-24), and the slide 26 exercises.
+2. Open Chapter 6 items to circle back to: 6.2 Exercises 3 (pyramid), 6.3
+   Exercises 1(c)/(d), 6.4 untouched.
+3. Keep checking negative signs (see learner profile).
