@@ -18,7 +18,8 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
 │   ├── 6_1Area_between_Curves.pdf / .md              (12 slides)
 │   ├── 6_2Volumes.pdf / .md                          (26 slides)
 │   ├── 6_3_Arc_Length.pdf / .md                      (20 slides)
-│   └── 6_4Area_of_asurface_of_revolution.pdf / .md   (15 slides)
+│   ├── 6_4Area_of_asurface_of_revolution.pdf / .md   (15 slides)
+│   └── 8.2_Vectors.md                                (26 slides; no PDF in repo, see below)
 ├── handover/
 │   └── HANDOVER.md        — progress so far, current level, next steps
 ├── navigation/
@@ -42,6 +43,12 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
   6.2 → 6.3 → 6.4. 6.2 depends on 6.1 (region-between-curves setup); 6.4
   depends on 6.3 (both build on the same slicing/limit argument, arc
   length before surface area).
+- `8.2_Vectors.md` is the exception to the PDF + `.md` pairing: it is
+  Chapter 8 of the same course, a separate topic with no dependency on
+  Chapter 6. Its original PDF is deliberately not committed (every slide
+  carries the university's logo and name; see CLAUDE.md's privacy rule),
+  so there is no PDF to fall back to. If the `.md` looks wrong, ask Wifey
+  to resend the original.
 
 ## What each curriculum file covers
 
@@ -73,6 +80,13 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
   `S = ∫[a,b] 2πf(x)√(1+(f'(x))²) dx` (and the y-axis version); 3 worked
   examples (sphere portion, parabola about y-axis, `y=eˣ` about x-axis);
   1 exercise slide.
+- **8.2_Vectors.md** (26 slides, original PDF not in repo) — vector
+  algebra, no calculus: definition (magnitude + direction), equal and zero
+  vectors; combining vectors (displacements, Triangle Law, Parallelogram
+  Law, scalar multiples, negatives, subtraction); components, position
+  vectors, `AB = <x2−x1, y2−y1, z2−z1>`, standard basis i/j/k; length
+  `|a| = √(ax²+ay²+az²)`; algebraic operations by components; unit vectors
+  `a/|a|`; properties of vectors; Examples 1-7; 2 exercise slides.
 
 ## Progress and history
 
