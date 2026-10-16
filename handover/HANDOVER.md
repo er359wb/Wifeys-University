@@ -1,10 +1,15 @@
 # Handover
 
-Last updated: not yet started.
+Last updated: 2026-10-16 — curriculum received, tutoring not yet started.
 
 ## Progress so far
 
-Nothing yet — tutoring hasn't started on this branch.
+No teaching yet. Curriculum received and saved in `curriculum/` (see
+`navigation/NAVIGATION.md`): lecture slides for Ch 21 (Electric Charge and
+Electric Field), Ch 22 (Gauss's Law), and Ch 23 (Electric Potential — this
+deck only covers 23.1 so far; the rest presumably comes later). Each has a
+`.md` companion. Ch 21 assigns homework 21.33 and 21.44 ("hand in every
+Tuesday").
 
 ## Learner profile
 
@@ -20,4 +25,5 @@ N/A
 
 ## Next steps
 
-Waiting for curriculum documents to begin.
+Start teaching from Ch 21 §21.1 unless Wifey says where she is in the
+course. Her level hasn't been rated yet — find out before teaching.
