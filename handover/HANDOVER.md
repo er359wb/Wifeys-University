@@ -17,6 +17,32 @@
 
 ## 1. Where things actually stand
 
+### New semester — classes and constructors (from 2026-09-21)
+
+She told me on 2026-09-21 she is in the new semester "even though I haven't
+passed the last one". The 2026-09-11 exam result is not recorded anywhere else.
+The branch now follows the autumn course: classes, constructors, operator
+overloading. Her own description: she gets the main idea but cannot write it.
+
+| Assignment | Curriculum file | State |
+|---|---|---|
+| `Complex` class | `Complex_Class_.md` | In-class start was hers and compiled clean (constructor + copy constructor, `public:` in the right place, `a.real` used correctly). The rest I wrote when she had 20 minutes to the deadline — **not evidence of her understanding**. The four check questions I set (what is a data member, where does `area()` get `radius`, two objects = how many `radius`) were never answered |
+| `MyString` class | `String_Class-_copy_constructordestructor.md` | Step 1 posed (explain `new char[1]`, she writes the default constructor). No answer; she moved on |
+| `Fraction` class | `Fraction_Class_photo_1.md` | Started 2026-10-16 from two classroom photos |
+
+Verified small facts from this stretch: she correctly kept `real`/`imag` apart
+from the constructor parameters `a`/`b`; she asked to drop `<iomanip>` and
+`cout.precision(2)` with `fixed` was checked to give identical output; her one
+attempt to add a default-argument constructor put it **outside** the class as a
+new line (error: no type) instead of editing the existing one — the same
+write-it-again-instead-of-edit pattern recorded earlier.
+
+How she asked to be taught on class work (her words, 2026-09-21 and 10-16):
+**do not give the finished program; guide one step at a time and go on only
+when she says so; do not change her variable names; do not make it too
+clever.** Under a deadline she will still ask for the answer outright, as she
+did on exam day; then give it but flag that it is not evidence of learning.
+
 ### Covered, with evidence (she wrote working code or answered checks correctly)
 
 | Topic | Evidence |
