@@ -61,6 +61,7 @@ exists.
 | `mock_paper_2026-06.docx` | ✅ | **Full mock exam paper** — MCQ, tracing, fill-in-the-blank | Worked through in full |
 | `Complex_Class_.docx` | ✅ | **New semester** — classes, constructors, copy constructor, `const` members | Just started 2026-09-21 |
 | `String_Class-_copy_constructordestructor.docx` | ✅ | **New semester** — `MyString`: `new[]`/`delete[]`, `char*`, 7 member functions | Started 2026-10-08 |
+| `Fraction_Class_photo_1.jpg`, `Fraction_Class_photo_2.jpg` | ✅ (`Fraction_Class_photo_1.md`) | **New semester** — `Fraction`: private `simplify`, `friend operator+`, mixed-number `display` | Started 2026-10-16. Two classroom-projector photos, no worksheet |
 
 `mock_paper_2026-06.md` is now the most useful document here, ahead of
 `homework_on_pointers.md`: it is the only one covering the whole exam shape
@@ -80,6 +81,11 @@ the specified signatures are what gets marked.
 source sheet (garbled `find` signature, "address" vs "0-based index", a
 filename that contradicts the text, no test sample). Its filename suggests
 copy constructor and destructor are required; the sheet says they are not.
+
+`Fraction_Class_photo_1.md` is a transcription of the teacher's live code
+from two classroom photos, not a written worksheet. The photos have no EXIF
+data and show no names or faces. The one uncertain character (the separator in
+the `1 1/2` output, hidden by the mouse cursor) is flagged in the `.md`.
 
 `homework_on_pointers.md` is the most useful document in the folder — it is
 the only one in the exam's own format. Its MCQ section transcribes the
