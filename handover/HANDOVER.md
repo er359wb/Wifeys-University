@@ -28,7 +28,7 @@ overloading. Her own description: she gets the main idea but cannot write it.
 |---|---|---|
 | `Complex` class | `Complex_Class_.md` | In-class start was hers and compiled clean (constructor + copy constructor, `public:` in the right place, `a.real` used correctly). The rest I wrote when she had 20 minutes to the deadline — **not evidence of her understanding**. The four check questions I set (what is a data member, where does `area()` get `radius`, two objects = how many `radius`) were never answered |
 | `MyString` class | `String_Class-_copy_constructordestructor.md` | Step 1 posed (explain `new char[1]`, she writes the default constructor). No answer; she moved on |
-| `Fraction` class | `Fraction_Class_photo_1.md` | Started 2026-10-16 from two classroom photos |
+| `Fraction` class | `Fraction_Class_photo_1.md` | **Guided phase done 2026-10-16/17.** She wrote all five pieces (`gcd`, `simplify`, constructor, `display`, `operator+`); the assembled program compiles with `-Wall` and reproduces both on-screen mains (`1/2`, `1 1/2`, `1`; and `1/2`, `2`). **Not yet evidenced as understood:** no independent exercise given. Rounds per piece are below |
 
 Verified small facts from this stretch: she correctly kept `real`/`imag` apart
 from the constructor parameters `a`/`b`; she asked to drop `<iomanip>` and
@@ -36,6 +36,43 @@ from the constructor parameters `a`/`b`; she asked to drop `<iomanip>` and
 attempt to add a default-argument constructor put it **outside** the class as a
 new line (error: no type) instead of editing the existing one — the same
 write-it-again-instead-of-edit pattern recorded earlier.
+
+**Fraction, what each piece cost her (so the next session aims at the real gaps):**
+
+| Piece | What went wrong, in order | What fixed it |
+|---|---|---|
+| `gcd` | Guessed "if a > b the gcd is a" (disproved with her own worksheet row `1562 33 -> 11`). First loop never used its counter and left it uninitialised; two conditions but on the wrong things | Worked example by hand; then she chose to count **up** and overwrite `result`, which also works. Asked unprompted whether two conditions were needed (yes, `&&`) |
+| `simplify` | Used the constructor's parameter names `num`/`den` inside a different function (not in scope); then added an `if` **after** the division with no braces, so `denominator = 0` ran for every fraction | She fixed the guard correctly on the third try: check `result != 0` **before** dividing, both lines in braces. Surfaced a real hole: her `gcd(0,1)` returns 0, so the default `Fraction c;` crashed with a division by zero |
+| constructor | Left a debug `cout` in; called `simplify (num, den)` as if it took arguments | Method vs ordinary function: a method sees its own fields, so empty parentheses |
+| `display` | Whole part by subtraction (right only for 3/2); printed the same variable twice; last branch printed the denominator; no `endl` | Whole part = `/`, remainder = `%`; all four fixed over two rounds. She folded `denominator != 1` into the second branch herself, a valid alternative to the order I had proposed |
+| `operator+` | Added tops with tops and bottoms with bottoms; results computed and thrown away; no `return`; then returned text `newNum'/'newDum` | See below |
+
+**The real gap on `operator+` is translating a hand calculation into code
+names**, not the maths. She knew how to add fractions. What worked: do one
+example by hand, then a table mapping each number in it to its code name
+(`a.numerator`, `b.denominator`...). Even then she mixed `a.`/`b.` once, and her
+line passed all three on-screen examples **by coincidence** (numerators of 1
+make the swap harmless); it failed `1/2 + 2/3`. She then named the rule herself:
+"крест накрест" (cross-multiply). Her final `return Fraction (newNum,newDen);`
+is correct and more compact than the two-line form I had suggested.
+
+**She asked to use her own method and was right to.** When I told her to
+discard her LCM line (`a.d / gcd(a.d, b.d) * b.d`, which was correct) in favour
+of mine, she said "это ты объяснил свой метод же". I checked both methods on five
+sums: identical results. Rule for next time: **if her route is valid, follow it.**
+
+Questions she asked unprompted, all good ones about structure rather than
+syntax: why the constructor body is outside the class; whether `if` needs a
+loop; whether `simplify` is called automatically; whether it matters where
+`simplify` sits in the file. I got one of those wrong first: I said `gcd` must be
+above the class, which was too strong. The real rule, tested over four file
+orders: a name must be declared before its first **use**. Anything declared in
+the class (`simplify`, constructor, `display`, `operator+`) may be defined in any
+order below it; `gcd` is not declared there, so it must precede `simplify`'s body.
+
+Open weakness inherited from this work: **`0/1` prints `0/1`, not `0`** (not
+specified on screen, left alone), and her `gcd` returns 0 when the first number
+is 0.
 
 How she asked to be taught on class work (her words, 2026-09-21 and 10-16):
 **do not give the finished program; guide one step at a time and go on only
