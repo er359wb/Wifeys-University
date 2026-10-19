@@ -62,6 +62,7 @@ exists.
 | `Complex_Class_.docx` | ✅ | **New semester** — classes, constructors, copy constructor, `const` members | Just started 2026-09-21 |
 | `String_Class-_copy_constructordestructor.docx` | ✅ | **New semester** — `MyString`: `new[]`/`delete[]`, `char*`, 7 member functions | Started 2026-10-08 |
 | `Fraction_Class_photo_1.jpg`, `Fraction_Class_photo_2.jpg` | ✅ (`Fraction_Class_photo_1.md`) | **New semester** — `Fraction`: private `simplify`, `friend operator+`, mixed-number `display` | Started 2026-10-16. Two classroom-projector photos, no worksheet |
+| *(photo not committed)* | `Fraction_Class_photo_3.md` | `Fraction` part 2 — member `operator==` and `operator-` | Added 2026-10-19. Photo withheld: a wall poster in it names the institution. The `.md` is the only record |
 
 `mock_paper_2026-06.md` is now the most useful document here, ahead of
 `homework_on_pointers.md`: it is the only one covering the whole exam shape
