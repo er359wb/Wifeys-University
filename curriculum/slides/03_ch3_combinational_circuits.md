@@ -103,6 +103,15 @@ Step 3: circuit diagram — AND2(A, B-or-C-via-OR2) feeding U; another
 AND2(NOT A, B-or-C-via-the-same-OR2) feeding Alarm — the OR2(B,C) is
 shared between the two output branches.
 
+PDF slide map: slide 17 = truth table, slide 18 = Step 2 (two 3-variable
+K-maps), slide 19 = Step 3 (circuit). On slides 18-19 the Alarm output
+is named "A" (e.g. "A = Σm(1,2,3)", "A = ĀB+ĀC", the lower circuit
+output): the left-hand A is Alarm, not input A. On slide 17 the Alarm
+cell of row 000 shows a red 0 written over an older digit; Σm(1,2,3)
+confirms Alarm = 0 there. On slide 19 NOT A is a separate input terminal
+(no NOT gate is drawn), and the circuit is built from U = A(B+C),
+Alarm = Ā(B+C) — the factoring from AB+AC is not written on any slide.
+
 **E.g. 3 (incompletely specified) — implementation of a comparator**
 
 Logical functions: inputs are BCD codes; output is 1 when the code > 4

@@ -124,20 +124,27 @@ Facts for teaching it:
   Alarm = 1 at rows 001, 010, 011; rows 000 and 100 give nothing.
 - U = Σm(5,6,7) = AB + AC = A(B + C). Alarm = Σm(1,2,3) = ĀB + ĀC =
   Ā(B + C).
+- Slide map (PDF): 17 = truth table, 18 = Step 2 (two 3-variable
+  K-maps: U = AB + AC, Alarm = ĀB + ĀC), 19 = Step 3 (the circuit).
 - The slide's circuit: one OR2 on (B, C), shared; one AND2 of (A, OR
-  output) driving U; one AND2 of (NOT A, OR output) driving Alarm. The
-  output the slide labels "A" on the right is Alarm, not the input A.
+  output) driving U; one AND2 of (NOT A, OR output) driving Alarm. NOT A
+  is drawn as a separate input terminal, not as a NOT gate. Slides 18-19
+  name the Alarm output "A" (e.g. "A = Σm(1,2,3)"): the left-hand A is
+  Alarm, not the input A. On slide 17 the Alarm cell of row 000 has a
+  red 0 over an older digit; Σm(1,2,3) confirms it is 0.
 - Likely snag: the written answer is AB + AC (two ANDs into an OR) but
-  the drawn circuit is OR first, then AND. The link is the factoring
-  AB + AC = A(B + C), which lets one OR2 serve both outputs (4 gates
-  total instead of 7).
+  the drawn circuit is OR first, then AND. No slide writes the step
+  AB + AC = A(B + C); it is skipped. That factoring lets one OR2 serve
+  both outputs (3 gates drawn, 4 with a NOT gate for Ā; the two-level
+  version needs 6, or 7 with the NOT).
 
-Teaching plan: (1) the three gates and the operation each one is,
-AND2 / OR2 / NOT, where the number is the count of inputs; (2) one
-operation in the expression = one gate, built from the innermost
-bracket outward, a barred letter needs a NOT; (3) why the slide factors
-and shares the OR2; (4) trace one input row through the finished
-circuit; (5) a small design she does alone.
+Teaching so far: sent the gates table (AND2 / OR2 / NOT, one operation =
+one gate) with three questions (OR2 and AND2 on inputs 1,0; NOT on 0;
+gates for A(B + C)) — never answered, because she asked to be walked
+through slides 17-19 instead. Order now: 17 -> 18 (table -> Σm ->
+simplify with her pairing method; she repeats it for Alarm), then 19
+(formula -> gates, the skipped factoring, the shared OR2), trace one row
+through the circuit, then a small design she does alone.
 
 **Units 4-6: not started.**
 
