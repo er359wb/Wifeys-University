@@ -19,7 +19,9 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
 │   ├── 6_2Volumes.pdf / .md                          (26 slides)
 │   ├── 6_3_Arc_Length.pdf / .md                      (20 slides)
 │   ├── 6_4Area_of_asurface_of_revolution.pdf / .md   (15 slides)
-│   └── 8.2_Vectors.md                                (26 slides; no PDF in repo, see below)
+│   ├── 8.1_Three-dimensional_coordinate_systems.md   (13 slides; no PDF in repo, see below)
+│   ├── 8.2_Vectors.md                                (26 slides; no PDF in repo, see below)
+│   └── 8.3_Dot_Product.md                            (16 slides; no PDF in repo, see below)
 ├── handover/
 │   └── HANDOVER.md        — progress so far, current level, next steps
 ├── navigation/
@@ -43,12 +45,14 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
   6.2 → 6.3 → 6.4. 6.2 depends on 6.1 (region-between-curves setup); 6.4
   depends on 6.3 (both build on the same slicing/limit argument, arc
   length before surface area).
-- `8.2_Vectors.md` is the exception to the PDF + `.md` pairing: it is
-  Chapter 8 of the same course, a separate topic with no dependency on
-  Chapter 6. Its original PDF is deliberately not committed (every slide
-  carries the university's logo and name; see CLAUDE.md's privacy rule),
-  so there is no PDF to fall back to. If the `.md` looks wrong, ask Wifey
-  to resend the original.
+- `8.1_Three-dimensional_coordinate_systems.md`, `8.2_Vectors.md` and
+  `8.3_Dot_Product.md` are the exception to the PDF + `.md` pairing: they
+  are Chapter 8 of the same course (read in the order 8.1, 8.2, 8.3; no
+  dependency on Chapter 6). Their original PDFs are deliberately not
+  committed (every slide carries the university's logo and name, and the
+  title slides name the lecturer; see CLAUDE.md's privacy rule), so there
+  is no PDF to fall back to. If one of these `.md` files looks wrong, ask
+  Wifey to resend the original.
 
 ## What each curriculum file covers
 
@@ -80,6 +84,13 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
   `S = ∫[a,b] 2πf(x)√(1+(f'(x))²) dx` (and the y-axis version); 3 worked
   examples (sphere portion, parabola about y-axis, `y=eˣ` about x-axis);
   1 exercise slide.
+- **8.1_Three-dimensional_coordinate_systems.md** (13 slides, original PDF
+  not in repo) — recall of 2-D coordinates; 3-D axes and the right-hand
+  rule; coordinate planes and octants; locating `(a,b,c)`, `R³`; planes
+  `x=k`, `y=k`, `z=k`; the 3-D distance formula and its proof; spheres
+  `(x−x0)²+(y−y0)²+(z−z0)²=r²`, completing the square to find a sphere's
+  center and radius; Examples 1-4; 1 exercise slide. (Slide 12 has a
+  `z≥0` vs "below the xy-plane" inconsistency, noted in the `.md`.)
 - **8.2_Vectors.md** (26 slides, original PDF not in repo) — vector
   algebra, no calculus: definition (magnitude + direction), equal and zero
   vectors; combining vectors (displacements, Triangle Law, Parallelogram
@@ -87,6 +98,13 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
   vectors, `AB = <x2−x1, y2−y1, z2−z1>`, standard basis i/j/k; length
   `|a| = √(ax²+ay²+az²)`; algebraic operations by components; unit vectors
   `a/|a|`; properties of vectors; Examples 1-7; 2 exercise slides.
+- **8.3_Dot_Product.md** (16 slides, original PDF not in repo) — dot
+  product `a·b = axbx+ayby+azbz` (a scalar) and its properties;
+  `a·b = |a||b|cosθ` via the Law of Cosines; angle between vectors;
+  orthogonality (`a·b=0`) and the sign of `a·b`; direction angles and
+  direction cosines; scalar and vector projections `comp` / `proj`;
+  Examples 1-8; 2 exercise slides. (Typos noted in the `.md`: slide 8's
+  middle label, slide 11's `z` for `k`.)
 
 ## Progress and history
 
