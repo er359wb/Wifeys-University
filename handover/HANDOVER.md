@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-10-15.
+Last updated: 2026-10-19.
 
 ## Progress so far
 
@@ -41,10 +41,25 @@ Last updated: 2026-10-15.
     answered as "up/down = bigger/smaller, the sign of a number, not a
     direction in space". Equal vectors: picked the right ones from a picture
     with the right reason (same length and same direction).
-  - Step 2, combining vectors: Triangle Law (answered correctly), Parallelogram
-    Law, sums in component notation `⟨2,3⟩+⟨4,1⟩=⟨6,4⟩` (correct). Scalar
-    multiplication explained (`c⟨a,b⟩=⟨ca,cb⟩`, `c<0` flips direction);
-    **pending question: `2v` and `-v` for `v=⟨3,-1⟩`.**
+  - Step 2, combining vectors: done. Triangle Law, Parallelogram Law, sums
+    and scalar multiples in component notation (`⟨2,3⟩+⟨4,1⟩=⟨6,4⟩`,
+    `2⟨3,-1⟩=⟨6,-2⟩`, `-⟨3,-1⟩=⟨-3,1⟩`), subtraction
+    (`⟨1,4⟩-⟨3,-2⟩=⟨-2,6⟩`, with the `4-(-2)=6` step right). Slide 25
+    exercises: (a) AC, (b) CB, (d) DB right; (c) first answered DB (ignored
+    the minus), then DA right after I pointed at `-AB=BA`. She first drew the
+    sum instead of writing the two-letter answer; one format example fixed it.
+  - Step 3, components (slides 12-16): taught `AB = ⟨x2-x1, y2-y1, z2-z1⟩`
+    ("end minus start"). **Pending question: `A(1,-2,3)`, `B(4,0,-1)`**
+    (she skipped it and went on to slide 26).
+  - Step 4 partly: the length formula was taught when she reached slide
+    26(a)(1) on her own. **(1) done fully independently and correctly**
+    (`a+b=⟨-1,1,2⟩`, `2a+3b=⟨-4,1,9⟩`, `|a|=√14`, `|a-b|=√82`; she needed
+    `|a-b|` split into "find a-b, then its length"). **Pending: slide
+    26(a)(2)** (needs `i,j,k` converted to components; I taught that,
+    including "a missing term means 0"). Unit vectors (`a/|a|`, slide 22) are
+    NOT taught yet.
+  - The 8.1 (3-D coordinates, spheres) and 8.3 (dot product) `.md`
+    companions were added on 2026-10-19 but those decks are not taught yet.
 - **Supplementary (from her own course, not in our decks):**
   - 2nd-order linear homogeneous ODEs with constant coefficients (her slide
     from the course): what "order" and "linear" mean; why we guess `y=e^{rx}`
@@ -109,17 +124,26 @@ Last updated: 2026-10-15.
 6.1 is solid. 6.2 is mostly fine; the weak spots are setups where the axis of
 rotation isn't a coordinate axis (sign of the distance, the inner radius).
 ODE basics (characteristic equation, three cases) went well: all three
-problems right. Vectors: Step 1 done, Step 2 in progress; she handles
-component arithmetic easily.
+problems right. Vectors: Steps 1-2 done; component arithmetic (including
+subtraction with a double negative) and the length formula went well.
 
 ## Next steps
 
-1. 8.2 Vectors: get her answer to the pending `2v`, `-v` question, then the
-   negative vector and subtraction (slide 10). After that she can do the
-   slide 25 exercises independently (they need only the Triangle Law and
-   negatives). Then components, position vectors and `AB` from two points
-   (slides 12-16), length (17), algebraic operations (19-20), unit vectors
-   (21-24), and the slide 26 exercises.
-2. Open Chapter 6 items to circle back to: 6.2 Exercises 3 (pyramid), 6.3
+1. 8.2 Vectors: slide 26(a)(2) is waiting (`i,j,k` form). Then 26(b) and
+   unit vectors (`a/|a|`, slide 22, not yet taught), the pending `AB`
+   from two points question, Examples 5-7 (slides 21, 24), and the 3-D side
+   of slides 12-14 if she wants it.
+2. **Reminder she asked for on 2026-10-19: ask her to send the Chapter 7
+   decks (7.1 to 7.5).** They are not in the repo (only 6.x and 8.x are). A
+   `send_later` reminder was scheduled to fire in this session at
+   2026-10-20 11:12 UTC. If that time has passed, or this is a new session,
+   remind her anyway at the start. When the files arrive: make `.md`
+   companions in `curriculum/`, keep the PDFs out of the repo (the slides
+   carry the university logo and the title slides name the lecturer; see
+   CLAUDE.md's privacy rule), and note them in `navigation/NAVIGATION.md`.
+3. 8.1 (3-D coordinates, spheres) and 8.3 (dot product) are saved as `.md`
+   but untaught; her course order is 8.1, 8.2, 8.3, so she may want them
+   next.
+4. Open Chapter 6 items to circle back to: 6.2 Exercises 3 (pyramid), 6.3
    Exercises 1(c)/(d), 6.4 untouched.
-3. Keep checking negative signs (see learner profile).
+5. Keep checking negative signs (see learner profile).
