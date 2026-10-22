@@ -22,7 +22,7 @@ public:
 int main(){
     Fraction a(2,4), b(1,2), c(3,2);
     a.display();  // output: 1/2
-    c.display();  // output: 1 1/2
+    c.display();  // output: 1u1/2
     c = a + b;
     c.display();  // output: 1
 ```
@@ -52,7 +52,7 @@ Only the declarations are on screen. The bodies are the task:
 | Code | Output |
 |---|---|
 | `Fraction a(2,4); a.display();` | `1/2` |
-| `Fraction c(3,2); c.display();` | `1 1/2` (whole part, then the fraction) |
+| `Fraction c(3,2); c.display();` | `1u1/2` as written on screen (whole part, a `u`, then the fraction) |
 | `c = a + b;` with `a`=2/4, `b`=1/2, then `c.display();` | `1` |
 
 Derived, not on screen: with photo 1's `main` (`a`=2/4, `b`=3/2) the sum is
@@ -60,9 +60,11 @@ Derived, not on screen: with photo 1's `main` (`a`=2/4, `b`=3/2) the sum is
 
 ## Uncertainties and inconsistencies — flagged, not silently resolved
 
-1. **The mixed-number separator is partly hidden.** In photo 2 the mouse
-   cursor sits on the character between `1` and `1/2`, so the output reads
-   `1u1/2`. Wifey describes it as `1 1/2`; a space is assumed.
+1. **The mixed-number separator is a `u` on the screen.** The first transcription read it as a
+   space, assuming the mouse cursor hid it. That was wrong: in the later photo
+   (`Fraction_Class_photo_3.md`) nothing covers it and the line clearly reads `1u1/2`.
+   Wifey described it as `1 1/2` at first, then typed `'u'` herself. What the teacher
+   actually wants is not stated; the screen says `u`. Corrected 2026-10-22.
 2. **No negative numbers or zero denominator are shown.** Nothing on screen
    says how to handle them; they are not part of the stated task.
 3. **`display()` is not marked `const`** on screen, unlike `display() const`

@@ -14,7 +14,7 @@ int main(){
     Fraction a(2,4), b(1,2), c(3,2);
     if(a==b)  cout<<"equal";   // member function        <- red
     a.display();               // output: 1/2
-    c.display();               // output: 1 1/2
+    c.display();               // output: 1u1/2
     c=a-b;                     // as member function     <- red
     c.display();               // output :1
     return 0;
@@ -48,8 +48,10 @@ operand is the parameter.
    intended.
 3. **The teacher's `GCD` on this screen** is a different function from the one
    Wifey wrote (it uses a temporary `t`); only its first lines are visible.
-4. As in part 1, the separator in `1u1/2` is partly hidden by the cursor and is
-   read as `1 1/2`.
+4. **The separator in `1u1/2` is a `u`, not a space.** Part 1's transcription assumed a
+   space hidden by the mouse cursor. In this photo no cursor is near it and the `u` is
+   plain. Earlier verification in this repository printed `1 1/2` with a space; that
+   does not match the screen.
 
 ## Verified against a reference
 
@@ -58,7 +60,7 @@ With Wifey's existing class plus the two member operators, compiled with
 
 ```
 equal1/2
-1 1/2
+1 1/2   <- printed with a space; the screen shows a u
 0/4
 ```
 

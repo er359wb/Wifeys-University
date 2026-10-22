@@ -56,6 +56,12 @@ make the swap harmless); it failed `1/2 + 2/3`. She then named the rule herself:
 "крест накрест" (cross-multiply). Her final `return Fraction (newNum,newDen);`
 is correct and more compact than the two-line form I had suggested.
 
+**Correction, 2026-10-22: the mixed-number output on the teacher's screen is `1u1/2`, with a
+letter `u`.** I had read it as a space hidden by the mouse cursor and told her `1 1/2` many
+times, so her `display()` prints a space. The later photo shows the `u` with nothing covering
+it. She typed `'u'` herself in her `operator<<` attempt, so she read the screen more carefully
+than I did. What the teacher wants is not stated; the screen says `u`.
+
 **She asked to use her own method and was right to.** When I told her to
 discard her LCM line (`a.d / gcd(a.d, b.d) * b.d`, which was correct) in favour
 of mine, she said "это ты объяснил свой метод же". I checked both methods on five
