@@ -21,7 +21,8 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
 │   ├── 6_4Area_of_asurface_of_revolution.pdf / .md   (15 slides)
 │   ├── 8.1_Three-dimensional_coordinate_systems.md   (13 slides; no PDF in repo, see below)
 │   ├── 8.2_Vectors.md                                (26 slides; no PDF in repo, see below)
-│   └── 8.3_Dot_Product.md                            (16 slides; no PDF in repo, see below)
+│   ├── 8.3_Dot_Product.md                            (16 slides; no PDF in repo, see below)
+│   └── 8.4_Cross_Product.md                          (22 slides; no PDF in repo, see below)
 ├── handover/
 │   └── HANDOVER.md        — progress so far, current level, next steps
 ├── navigation/
@@ -45,10 +46,10 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
   6.2 → 6.3 → 6.4. 6.2 depends on 6.1 (region-between-curves setup); 6.4
   depends on 6.3 (both build on the same slicing/limit argument, arc
   length before surface area).
-- `8.1_Three-dimensional_coordinate_systems.md`, `8.2_Vectors.md` and
-  `8.3_Dot_Product.md` are the exception to the PDF + `.md` pairing: they
-  are Chapter 8 of the same course (read in the order 8.1, 8.2, 8.3; no
-  dependency on Chapter 6). Their original PDFs are deliberately not
+- `8.1_Three-dimensional_coordinate_systems.md`, `8.2_Vectors.md`,
+  `8.3_Dot_Product.md` and `8.4_Cross_Product.md` are the exception to the
+  PDF + `.md` pairing: they are Chapter 8 of the same course (read in the
+  order 8.1 to 8.4; no dependency on Chapter 6). Their original PDFs are deliberately not
   committed (every slide carries the university's logo and name, and the
   title slides name the lecturer; see CLAUDE.md's privacy rule), so there
   is no PDF to fall back to. If one of these `.md` files looks wrong, ask
@@ -105,6 +106,16 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
   direction cosines; scalar and vector projections `comp` / `proj`;
   Examples 1-8; 2 exercise slides. (Typos noted in the `.md`: slide 8's
   middle label, slide 11's `z` for `k`.)
+- **8.4_Cross_Product.md** (22 slides, original PDF not in repo) — cross
+  product `a×b` from the component formula and via a 3×3 determinant
+  (determinants of order 2 and 3 are introduced on slide 3); `a×a=0`;
+  `a×b` is orthogonal to `a` and `b` (slide 7) with the right-hand rule;
+  `|a×b| = |a||b|sinθ`; parallel iff `a×b=0`; area of a parallelogram and a
+  triangle; a normal vector of a plane through 3 points; `i×j=k` table,
+  anti-commutativity and the other properties; scalar triple product;
+  Examples 1-5; 2 exercise slides plus worked solutions on slides 18-21.
+  (Typos noted in the `.md`: slide 4's `-24` should be `-21`; slide 19's
+  `k`-component.)
 
 ## Progress and history
 
