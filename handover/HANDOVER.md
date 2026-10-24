@@ -1,9 +1,10 @@
 # Handover
 
-Last updated: 2026-10-19 (session: Unit 2 algebraic simplification with
-her teacher's "add / split" method, canonical SOP via Σm, K-map intro;
-then she sent the Unit 3 coded-lock slide and asked how to build that
-circuit herself).
+Last updated: 2026-10-24 (midterm is Monday 2026-10-26. Earlier this
+session: Unit 2 algebraic simplification with her teacher's "add / split"
+method, canonical SOP via Σm, K-map intro, the Unit 3 coded-lock slide.
+Latest: she chose to go through everything in order from Ch1, so Ch1
+conversions were drilled with mock sets).
 
 ## Progress so far
 
@@ -12,10 +13,18 @@ companion — read those, not the PDFs), `curriculum/textbook/`, and
 `curriculum/SYLLABUS.md`. Prior tutoring transcripts in
 `conversation_history/`.
 
-Test scope, as she told it: a test on "Chapter 2 fd2" (the Boolean
-algebra deck, `02_ch2_fd2_boolean_algebra.md`). Her teacher said the
-canonical-form / POS material will NOT be examined. She never gave more
-detail than this when asked for the exact coverage.
+**Midterm exam: Monday 2026-10-26** (she told me on Saturday
+2026-10-24). Scope never confirmed: she was asked three times and did not
+answer. Earlier she mentioned a test on "Chapter 2 fd2" (the Boolean
+algebra deck) and said her teacher will NOT examine canonical SOP / POS.
+
+Her decision: go through everything in order from the beginning (Ch1,
+then Ch2, then Ch3), learning through worked examples and many mock sets
+("пробники"), "to perfection". She also asked to cover canonical SOP /
+POS in its place (2.5) even though it is not examined. Pace agreed: what
+she already solved correctly gets a fast check, new material gets the
+time. Plan for the end: a mixed mock over each chapter and a one-page
+formula sheet.
 
 ### Unit 1 — Number Systems and Codes: in progress
 
@@ -23,7 +32,22 @@ detail than this when asked for the exact coverage.
 - Radix/base, positional notation.
 - binary <-> octal, binary <-> hex conversion (grouping method), incl.
   the direction point (group right-to-left, write left-to-right).
-- Octal/hex tables memorized by rote.
+- Octal tables memorized by rote. Hex letters A-F were NOT solid
+  (wrote A as 1001, 1101 as E, E as 15); fixed by a table plus a drill,
+  and a repeat of the same 1101 case then came out right. Keep
+  re-checking A-F.
+- **Conversions (1.1.2), verified with mock sets this session:**
+  grouping with padding in both directions, including numbers with a
+  point (integer part right-to-left from the point, fraction
+  left-to-right, pad zeros on the right); decimal -> binary by division
+  by 2 (45, 100 correct); fractions by multiplication by 2 (0.375, 0.25
+  correct; 0.8 had the right working but a mis-copied answer, and the
+  non-terminating case was explained); binary -> decimal with
+  fractions; hex -> decimal as digit x 16 + digit. Faster method that
+  worked for her: use hex as the hub (binary <-> hex by table, hex ->
+  decimal by x 16), because position labels in long expansions were
+  error-prone. Octal -> decimal directly and decimal -> hex/octal were
+  not drilled.
 - **BCD**: what it is, digit-by-digit encoding, valid vs invalid 4-bit
   codes. Verified: (39)₁₀ → 0011 1001 correct; identified 1100/1011 as
   invalid.
@@ -191,6 +215,16 @@ through the circuit, then a small design she does alone.
   recurs; restate it explicitly in every new context.
 - **Notation**: always use proper subscripts — (101)₂, (7)₈, (2F)₁₆.
 - **No emojis.**
+- **Numbered lists, not bullets.** She asked that points, especially the
+  list of her mistakes, be numbered 1, 2, 3 rather than bulleted.
+- **Write the answer's base first.** Twice she converted to the wrong
+  base (asked hex, gave decimal; asked decimal, gave binary) while the
+  conversions themselves were correct. Her base subscripts were also
+  unclear in handwriting (octal looked like ₆, hex like ₁₀) and missing
+  on some answers; after a reminder she wrote them clearly.
+- **Concrete drill sets suit her.** Short worked example, then 4-8
+  items, photo of handwritten work, results explained as a numbered
+  list. She asks for more mock sets when she wants to be sure.
 
 **Recurring errors to target:**
 - Swapping `x + x = x` with `x + x̄ = 1`.
@@ -205,21 +239,35 @@ through the circuit, then a small design she does alone.
 - Consensus: right verdict, wrong reason.
 - Mixing the names "duality" and "inverse" while executing both
   correctly.
+- Answering the wrong conversion target (see above).
+- Position labels in long binary expansions: off by one at the top bit
+  or a skipped label (gave 114 instead of 178, 373 instead of 187). Use
+  the hex hub instead of labelling bits.
+- Slips when copying or adding the final answer despite correct working
+  (0.1100 written as 0.1001; 15×16 + 7 written as 240; 32+16+8+4+2 for a
+  bit that was 0).
 
 ## Next steps
 
-1. **Unit 3 circuit-from-expression** (the coded-lock slide) — plan
-   above. Done only when she reads an expression into gates correctly,
-   explains why the OR2 is shared, and designs one on her own.
-2. **Close the open check questions** when there is slack: octal table
-   drill, 48 + 27 in BCD, the XOR and MSB/LSB questions, F(A,B) =
-   Σm(0,1) on a 2-variable K-map, practice set 2 items 4-5, the
-   truth-table canonical SOP check.
-3. **Unit 2 leftovers**, in this order: 3-variable K-map as a method
-   (the coded-lock slide's maps are the natural example), consensus
-   redo, then 2.2/2.3 (quick), 2.8, 2.9, 2.10.
-4. **Unit 1 leftovers**: Gray code B → G formula, then signed numbers,
-   complements, Excess-3, parity, ASCII.
+The agreed order is Ch1 -> Ch2 -> Ch3, example-driven, with a final
+mixed mock and a one-page formula sheet before Monday.
+
+1. **Ch1 in order**: 1.1.3 signed numbers (sign-and-magnitude, 1's and
+   2's complement), 1.1.4 addition/subtraction via complements, then
+   1.2 codes: BCD (multi-digit 48 + 27 still open), Excess-3, Gray
+   (XOR check and the B -> G formula still open), parity, ASCII. End
+   with a mixed Ch1 mock, including one more non-terminating fraction
+   and an octal -> decimal item.
+2. **Ch2 in order**: 2.1-2.4 fast check (consensus needs a redo), 2.5
+   canonical SOP and POS (she asked for it; the Alarm exercise and the
+   truth-table check are still open), 2.6 algebraic simplification
+   (practice set 2 items 4-5, then an unguided exercise), 2.7 K-maps on
+   2, 3 and 4 variables, 2.8 don't-cares, 2.9 cost, 2.10 multiple-output.
+3. **Ch3**: resume the coded-lock thread at slides 17-19 (plan in the
+   Unit 3 section above), then analysis/design, then the building blocks
+   as time allows.
+4. Ask again, once, what the midterm covers; until she answers, assume
+   Ch1-Ch3 up to where her lecture has reached.
 
 Per CLAUDE.md: nothing above is "done" unless it says verified with her
 own correct answers. Consensus, canonical SOP from a truth table, K-map
