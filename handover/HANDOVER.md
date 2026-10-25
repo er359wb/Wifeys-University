@@ -1,10 +1,10 @@
 # Handover
 
-Last updated: 2026-10-24 (midterm is Monday 2026-10-26. Earlier this
-session: Unit 2 algebraic simplification with her teacher's "add / split"
-method, canonical SOP via Σm, K-map intro, the Unit 3 coded-lock slide.
-Latest: she chose to go through everything in order from Ch1, so Ch1
-conversions were drilled with mock sets).
+Last updated: 2026-10-25 (Sunday; midterm is tomorrow, Monday
+2026-10-26. Earlier: Unit 2 algebraic simplification with her teacher's
+"add / split" method, canonical SOP via Σm, K-map intro, the Unit 3
+coded-lock slide. Latest: she chose to go through everything in order
+from Ch1; Ch1 conversions and signed-number arithmetic are now done).
 
 ## Progress so far
 
@@ -55,6 +55,14 @@ formula sheet.
   (result lands in 1010-1111, or carry-out of the 4-bit group).
   Verified 3/3 (3+4 no correction, 6+7 → 0001 0011, 9+9 → 0001 1000),
   including remembering the tens group.
+- **Signed numbers and complement arithmetic (1.1.3-1.1.4), verified
+  with handwritten sets:** writing negatives in sign-and-magnitude, 1's
+  and 2's complement; reading a record back to a signed decimal (the
+  first bit gives the sign; for a 1 in 1's/2's flip all bits [+1 for
+  2's], read as binary, put the minus; positive records are read as
+  plain binary); 2's complement addition and subtraction (A - B =
+  A + (-B), drop the carry); 1's complement addition with end-around
+  carry. It took several attempts; see the errors below.
 
 **Taught but NOT verified:**
 - **Multi-digit BCD addition** (carry propagates into the next BCD
@@ -69,9 +77,7 @@ formula sheet.
 - **B → G conversion formula (G_n = B_n; G_i = B_{i+1} ⊕ B_i)** — not
   reached. This is where Gray code stopped.
 
-**Not started in Unit 1:** signed numbers (sign-magnitude, 1's/2's
-complement), addition/subtraction via complements, Excess-3, parity,
-ASCII.
+**Not started in Unit 1:** Excess-3, parity, ASCII.
 
 ### Unit 2 — Boolean Algebra: in progress
 
@@ -225,6 +231,21 @@ through the circuit, then a small design she does alone.
 - **Concrete drill sets suit her.** Short worked example, then 4-8
   items, photo of handwritten work, results explained as a numbered
   list. She asks for more mock sets when she wants to be sure.
+- **A representation is not an operation.** With signed numbers she
+  first treated "1's/2's complement" as an operation to apply to any bit
+  string and answered "read this record" tasks by re-encoding it. What
+  fixed it: each representation has a "change sign" action; writing -N =
+  change the sign of +N; reading = change the sign again; then a
+  one-step worked example.
+- **Dense feedback shuts her down.** After a four-point correction she
+  wrote "Не понимаю твои объяснения". One idea per message, a small
+  table, and a tiny drill that isolates the failing sub-skill worked.
+- **She sometimes invents a valid variant.** For reading 2's records she
+  kept the sign bit, flipped the rest, added 1 and read sign-and-
+  magnitude; it fails only on 1000 (-8). Agreed rule: negative records
+  only, flip all bits.
+- **Typed answers hide the method.** When she types only final answers
+  (doable in decimal in her head), ask for photos of the binary steps.
 
 **Recurring errors to target:**
 - Swapping `x + x = x` with `x + x̄ = 1`.
@@ -246,18 +267,22 @@ through the circuit, then a small design she does alone.
 - Slips when copying or adding the final answer despite correct working
   (0.1100 written as 0.1001; 15×16 + 7 written as 240; 32+16+8+4+2 for a
   bit that was 0).
+- Signed numbers: writing negatives in sign-and-magnitude when 2's
+  complement was asked; writing 0 for 1 + 1 + 1 in a binary column
+  (should be 1, carry 1; fixed); forgetting the minus when the result's
+  first bit is 1; applying flip + 1 to a positive result; treating the
+  dropped carry as a sign bit.
 
 ## Next steps
 
 The agreed order is Ch1 -> Ch2 -> Ch3, example-driven, with a final
 mixed mock and a one-page formula sheet before Monday.
 
-1. **Ch1 in order**: 1.1.3 signed numbers (sign-and-magnitude, 1's and
-   2's complement), 1.1.4 addition/subtraction via complements, then
-   1.2 codes: BCD (multi-digit 48 + 27 still open), Excess-3, Gray
-   (XOR check and the B -> G formula still open), parity, ASCII. End
-   with a mixed Ch1 mock, including one more non-terminating fraction
-   and an octal -> decimal item.
+1. **Ch1 codes (1.2), quickly**: Excess-3, Gray (XOR check and the
+   B -> G formula still open), parity, ASCII, multi-digit BCD (48 + 27
+   still open). 1.1.3-1.1.4 are done. A mixed Ch1 mock (with a
+   non-terminating fraction and an octal -> decimal item) only if time
+   allows.
 2. **Ch2 in order**: 2.1-2.4 fast check (consensus needs a redo), 2.5
    canonical SOP and POS (she asked for it; the Alarm exercise and the
    truth-table check are still open), 2.6 algebraic simplification
