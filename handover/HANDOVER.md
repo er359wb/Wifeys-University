@@ -4,7 +4,7 @@ Last updated: 2026-10-25 (Sunday; midterm is tomorrow, Monday
 2026-10-26. Earlier: Unit 2 algebraic simplification with her teacher's
 "add / split" method, canonical SOP via Σm, K-map intro, the Unit 3
 coded-lock slide. Latest: she chose to go through everything in order
-from Ch1; all of Ch1 is now done, ending with a mixed Ch1 test).
+from Ch1; Ch1 and Ch2 are now done, Ch3 is next).
 
 ## Progress so far
 
@@ -135,8 +135,30 @@ combining done visually. Check question F(A,B) = Σm(0,1) was never
 answered. She then sent the 3-variable K-maps from the Unit 3 coded-lock
 slide; the 3-variable method itself has not been taught.
 
-**Not started in Unit 2:** 2.2 truth tables and 2.3 gates (as formal
-topics), 2.8 don't-cares, 2.9 cost, 2.10 multiple-output.
+**Ch2 second pass, 2026-10-25, in order:**
+- 2.4 rules: first attempt she peeked and mixed up absorption and
+  bar-form (R + RS = RS, X(X + Y) = XY); fixed with a one-page rule
+  table, a side-by-side absorption/bar-form table and factoring
+  (R + RS = R(1 + S) = R). Learned that a substitution check must use a
+  set containing a 0 (all-ones sets passed wrong answers). Re-verified on
+  new items without peeking. Teacher's emphasis: combining is the most
+  important rule; b-versions are the duals of a-versions.
+- 2.5 canonical SOP/POS (Σm/ΠM): correct; she mixes up the labels f and
+  f̄ when she reads the zeros.
+- 2.6 simplification: DeMorgan + bar-form (PQ + P̄R + Q̄R = PQ + R) and
+  consensus via the teacher's (x + x̄) split, done independently on new
+  items after one worked pair. She asked why only BC is multiplied out;
+  explained that expanding everything gives canonical SOP (same answer,
+  longer), which led straight into K-maps.
+- 2.7 K-maps, SOP, 3 and 4 variables, incl. wrap-around and corners:
+  verified. Early habit of making groups smaller than possible (would
+  not reuse covered cells); fixed with the search order 8 -> 4 -> 2 -> 1.
+  POS via K-map: once grouped the Σm cells instead of the zeros;
+  understood, further practice skipped for time.
+- 2.8 don't-cares: she skipped it ("same thing"), not verified.
+- 2.9 cost (gates + inputs): explained via the slide 19 circuit after she
+  asked for English terms (gate, input, output); 1 of 2 right first time.
+- 2.10 multiple-output: her teacher said it is not needed.
 
 ### Unit 3 — Combinational Circuits: just started
 
@@ -281,11 +303,7 @@ mixed mock and a one-page formula sheet before Monday.
 
 1. **Ch1 is done.** If there is a spare minute before the exam: one
    more Gray -> binary with the round-trip check, and an odd-parity code.
-2. **Ch2 in order**: 2.1-2.4 fast check (consensus needs a redo), 2.5
-   canonical SOP and POS (she asked for it; the Alarm exercise and the
-   truth-table check are still open), 2.6 algebraic simplification
-   (practice set 2 items 4-5, then an unguided exercise), 2.7 K-maps on
-   2, 3 and 4 variables, 2.8 don't-cares, 2.9 cost, 2.10 multiple-output.
+2. **Ch2 is done** (2.10 not needed per her teacher; 2.8 skipped by her).
 3. **Ch3**: resume the coded-lock thread at slides 17-19 (plan in the
    Unit 3 section above), then analysis/design, then the building blocks
    as time allows.
