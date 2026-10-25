@@ -4,7 +4,7 @@ Last updated: 2026-10-25 (Sunday; midterm is tomorrow, Monday
 2026-10-26. Earlier: Unit 2 algebraic simplification with her teacher's
 "add / split" method, canonical SOP via Σm, K-map intro, the Unit 3
 coded-lock slide. Latest: she chose to go through everything in order
-from Ch1; Ch1 conversions and signed-number arithmetic are now done).
+from Ch1; all of Ch1 is now done, ending with a mixed Ch1 test).
 
 ## Progress so far
 
@@ -26,7 +26,7 @@ she already solved correctly gets a fast check, new material gets the
 time. Plan for the end: a mixed mock over each chapter and a one-page
 formula sheet.
 
-### Unit 1 — Number Systems and Codes: in progress
+### Unit 1 — Number Systems and Codes: done (except ASCII)
 
 **Solid:**
 - Radix/base, positional notation.
@@ -64,20 +64,16 @@ formula sheet.
   A + (-B), drop the carry); 1's complement addition with end-around
   carry. It took several attempts; see the errors below.
 
-**Taught but NOT verified:**
-- **Multi-digit BCD addition** (carry propagates into the next BCD
-  group, each group checked separately). Worked example 27+35 shown;
-  her exercise **48 + 27 was never answered** — open.
-- **Gray code**: why it exists (avoids instantaneous errors — only 1
-  bit changes between adjacent values), the "differs in 1 bit" property
-  shown column-by-column, MSB/LSB explained (she did not know these
-  terms — that was a real gap, now covered). **XOR introduced** (rule:
-  1 if bits differ, 0 if same) but her answers to the XOR and MSB/LSB
-  questions were never given.
-- **B → G conversion formula (G_n = B_n; G_i = B_{i+1} ⊕ B_i)** — not
-  reached. This is where Gray code stopped.
-
-**Not started in Unit 1:** Excess-3, parity, ASCII.
+- **Codes (1.2), verified 2026-10-25:** multi-digit BCD addition
+  (48 + 27, and 67 + 58 with a carry into a new hundreds group; once
+  forgot the +6 when the carry came out of the group, 59 + 38);
+  Excess-3 both ways (once read the decoded groups as one binary number
+  instead of digit by digit); Gray B -> G and G -> B with the XOR chain
+  and a round-trip check; parity with the slide's XOR formulas (P for
+  even/odd, check S). ASCII skipped as a pure lookup table.
+- **Ch1 mixed test (2026-10-25): 11 of 13 fully correct.** Errors: Gray
+  1110 -> binary gave 1010 (last bit; no round-trip check this time),
+  and the odd-parity code was written without P.
 
 ### Unit 2 — Boolean Algebra: in progress
 
@@ -246,6 +242,11 @@ through the circuit, then a small design she does alone.
   only, flip all bits.
 - **Typed answers hide the method.** When she types only final answers
   (doable in decimal in her head), ask for photos of the binary steps.
+- **Practice should look like the slides.** She asked for problems of
+  the same type as in the presentation (own numbers are fine) and for
+  the slide's own method, e.g. parity by the XOR formula rather than by
+  counting ones. When she says the presentation does it differently,
+  switch to the slide's method and wording.
 
 **Recurring errors to target:**
 - Swapping `x + x = x` with `x + x̄ = 1`.
@@ -278,11 +279,8 @@ through the circuit, then a small design she does alone.
 The agreed order is Ch1 -> Ch2 -> Ch3, example-driven, with a final
 mixed mock and a one-page formula sheet before Monday.
 
-1. **Ch1 codes (1.2), quickly**: Excess-3, Gray (XOR check and the
-   B -> G formula still open), parity, ASCII, multi-digit BCD (48 + 27
-   still open). 1.1.3-1.1.4 are done. A mixed Ch1 mock (with a
-   non-terminating fraction and an octal -> decimal item) only if time
-   allows.
+1. **Ch1 is done.** If there is a spare minute before the exam: one
+   more Gray -> binary with the round-trip check, and an odd-parity code.
 2. **Ch2 in order**: 2.1-2.4 fast check (consensus needs a redo), 2.5
    canonical SOP and POS (she asked for it; the Alarm exercise and the
    truth-table check are still open), 2.6 algebraic simplification
