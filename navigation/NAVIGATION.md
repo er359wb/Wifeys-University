@@ -62,6 +62,7 @@ exists.
 | `Complex_Class_.docx` | ✅ | **New semester** — classes, constructors, copy constructor, `const` members | Just started 2026-09-21 |
 | `String_Class-_copy_constructordestructor.docx` | ✅ | **New semester** — `MyString`: `new[]`/`delete[]`, `char*`, 7 member functions | Started 2026-10-08 |
 | `Fraction_Class_photo_1.jpg`, `Fraction_Class_photo_2.jpg` | ✅ (`Fraction_Class_photo_1.md`) | **New semester** — `Fraction`: private `simplify`, `friend operator+`, mixed-number `display` | Started 2026-10-16. Two classroom-projector photos, no worksheet |
+| `Operator_Overloading_Comprehensive.docx` | ✅ | **The written assignment** — full `Fraction` class: `=`, `+`, `+=`, `==`, `<`, `++` (prefix and postfix), `<<`, `>>`, `[]` | Received 2026-10-26. The class demos (`Fraction_Class_photo_*`) build toward it |
 | *(photo not committed)* | `Fraction_Class_photo_3.md` | `Fraction` part 2 — member `operator==` and `operator-` | Added 2026-10-19. Photo withheld: a wall poster in it names the institution. The `.md` is the only record |
 
 `mock_paper_2026-06.md` is now the most useful document here, ahead of
@@ -88,6 +89,12 @@ from two classroom photos, not a written worksheet. The photos have no EXIF
 data and show no names or faces. The one uncertain character (the separator in
 the `1 1/2` output, hidden by the mouse cursor) is flagged in the `.md`.
 
+`Operator_Overloading_Comprehensive.md` is the actual assignment for the
+`Fraction` class; the two `Fraction_Class_photo_*` notes are class demos that
+build toward it. The sheet gives no expected output and no output format for
+`operator<<`; the `.md` lists seven unspecified or inconsistent points and a
+compiled reference run, rather than guessing.
+
 `homework_on_pointers.md` is the most useful document in the folder — it is
 the only one in the exam's own format. Its MCQ section transcribes the
 source's own answer key exactly, including the questions the source leaves
@@ -96,7 +103,7 @@ unmarked — don't fill those in with a guessed answer.
 `palindrome_practice.docx` was originally named `回文数练习.docx`; renamed for
 consistency, contents unchanged. Document metadata (author/last-modified-by
 fields embedded in the `.docx` files, not visible in the document body) has
-been stripped from all 15 `.docx` files as part of the privacy pass — see
+been stripped from all 16 `.docx` files as part of the privacy pass — see
 `handover/HANDOVER.md`'s session log / the commit history for details. The
 two legacy `.doc` files (`20260414_while_loop_2.doc`,
 `homework_on_pointers.doc`) still carry short author initials in their OLE
