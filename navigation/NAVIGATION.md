@@ -22,7 +22,8 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
 │   ├── 8.1_Three-dimensional_coordinate_systems.md   (13 slides; no PDF in repo, see below)
 │   ├── 8.2_Vectors.md                                (26 slides; no PDF in repo, see below)
 │   ├── 8.3_Dot_Product.md                            (16 slides; no PDF in repo, see below)
-│   └── 8.4_Cross_Product.md                          (22 slides; no PDF in repo, see below)
+│   ├── 8.4_Cross_Product.md                          (22 slides; no PDF in repo, see below)
+│   └── 8.5_Equations_of_Lines_and_Planes.md          (18 slides; no PDF in repo, see below)
 ├── handover/
 │   └── HANDOVER.md        — progress so far, current level, next steps
 ├── navigation/
@@ -47,9 +48,10 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
   depends on 6.3 (both build on the same slicing/limit argument, arc
   length before surface area).
 - `8.1_Three-dimensional_coordinate_systems.md`, `8.2_Vectors.md`,
-  `8.3_Dot_Product.md` and `8.4_Cross_Product.md` are the exception to the
-  PDF + `.md` pairing: they are Chapter 8 of the same course (read in the
-  order 8.1 to 8.4; no dependency on Chapter 6). Their original PDFs are deliberately not
+  `8.3_Dot_Product.md`, `8.4_Cross_Product.md` and
+  `8.5_Equations_of_Lines_and_Planes.md` are the exception to the PDF + `.md`
+  pairing: they are Chapter 8 of the same course (read in the order 8.1 to
+  8.5; no dependency on Chapter 6). Their original PDFs are deliberately not
   committed (every slide carries the university's logo and name, and the
   title slides name the lecturer; see CLAUDE.md's privacy rule), so there
   is no PDF to fall back to. If one of these `.md` files looks wrong, ask
@@ -116,6 +118,14 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
   Examples 1-5; 2 exercise slides plus worked solutions on slides 18-21.
   (Typos noted in the `.md`: slide 4's `-24` should be `-21`; slide 19's
   `k`-component.)
+- **8.5_Equations_of_Lines_and_Planes.md** (18 slides, original PDF not in
+  repo) — a line in space: direction vector, parametric equations
+  `x=x0+λa` etc., symmetric equations, special cases `a=0`; line through two
+  points; a plane: point + normal vector, `A(x−x0)+B(y−y0)+C(z−z0)=0` and
+  `Ax+By+Cz+D=0`; plane through 3 points via `PQ×PR`; parallel planes, angle
+  between planes (angle between normals), line of intersection of two planes;
+  distance from a point to a plane and between parallel planes; Examples 1-7;
+  1 exercise slide (6 parts, plane equations).
 
 ## Progress and history
 

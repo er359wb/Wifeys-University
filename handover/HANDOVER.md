@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-10-19.
+Last updated: 2026-10-26.
 
 ## Progress so far
 
@@ -56,10 +56,68 @@ Last updated: 2026-10-19.
     (`a+b=⟨-1,1,2⟩`, `2a+3b=⟨-4,1,9⟩`, `|a|=√14`, `|a-b|=√82`; she needed
     `|a-b|` split into "find a-b, then its length"). **Pending: slide
     26(a)(2)** (needs `i,j,k` converted to components; I taught that,
-    including "a missing term means 0"). Unit vectors (`a/|a|`, slide 22) are
-    NOT taught yet.
-  - The 8.1 (3-D coordinates, spheres) and 8.3 (dot product) `.md`
-    companions were added on 2026-10-19 but those decks are not taught yet.
+    including "a missing term means 0"). Unit vectors (`a/|a|`, slide 22):
+    taught inside 8.3, see below; 8.2 slide 26(b)(1) (`⟨-4,2,4⟩`) she skipped.
+  - Unit vectors were taught later, inside 8.3 (she computed `b=⟨3,0,-4⟩`:
+    `⟨3/5,0,-4/5⟩`, and `⟨2/√5,-1/√5,0⟩`; she first wrote the three
+    components as three separate "u = number" lines instead of one vector).
+- **8.3 Dot Product (`curriculum/8.3_Dot_Product.md`, PDF not in repo).**
+  Taught 2026-10-19/22 in small steps, one idea per message:
+  - Definition and computing (slides 2-3): done. `⟨2,-1,3⟩·⟨4,5,-2⟩=-3` right;
+    `(i+2j-3k)·(2j-k)` first answered 5, self-corrected to 7 after writing out
+    the components. `a·a=|a|²` explained.
+  - Angle (slides 4-5): done. `a·b=|a||b|cosθ` (Law of Cosines derivation;
+    she asked why slide 4 is so long: one idea written three times, the
+    derivation need not be memorized). Example 3 (`12`) right. Example 4
+    angle between `⟨2,2,-1⟩` and `⟨5,-3,2⟩`: she set up the formula herself,
+    `|a|` was first `√5` instead of `3` (dropped a term), and she did not know
+    how to get θ from cosθ (arccos); after a walk-through she answered
+    "cosθ=1/2 → π/3" correctly.
+  - Orthogonality and sign (slides 6-8): done (perpendicular check right;
+    negative dot product means obtuse angle, answered right).
+  - Direction cosines (slides 9-11): `cosα=a_x/|a|`. For `⟨-2,1,2⟩` she first
+    wrote `component·component/(3·2)`; after I worked `cosα` out in full via
+    `a·i/(|a||i|)` she got `-2/3, 1/3, 2/3` (one slip: denominator `3·1` as
+    `1`) and named α as the obtuse one. `cosβ=0` she turned into `β=0`
+    instead of `90°`.
+  - Projections (slides 12-14): item 7 of her worksheet below (`a=⟨2,-1,0⟩`,
+    `b=⟨1,0,-1⟩`): `comp = 2/√5` right, `proj` formula chain right, but the
+    last line (`2/√17·1`) was wrong (`|a|²` is 5, and `proj` is a vector);
+    **redo of `proj` still pending.**
+  - Her own worksheet (`a=⟨2,-1,0⟩`, `b=⟨1,0,-1⟩`): items 1-6 all correct
+    (lengths, `|-a+b|=√3` after one worked example, `2a+5b`, unit vector,
+    `(3a-b)·(a+2b)=21`, `cosθ=2/√10`). She wrote `×` for the dot product
+    twice; I told her the dot product is `·` and `×` is the cross product.
+  - Slide 16 exercises (right-angled triangle, direction cosines,
+    `u+v ⟂ u-v`) NOT done yet; direction angles Example 6/7 not worked.
+- **8.4 Cross Product (`curriculum/8.4_Cross_Product.md`, PDF not in repo).**
+  She says she already knows how to compute `a×b`. Her 24-slide version
+  differs from my 22-slide file (her exercises are on slide 18, mine 17); she
+  could send the fresh PDF.
+  - Determinants: her own `3×3` determinant (31) fully correct with the
+    sign rules. Orthogonality theorem (slide 7) explained with numbers and the
+    symbolic cancellation.
+  - Example 4 (slide 13): (1) and (3) right; (2) `i×j` she first wrote 0
+    (misread a `2×2` minor), then `k`. Example 3 (slide 12) explained
+    (including why `PR`, `QR` or `QP` are equally fine); her `P(1,0,0),
+    Q(0,1,0), R(0,0,1)` normal: one sign slip in the `k` minor, then
+    `⟨1,1,1⟩`. Triangle area (`½|PQ×PR|`) asked, not answered.
+  - Exercises (slide 17/18 in her numbering): (a)(1) via dot products
+    explained; (a)(2) with `t, cos t, sin t`: she first used `t` instead of
+    `1` as the first component of `b` and wrote `t cos t` as `cos 2t` (watch
+    this `sin(2x)`-type confusion); after the fix she got
+    `⟨1,-t cos t+sin t,-t sin t-cos t⟩`; **her `b·(a×b)=0` check is
+    pending.** (b): `⟨-1,-1,5⟩` right after fixing signs. (c)(1): she used
+    `PQ=⟨-1,2,1⟩` (sign slip; correct `⟨1,2,1⟩`) and `RQ=⟨-4,2,3⟩`; **redo
+    pending** (answer: vector perpendicular to the plane and area
+    `½√165`). (c)(2), slide 22 exercises not done.
+  - Slide 16 theorem (properties): she asked whether the check uses those
+    formulas; no, it uses dot products (formula (5) gives a shortcut).
+- **8.5 Equations of Lines and Planes
+  (`curriculum/8.5_Equations_of_Lines_and_Planes.md`, PDF not in repo).**
+  Sent 2026-10-26; `.md` written, nothing taught yet.
+- The 8.1 (3-D coordinates, spheres) `.md` is saved but that deck is not
+  taught yet.
 - **Supplementary (from her own course, not in our decks):**
   - 2nd-order linear homogeneous ODEs with constant coefficients (her slide
     from the course): what "order" and "linear" mean; why we guess `y=e^{rx}`
@@ -117,7 +175,16 @@ Last updated: 2026-10-19.
   when it isn't in our decks.
 - **Responds well to a worked checklist** (the u-substitution table, the
   area checklist) that she then applies herself while I check; this produced
-  her best independent work.
+  her best independent work. In the vectors decks the same pattern worked:
+  a worked example on other numbers, then her own problem, then a targeted
+  pointer at the one wrong step (e.g. "the third row", "this minor").
+- **Sends photos of handwritten work and short numeric answers**
+  ("Минус 1, минус 1, 5"); she often skips a question I asked and moves to the
+  next exercise she actually needs, so keep a list of what is open (see Next
+  steps). Her main error type in vectors is sign slips in `2×2` minors and in
+  "end minus start" (`0-(-1)`), plus reading `t cos t` as `cos 2t`. A dot
+  product check of the answer (`n·PQ=0`) catches these; she accepts it as a
+  tool when I show it on her own wrong answer.
 
 ## Current level / notes
 
@@ -129,10 +196,13 @@ subtraction with a double negative) and the length formula went well.
 
 ## Next steps
 
-1. 8.2 Vectors: slide 26(a)(2) is waiting (`i,j,k` form). Then 26(b) and
-   unit vectors (`a/|a|`, slide 22, not yet taught), the pending `AB`
-   from two points question, Examples 5-7 (slides 21, 24), and the 3-D side
-   of slides 12-14 if she wants it.
+1. She works on her course's current deck and worksheets, not our order:
+   first finish what is open there. 8.4: redo (c)(1) (`PQ=⟨1,2,1⟩`, then
+   normal vector and area `½√165`), her `b·(a×b)=0` check in (a)(2), (c)(2),
+   slide 22. 8.3: redo `proj_a b` (item 7), slide 16 exercises. 8.2: slide
+   26(a)(2) and 26(b), Examples 5-7 (slides 21, 24).
+   8.5 (lines and planes) was just sent: expect questions on it next; the
+   plane exercises (slide 18) reuse `PQ×PR` and the point-to-plane distance.
 2. **Reminder she asked for on 2026-10-19: ask her to send the Chapter 7
    decks (7.1 to 7.5).** They are not in the repo (only 6.x and 8.x are). A
    `send_later` reminder was scheduled to fire in this session at
@@ -141,9 +211,7 @@ subtraction with a double negative) and the length formula went well.
    companions in `curriculum/`, keep the PDFs out of the repo (the slides
    carry the university logo and the title slides name the lecturer; see
    CLAUDE.md's privacy rule), and note them in `navigation/NAVIGATION.md`.
-3. 8.1 (3-D coordinates, spheres) and 8.3 (dot product) are saved as `.md`
-   but untaught; her course order is 8.1, 8.2, 8.3, so she may want them
-   next.
+3. 8.1 (3-D coordinates, spheres) is saved as `.md` but untaught.
 4. Open Chapter 6 items to circle back to: 6.2 Exercises 3 (pyramid), 6.3
    Exercises 1(c)/(d), 6.4 untouched.
 5. Keep checking negative signs (see learner profile).
