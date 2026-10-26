@@ -1,10 +1,11 @@
 # Handover
 
-Last updated: 2026-10-25 (Sunday; midterm is tomorrow, Monday
-2026-10-26. Earlier: Unit 2 algebraic simplification with her teacher's
-"add / split" method, canonical SOP via Σm, K-map intro, the Unit 3
-coded-lock slide. Latest: she chose to go through everything in order
-from Ch1; Ch1 and Ch2 are now done, Ch3 is next).
+Last updated: 2026-10-26 (Monday, exam day: the midterm is today.
+Earlier: Unit 2 algebraic simplification with her teacher's "add /
+split" method, canonical SOP via Σm, K-map intro, the Unit 3 coded-lock
+slide. Then she chose to go through everything in order from Ch1: Ch1
+and Ch2 done, Ch3 done up to the full adder; ended with a cheat sheet in
+chat on exam morning).
 
 ## Progress so far
 
@@ -304,12 +305,17 @@ mixed mock and a one-page formula sheet before Monday.
 1. **Ch1 is done.** If there is a spare minute before the exam: one
    more Gray -> binary with the round-trip check, and an odd-parity code.
 2. **Ch2 is done** (2.10 not needed per her teacher; 2.8 skipped by her).
-3. **Ch3**: resume the coded-lock thread at slides 17-19 (plan in the
-   Unit 3 section above), then analysis/design, then the building blocks
-   as time allows.
-4. Ask again, once, what the midterm covers; until she answers, assume
-   Ch1-Ch3 up to where her lecture has reached.
-
+3. **Ch3, done 2026-10-25/26:** gates incl. NAND/NOR/XOR; 3.3 analysis
+   (4-NAND XOR; needed help with the final DeMorgan step); 3.4 design
+   end to end (once read ≥ as ≤ and drew OR-then-AND for a sum, then a
+   fully correct design with circuit and cost); she drew the coded-lock
+   circuit herself and understood the factored form via cost; 3.5.1 half
+   adder correct, full adder truth table and carry correct (one misplaced
+   cell in the s map). Ripple-carry check questions were not answered.
+   Not done: multiplexers, decoders, code converters (she did not know
+   whether they are examined).
+4. **After the exam:** ask how it went and what was on it, then re-plan
+   from her answer.
 Per CLAUDE.md: nothing above is "done" unless it says verified with her
 own correct answers. Consensus, canonical SOP from a truth table, K-map
 and the circuit-building topic are explicitly not done.
