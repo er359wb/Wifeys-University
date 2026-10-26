@@ -27,6 +27,17 @@ she already solved correctly gets a fast check, new material gets the
 time. Plan for the end: a mixed mock over each chapter and a one-page
 formula sheet.
 
+**What the midterm contained** (from photos of her paper, 2026-10-26):
+a decimal with a fraction to binary/octal/hex/BCD; 1's and 2's
+complement of 7-bit magnitudes (8-bit results) and of −10000; Gray code
+plus an even-parity code; decimal → BCD → Excess-3; a 3-variable K-map;
+ĀD + ABCD; a 2-bit "game" design with outputs W_A, W_B (rules written as
+00 → 10, 10 → 01, 01 → 00); F = Σm(0..7); F = AB̄ + BC̄ + B̄C + ĀB (the
+slide 2.6 example); a 4-variable K-map. Visible errors: −10000 in 2's
+(wrote 100000), the W_A column probably missing the (A = 00, B = 10)
+row by symmetry, and AB̄ + BC̄ + B̄C + ĀB simplified wrongly to
+B ⊕ (A + C). Several items unfinished or hidden in the photo.
+
 ### Unit 1 — Number Systems and Codes: done (except ASCII)
 
 **Solid:**
