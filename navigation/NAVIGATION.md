@@ -23,7 +23,8 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
 │   ├── 8.2_Vectors.md                                (26 slides; no PDF in repo, see below)
 │   ├── 8.3_Dot_Product.md                            (16 slides; no PDF in repo, see below)
 │   ├── 8.4_Cross_Product.md                          (22 slides; no PDF in repo, see below)
-│   └── 8.5_Equations_of_Lines_and_Planes.md          (18 slides; no PDF in repo, see below)
+│   ├── 8.5_Equations_of_Lines_and_Planes.md          (18 slides; no PDF in repo, see below)
+│   └── 8.6_Cylinders_and_Quadric_Surfaces.md         (21 slides; no PDF in repo, see below)
 ├── handover/
 │   └── HANDOVER.md        — progress so far, current level, next steps
 ├── navigation/
@@ -49,9 +50,10 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
   length before surface area).
 - `8.1_Three-dimensional_coordinate_systems.md`, `8.2_Vectors.md`,
   `8.3_Dot_Product.md`, `8.4_Cross_Product.md` and
-  `8.5_Equations_of_Lines_and_Planes.md` are the exception to the PDF + `.md`
+  `8.5_Equations_of_Lines_and_Planes.md` and
+  `8.6_Cylinders_and_Quadric_Surfaces.md` are the exception to the PDF + `.md`
   pairing: they are Chapter 8 of the same course (read in the order 8.1 to
-  8.5; no dependency on Chapter 6). Their original PDFs are deliberately not
+  8.6; no dependency on Chapter 6). Their original PDFs are deliberately not
   committed (every slide carries the university's logo and name, and the
   title slides name the lecturer; see CLAUDE.md's privacy rule), so there
   is no PDF to fall back to. If one of these `.md` files looks wrong, ask
@@ -126,6 +128,15 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
   between planes (angle between normals), line of intersection of two planes;
   distance from a point to a plane and between parallel planes; Examples 1-7;
   1 exercise slide (6 parts, plane equations).
+- **8.6_Cylinders_and_Quadric_Surfaces.md** (21 slides, original PDF not in
+  repo; many slides are 3-D pictures, only text/equations transcribed) —
+  traces (cross-sections); cylinders (a missing variable means rulings along
+  that axis); quadric surfaces: ellipsoid, cone, elliptic paraboloid,
+  hyperboloid of one and two sheets, hyperbolic paraboloid, with their traces;
+  recognizing a surface by completing the square (Example 6); Examples 1-6;
+  exercises on slides 19-20 and a mixed review set on slide 21 (dot product,
+  `comp`, unit vector, line through two points, distance between planes,
+  plane containing a line).
 
 ## Progress and history
 

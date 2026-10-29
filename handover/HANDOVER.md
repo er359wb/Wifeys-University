@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-10-26.
+Last updated: 2026-10-29.
 
 ## Progress so far
 
@@ -115,7 +115,24 @@ Last updated: 2026-10-26.
     formulas; no, it uses dot products (formula (5) gives a shortcut).
 - **8.5 Equations of Lines and Planes
   (`curriculum/8.5_Equations_of_Lines_and_Planes.md`, PDF not in repo).**
-  Sent 2026-10-26; `.md` written, nothing taught yet.
+  Sent 2026-10-26. Taught from Example 2 on: line through `A(2,4,-3)`,
+  `B(3,-1,1)` solved fully by her (direction vector `B-A`, parametric and
+  symmetric equations, intersection with the xy-plane `(11/4,1/4,0)`); she
+  asked "what formula" for substituting λ (answer: the parametric equations).
+  Plane through a point with a normal: she first swapped the roles (point as
+  coefficients, normal as the point), then wrote `x+6` instead of `x-6`; both
+  pointed out, then (a) `-2x+y+5z=11` and (b) `y+2z=-6` right, with a "does
+  the point satisfy the equation" check. (c): she asked what `z=x+y` is
+  (a plane; rewrite as `x+y-z=0`, normal `⟨1,1,-1⟩`; the point `(2,4,6)` is on
+  that plane so the answer is the same plane, `D=0`). She also asked what
+  "orthogonal" means (= perpendicular, dot product 0). **Pending: (d)** (normal
+  `OP×OQ`, then (e), (f) on slide 18) and the earlier example question.
+- **8.6 Cylinders and Quadric Surfaces
+  (`curriculum/8.6_Cylinders_and_Quadric_Surfaces.md`, PDF not in repo).**
+  Sent 2026-10-29; `.md` written, nothing taught yet. Its slide 21 is a mixed
+  review set (dot product, `comp`, unit vector, line through 2 points,
+  distance between planes, plane through a point containing a line): likely
+  her current homework.
 - The 8.1 (3-D coordinates, spheres) `.md` is saved but that deck is not
   taught yet.
 - **Supplementary (from her own course, not in our decks):**
