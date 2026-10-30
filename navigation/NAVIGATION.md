@@ -20,7 +20,8 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
     ├── Chapter 21 (1).pdf / .md          — Electric Charge and Electric Field (177 slides)
     ├── Chapter 22 (1).pdf / .md          — Gauss's Law (126 slides)
     ├── Chapter 23宽版.pdf / .md           — Electric Potential, full deck (144 slides)
-    └── Chapter 23宽版1009 (1).pdf / .md   — Electric Potential, short copy = slides 1–37 of the full deck
+    ├── Chapter 23宽版1009 (1).pdf / .md   — Electric Potential, short copy = slides 1–37 of the full deck
+    └── Chapter_24.pdf / .md              — Chapter 24 (Capacitance) TEST paper, 18 multiple-choice questions, blank
 ```
 
 ## Navigation paths
@@ -40,7 +41,10 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
 - Assigned homework: Ch 21 → 21.33, 21.44; Ch 23 → 23.20. Full problem text
   is at the bottom of the matching `.md`.
 - The full electromagnetism unit (chapters 21–32) is listed in the Ch 21
-  `.md` under "Course context"; only 21–23 have been received so far.
+  `.md` under "Course context". Slides received: 21–23. For Ch 24
+  (Capacitance and Dielectrics) only a test paper has arrived
+  (`Chapter_24.md`), with no lecture slides yet. The test's 3 circuit
+  figures are described in words in the `.md`; no answers are stored there.
 
 ## Maintenance
 

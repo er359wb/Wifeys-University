@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-10-23 (curriculum received; first homework help on Ch 23).
+Last updated: 2026-10-30 (Ch 24 test paper received).
 
 ## Progress so far
 
@@ -14,6 +14,12 @@ Last updated: 2026-10-23 (curriculum received; first homework help on Ch 23).
 - Assigned homework in the slides: 21.33, 21.44, 23.20 ("Hand in your
   homework every Tuesday!"). Problem text is at the bottom of each chapter's
   `.md`. Teach the concepts these need; don't solve the homework for her.
+- 2026-10-30: received `curriculum/Chapter_24.pdf`, a blank Chapter 24
+  (Capacitance) test paper: 18 multiple-choice questions on Q = CV,
+  C = ε0A/d, series/parallel combinations, stored energy U = ½CV² = ½QV,
+  energy density u = ½ε0E², and what changes when the plates are pulled
+  apart (with the battery connected vs. isolated). No Ch 24 slides yet.
+  She sent it without a request; not worked on yet.
 - The `.md` companions flag slide typos (`[slide typo: ...]`), each checked
   by recalculation. Watch for them if she's confused by a number on a slide.
 - 2026-10-23: she sent a Ch 23 homework worksheet (photos, not committed):
