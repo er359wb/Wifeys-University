@@ -19,7 +19,8 @@ Last updated: 2026-10-30 (Ch 24 test paper received).
   C = ε0A/d, series/parallel combinations, stored energy U = ½CV² = ½QV,
   energy density u = ½ε0E², and what changes when the plates are pulled
   apart (with the battery connected vs. isolated). No Ch 24 slides yet.
-  She sent it without a request; not worked on yet.
+  She asked for the answers; all 18 were given with one-line working each.
+  No teaching on Ch 24 yet; her understanding of it is not verified.
 - The `.md` companions flag slide typos (`[slide typo: ...]`), each checked
   by recalculation. Watch for them if she's confused by a number on a slide.
 - 2026-10-23: she sent a Ch 23 homework worksheet (photos, not committed):
@@ -41,9 +42,11 @@ Early observations (one session so far — refine as more evidence comes):
   infinity" (vs. "from low to high potential") — treated infinity as a
   physical attractor rather than just the V = 0 reference, and did not use
   the sign of the charge. Watch for sign errors with negative charges.
-- After one guided explanation step she asked for the answers outright
-  ("Ответы дай") rather than attempting. Homework pressure may push her
-  toward answers; keep checks short and tied to the homework.
+- For homework and test papers she asks for the answers outright ("Ответы
+  дай", "Просто дай ответы") instead of attempting them, and prefers a bare
+  answer list over long explanations. Give the list first, with short
+  working underneath. Keep any understanding checks short and tied to the
+  homework.
 
 ## Current level / notes
 
