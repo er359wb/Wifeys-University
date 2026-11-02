@@ -1,6 +1,26 @@
 # Handover
 
-Last updated: 2026-10-29.
+Last updated: 2026-11-02.
+
+## Midterm exam scope (the exam is TODAY, 2026-11-02)
+
+She sent a photo of her lecturer's projected "Mid:" topic list (not committed).
+Transcribed:
+
+- Calculus: (1) area between curves; (2) volume of a solid of revolution;
+  (3) arc length; (4) surface area of revolution.
+- Differential equations: (1) separable equation; (2) linear equation of
+  order 1; (3) linear equation of order 2 with constant coefficients.
+- Vectors: (1) vectors (linear operations); (2) length, unit vector, dot
+  product, cross product, projection, `cosθ`; (3) lines, planes, distance.
+
+Not on the list: 7.5 (nonhomogeneous equations), 8.6 (cylinders and quadric
+surfaces), 8.1 (3-D coordinates and spheres). 7.1 is background only.
+
+Gaps against the list as of this update: surface area of revolution (6.4)
+untouched; separable (7.2) and first-order linear (7.3) not taught yet;
+order-2 constant coefficients already covered and solved correctly (see
+"Supplementary" below); the open vectors items listed in Next steps.
 
 ## Progress so far
 
@@ -135,6 +155,15 @@ Last updated: 2026-10-29.
   her current homework.
 - The 8.1 (3-D coordinates, spheres) `.md` is saved but that deck is not
   taught yet.
+- **Chapter 7 decks (differential equations), received 2026-11-02.** The
+  `.md` companions `curriculum/7.1_Differential_equations.md`,
+  `7.2_Separable_equations_and_applications.md`, `7.3_Linear_equations.md`
+  and `7.4_Second-order_linear_Equations.md` are saved (PDFs deliberately not
+  committed, same privacy reason as Chapter 8). The 7.5 deck
+  (nonhomogeneous equations, 13 slides, not on the exam list) was also sent
+  but is **not transcribed yet**. **Nothing in Chapter 7 has been taught from
+  these decks.** Only the order-2 constant-coefficient material (7.4 section
+  2) was covered earlier, as the "Supplementary" item below.
 - **Supplementary (from her own course, not in our decks):**
   - 2nd-order linear homogeneous ODEs with constant coefficients (her slide
     from the course): what "order" and "linear" mean; why we guess `y=e^{rx}`
@@ -220,15 +249,15 @@ subtraction with a double negative) and the length formula went well.
    26(a)(2) and 26(b), Examples 5-7 (slides 21, 24).
    8.5 (lines and planes) was just sent: expect questions on it next; the
    plane exercises (slide 18) reuse `PQ×PR` and the point-to-plane distance.
-2. **Reminder she asked for on 2026-10-19: ask her to send the Chapter 7
-   decks (7.1 to 7.5).** They are not in the repo (only 6.x and 8.x are). A
-   `send_later` reminder was scheduled to fire in this session at
-   2026-10-20 11:12 UTC. If that time has passed, or this is a new session,
-   remind her anyway at the start. When the files arrive: make `.md`
-   companions in `curriculum/`, keep the PDFs out of the repo (the slides
-   carry the university logo and the title slides name the lecturer; see
-   CLAUDE.md's privacy rule), and note them in `navigation/NAVIGATION.md`.
-3. 8.1 (3-D coordinates, spheres) is saved as `.md` but untaught.
+2. The Chapter 7 reminder is fulfilled: 7.1 to 7.5 arrived 2026-11-02. Still
+   to do: write `curriculum/7.5_Nonhomogeneous_linear_equations.md` from the
+   7.5 deck (she must resend it if the PDF is no longer available to this
+   session), then note it in `navigation/NAVIGATION.md`. Not urgent: 7.5 is
+   not on the exam list.
+3. Exam priority (today): teach 7.2 separable equations and 7.3 first-order
+   linear equations, briefly the 7.1 vocabulary they need, then 6.4 surface
+   area; then close the open vectors items in step 1. 8.1 and 8.6 are not on
+   the exam list.
 4. Open Chapter 6 items to circle back to: 6.2 Exercises 3 (pyramid), 6.3
    Exercises 1(c)/(d), 6.4 untouched.
 5. Keep checking negative signs (see learner profile).

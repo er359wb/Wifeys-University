@@ -19,6 +19,10 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
 │   ├── 6_2Volumes.pdf / .md                          (26 slides)
 │   ├── 6_3_Arc_Length.pdf / .md                      (20 slides)
 │   ├── 6_4Area_of_asurface_of_revolution.pdf / .md   (15 slides)
+│   ├── 7.1_Differential_equations.md                 (16 slides; no PDF in repo, see below)
+│   ├── 7.2_Separable_equations_and_applications.md   (12 slides; no PDF in repo, see below)
+│   ├── 7.3_Linear_equations.md                       (10 slides; no PDF in repo, see below)
+│   ├── 7.4_Second-order_linear_Equations.md          (15 slides; no PDF in repo, see below)
 │   ├── 8.1_Three-dimensional_coordinate_systems.md   (13 slides; no PDF in repo, see below)
 │   ├── 8.2_Vectors.md                                (26 slides; no PDF in repo, see below)
 │   ├── 8.3_Dot_Product.md                            (16 slides; no PDF in repo, see below)
@@ -48,12 +52,17 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
   6.2 → 6.3 → 6.4. 6.2 depends on 6.1 (region-between-curves setup); 6.4
   depends on 6.3 (both build on the same slicing/limit argument, arc
   length before surface area).
-- `8.1_Three-dimensional_coordinate_systems.md`, `8.2_Vectors.md`,
+- The Chapter 7 files `7.1_Differential_equations.md`,
+  `7.2_Separable_equations_and_applications.md`, `7.3_Linear_equations.md`,
+  `7.4_Second-order_linear_Equations.md` (a 7.5 deck, nonhomogeneous linear
+  equations, was also sent but is not transcribed yet) and the Chapter 8 files
+  `8.1_Three-dimensional_coordinate_systems.md`, `8.2_Vectors.md`,
   `8.3_Dot_Product.md`, `8.4_Cross_Product.md` and
   `8.5_Equations_of_Lines_and_Planes.md` and
   `8.6_Cylinders_and_Quadric_Surfaces.md` are the exception to the PDF + `.md`
-  pairing: they are Chapter 8 of the same course (read in the order 8.1 to
-  8.6; no dependency on Chapter 6). Their original PDFs are deliberately not
+  pairing: they are Chapters 7 and 8 of the same course (read Chapter 7 in the
+  order 7.1 to 7.4, each builds on the previous; Chapter 8 in the order 8.1 to
+  8.6; no dependency on Chapter 6 beyond integration skills). Their original PDFs are deliberately not
   committed (every slide carries the university's logo and name, and the
   title slides name the lecturer; see CLAUDE.md's privacy rule), so there
   is no PDF to fall back to. If one of these `.md` files looks wrong, ask
@@ -89,6 +98,26 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
   `S = ∫[a,b] 2πf(x)√(1+(f'(x))²) dx` (and the y-axis version); 3 worked
   examples (sphere portion, parabola about y-axis, `y=eˣ` about x-axis);
   1 exercise slide.
+- **7.1_Differential_equations.md** (16 slides, original PDF not in repo) —
+  population model `dP/dt=kP` and its solution `Ce^{kt}`; differential
+  equation, order, solution, general vs particular solution, initial
+  condition and initial-value problem; Examples 1-4; 2 exercise slides.
+  (Slide 9 writes polynomial terms in `x` though the variable is `θ`.)
+- **7.2_Separable_equations_and_applications.md** (12 slides, original PDF
+  not in repo) — separable equations `dy/dx=g(x)f(y)`: divide, multiply by
+  `dx`, integrate both sides; Examples 1-4 (incl. an implicit solution, a
+  `y=Ae^{x³/3}` case and a salt-tank mixing problem); 3 exercise slides
+  (separable equations, a change of variable, integral equations).
+- **7.3_Linear_equations.md** (10 slides, original PDF not in repo) —
+  first-order linear equations `y'+P(x)y=Q(x)`; the integrating factor
+  `I(x)=e^{∫P dx}` and why it works (product rule); Examples 1-3 (incl. an
+  RL circuit); 2 exercise slides (is it linear; solve).
+- **7.4_Second-order_linear_Equations.md** (15 slides, original PDF not in
+  repo) — `Py''+Qy'+Ry=G`, homogeneous vs nonhomogeneous; superposition and
+  linear independence; constant coefficients `ay''+by'+cy=0` via the
+  characteristic equation `ar²+br+c=0` and its three root cases (distinct
+  real, repeated, complex via Euler's formula); initial-value and
+  boundary-value problems; Examples 1-6; summary table; 2 exercise slides.
 - **8.1_Three-dimensional_coordinate_systems.md** (13 slides, original PDF
   not in repo) — recall of 2-D coordinates; 3-D axes and the right-hand
   rule; coordinate planes and octants; locating `(a,b,c)`, `R³`; planes
