@@ -1,6 +1,9 @@
 # Handover
 
-Last updated: 2026-10-30 (Ch 24 test paper received).
+Last updated: 2026-11-03 (Ch 24 slides received).
+
+Push every update to BOTH `physics-tutoring` (the branch other sessions
+read) and the session's working branch.
 
 ## Progress so far
 
@@ -21,6 +24,13 @@ Last updated: 2026-10-30 (Ch 24 test paper received).
   apart (with the battery connected vs. isolated). No Ch 24 slides yet.
   She asked for the answers; all 18 were given with one-line working each.
   No teaching on Ch 24 yet; her understanding of it is not verified.
+- 2026-11-03: received Ch 24 lecture slides (`Chapter 24宽版`, dated
+  2026/10/30, sections 24.1–24.4) and a screenshot of her handwritten
+  cross-product working. That working has the right final vector but a sign
+  slip in the middle line (see its `.md`). She also sent Pearson's
+  "ConcepTest" clicker questions for Ch 21 (Giancoli PSE4). That file is NOT
+  in the repo: its copyright notice forbids posting it on the web and the
+  repo is public. I asked her how she wants it handled.
 - The `.md` companions flag slide typos (`[slide typo: ...]`), each checked
   by recalculation. Watch for them if she's confused by a number on a slide.
 - 2026-10-23: she sent a Ch 23 homework worksheet (photos, not committed):
