@@ -25,9 +25,9 @@ read) and the session's working branch.
   She asked for the answers; all 18 were given with one-line working each.
   No teaching on Ch 24 yet; her understanding of it is not verified.
 - 2026-11-03: received Ch 24 lecture slides (`Chapter 24宽版`, dated
-  2026/10/30, sections 24.1–24.4) and a screenshot of her handwritten
-  cross-product working. That working has the right final vector but a sign
-  slip in the middle line (see its `.md`). She also sent Pearson's
+  2026/10/30, sections 24.1–24.4). A cross-product screenshot that came in
+  the same zip was there by mistake and was removed at her request. She
+  also sent Pearson's
   "ConcepTest" clicker questions for Ch 21 (Giancoli PSE4). That file is NOT
   in the repo: its copyright notice forbids posting it on the web and the
   repo is public. I asked her how she wants it handled.

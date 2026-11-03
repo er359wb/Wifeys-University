@@ -22,8 +22,7 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
     ├── Chapter 23宽版.pdf / .md           — Electric Potential, full deck (144 slides)
     ├── Chapter 23宽版1009 (1).pdf / .md   — Electric Potential, short copy = slides 1–37 of the full deck
     ├── Chapter_24.pdf / .md              — Chapter 24 (Capacitance) TEST paper, 18 multiple-choice questions, blank
-    ├── Chapter 24宽版.pdf / .md           — Capacitance and Dielectrics, slides (136 slides)
-    └── AISelect_20261102_180006_Samsung Notes.jpg / .md — her handwritten cross-product note (screenshot)
+    └── Chapter 24宽版.pdf / .md           — Capacitance and Dielectrics, slides (136 slides)
 ```
 
 ## Navigation paths
