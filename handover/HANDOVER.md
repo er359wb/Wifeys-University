@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-11-04 (21.1 completed; starting 21.2).
+Last updated: 2026-11-04 (21.1 and 21.2 completed; starting 21.3).
 
 Push every update to BOTH `physics-tutoring` (the branch other sessions
 read) and the session's working branch.
@@ -18,7 +18,20 @@ read) and the session's working branch.
   counts, rubbing problems and the full "identical spheres touch" algorithm
   (sum → ÷2 → change = after − before → sign of change → n = |change|/e)
   correctly on her own on the last problem.
-- **21.2 Conductors, Insulators, Induced Charges — in progress.**
+- **21.2 Conductors, Insulators, Induced Charges — DONE (2026-11-04),
+  verified.** Covered: conductors/insulators/semiconductors, which
+  particles move (electrons in metals; both ions in solutions); charging by
+  contact (same sign); grounding (grounded body with nothing nearby → 0;
+  electrons move, never protons); induction with ground, incl. order of
+  steps (remove wire before rod); polarization of insulators (either sign
+  attracts a neutral body; attraction doesn't prove charge, repulsion
+  does). The independent exercise first exposed a gap: she treated two
+  TOUCHING metal spheres as separately polarized and used the ÷2 sharing
+  rule while a rod was nearby. Fixed with "two touching metals = one
+  conductor" plus a mapping table to the grounding case (far sphere ↔
+  earth, contact point ↔ wire, separating ↔ removing wire). Then she passed
+  an unscaffolded check fully.
+- **21.3 Coulomb's Law — in progress.**
 
 ### Curriculum and homework received
 
@@ -56,7 +69,8 @@ read) and the session's working branch.
   Good at chained sign logic (A repels B, B attracts C(+) → A negative) and
   picks up a procedure quickly once shown.
 - **What works:** "было → стало" (before → after) tables; a numbered
-  step-by-step algorithm for a problem type; pinpointing exactly which
+  step-by-step algorithm for a problem type; mapping a new situation onto
+  one she already solved, with a side-by-side table; pinpointing exactly which
   number her wrong answer came from (e.g. "1.25×10¹⁰ is 2 nC / e, you used
   the starting charge, not the change") — she corrects right away after
   that.
@@ -68,7 +82,12 @@ read) and the session's working branch.
     "+4 nC"; computing 1.50 but not saying "so impossible");
   - a misconception can come back in a new context: she knew "protons
     don't move" in the abstract but then wrote "silk has fewer protons".
-    Recheck key misconceptions in applied problems.
+    Recheck key misconceptions in applied problems;
+  - over-applies a recently learned rule outside its conditions (÷2 sharing
+    used with a rod nearby; "polarization" used for metals). When teaching a
+    rule, state when it does NOT apply;
+  - sometimes skips a sub-question (missed 21.2 d) — check every part was
+    answered.
 - **Prerequisites:** she needed SI prefixes (nano, micro) and the rule for
   dividing powers of ten explained; she now handles them fine.
 - **Before any teaching** she answered "a free negative charge moves away
@@ -81,7 +100,7 @@ read) and the session's working branch.
 
 ## Current level / notes
 
-21.1 solid. The course assumes vectors (components, unit vectors, dot/cross
+21.1 and 21.2 solid. The course assumes vectors (components, unit vectors, dot/cross
 product), Newton's laws, constant-acceleration kinematics, energy
 conservation, and basic calculus (integration over a charge distribution,
 partial derivatives in 23.5). Check these prerequisites as they come up —
@@ -89,9 +108,10 @@ the prefix/powers-of-ten gap suggests math basics may need short refreshers.
 
 ## Next steps
 
-1. Continue 21.2 (conductors/insulators → charging by contact and
-   grounding → induction → polarization), then the independent exercise.
-2. Then 21.3 Coulomb's law, and so on in curriculum order.
-3. Her class is ahead (Ch 23–24 already). Ch 23 worksheet reasoning and the
+1. Continue 21.3 Coulomb's law: proportional reasoning and Newton's 3rd
+   law → single-pair calculation → superposition on a line → in a plane
+   with components → independent exercise. Then 21.4 onward in curriculum
+   order.
+2. Her class is ahead (Ch 23–24 already). Ch 23 worksheet reasoning and the
    Ch 24 test answers are not verified — revisit when the course order
    reaches them, or earlier if she asks.
