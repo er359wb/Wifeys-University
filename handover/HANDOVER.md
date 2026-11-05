@@ -1,8 +1,13 @@
 # Handover
 
-Last updated: 2026-11-02.
+Last updated: 2026-11-05.
 
-## Midterm exam scope (the exam is TODAY, 2026-11-02)
+## Midterm exam scope (the exam was 2026-11-02, 18:30; result not known)
+
+The exam date has passed; I do not know how it went. Ask her at the start of
+the next session instead of assuming. The list below stays useful as the
+course's own statement of what is core, and the same topics will likely
+return later.
 
 She sent a photo of her lecturer's projected "Mid:" topic list (not committed).
 Transcribed:
@@ -155,15 +160,69 @@ order-2 constant coefficients already covered and solved correctly (see
   her current homework.
 - The 8.1 (3-D coordinates, spheres) `.md` is saved but that deck is not
   taught yet.
-- **Chapter 7 decks (differential equations), received 2026-11-02.** The
-  `.md` companions `curriculum/7.1_Differential_equations.md`,
-  `7.2_Separable_equations_and_applications.md`, `7.3_Linear_equations.md`
-  and `7.4_Second-order_linear_Equations.md` are saved (PDFs deliberately not
-  committed, same privacy reason as Chapter 8). The 7.5 deck
-  (nonhomogeneous equations, 13 slides, not on the exam list) was also sent
-  but is **not transcribed yet**. **Nothing in Chapter 7 has been taught from
-  these decks.** Only the order-2 constant-coefficient material (7.4 section
-  2) was covered earlier, as the "Supplementary" item below.
+- **Chapter 9 decks (functions of several variables), received 2026-11-05.**
+  `.md` companions saved for 9.1 (functions of several variables), 9.2
+  (limits and continuity), 9.3 (partial derivatives), 9.4 (chain rules and
+  implicit differentiation), 9.5 (directional derivatives and the gradient),
+  9.6 (tangent plane and differentials). PDFs not committed (same reason).
+  **Nothing in Chapter 9 has been taught.** The `.md` files flag source
+  errors: 9.2 slide 3 Example 1 (the limit is `0`, the slide says it does not
+  exist), 9.4 slide 21 (`∂z/∂x` printed twice), 9.6 slide 9 Example 3(2)
+  (garbled digits), and 7.5 slide 6 (the constant `C` should be `-2`).
+- **Other work on 2026-11-02 (exam day, short on time):**
+  - 6.1: her area between `y=12-x²` and `y=x²-6` had the right limits (`±3`)
+    and integrand (`18-2x²`) but the antiderivative lost the `18x` term and the
+    limits were written `3` to `-3`; she got `36`, correct is `72`. Not redone.
+  - 6.2: formulas (`V=∫A dx`, disk and washer, radius as distance from the
+    axis) listed from `6_2Volumes.md`; her Exercises 1(a) setup
+    `π∫x⁴dx=πx⁵/5` was right, limits `1` to `2` not yet substituted.
+  - 6.4: only the chain-rule derivative `y'=½(9-x²)^{-1/2}(-2x)` was practised
+    (inner/outer identified right; she wrote the exponent without the minus
+    first). The surface-area formula itself was **not** taught.
+  - 8.3 slides 15-16 exercises (projections, direction cosines, right
+    triangle, `u+v ⟂ u-v`): I showed **full worked solutions at her request
+    ("мало времени, покажи")**, so they do not count as her own evidence; she
+    should still do some herself. 8.4: her own `a×b` determinant (rows
+    `i,j,k`; `6,0,-2`; `0,8,0`) was fully correct, `⟨16,0,48⟩` (one sign typo
+    in the line before, `-48k` for `+48k`).
+- **Chapter 7 decks (differential equations), received 2026-11-02;
+  `.md` companions for 7.1 to 7.5 are all saved** in `curriculum/` (PDFs
+  deliberately not committed, same privacy reason as Chapter 8; 7.5 was
+  transcribed 2026-11-05). Order-2 constant-coefficient material (7.4 section 2)
+  was covered earlier, see "Supplementary". Taught on 2026-11-02 (the exam
+  day), one idea per message:
+  - **7.1 vocabulary: done, with evidence.** `y'=2x` gives `x²+C`; `y'=2x,
+    y(3)=10` gives `x²+1`; orders 3 and 1 for `y'''+y=0` and `(y')⁴+y=x` right.
+    Not taught: 7.1 slides 2-6 (population model) and 13-16.
+  - **7.2 separable equations: partly done, several corrections needed.**
+    Recognizing separable forms right (a, c yes, b no). Method learned:
+    separate, integrate both sides, one constant, solve for `y`, then
+    initial condition. Her errors: `∫dy/y` written `1/y` (needs `ln|y|`);
+    `e^{a+b}` written `e^a+e^b` (it is `e^a·e^b`); `∫x dx` written `1`;
+    `∫1 dv=v` forgotten and `∫1 ds` written `s²/2`; `ln 1` written `e²`; to
+    remove a square root she took a root of the left side instead of squaring
+    both sides; she subtracted `∛3` instead of dividing. Done after
+    corrections: `dy/dx=3x²y` (`y=Ae^{x³}`), Example 1 `dy/dx=x²/y²,
+    y(0)=2` (`y=∛(x³+8)`), Exercises 1(1) `y=Ae^{x²/2}`, 1(5)
+    `y=√((ln x)²+4)` (with the substitution `u=ln x` explained to her;
+    she could not recall it). Exercises 1(2) `dv/ds`: she factored `s(v+1)`
+    correctly but at the end said "ладно, понятно" after the `∫1 ds=s` point,
+    not shown redone; result `v²/2+v=s+ln|s|+C`. **Open: Exercises 1(3),
+    1(4), 2, 3.**
+  - **7.3 first-order linear: in progress, not done.** Linear/not linear
+    (she said yes, no, no, no; (4) is linear). Method taught: bring to
+    `y'+P(x)y=Q(x)` (sign goes with `P` and `Q`), `I=e^{∫P dx}`,
+    `y=(1/I)(∫IQ dx+C)`. Her errors: kept `y` inside `P(x)` twice; moved a term
+    across `=` without flipping its sign; divided only one term by `y`;
+    `∫(-1/x)dx` written `1/x` (it is `-ln|x|`); in `∫x e^{x²/2}dx` she took
+    `du=eˣ` and `∫u du` instead of `du=x dx` and `∫e^u du`; `(e^a)^{-1}`
+    written with the exponent's `x` inverted; kept `x` out of `x·C`.
+    Done only with heavy help: Exercises 2(1) `y'+xy=x` (general solution
+    `y=1+Ce^{-x²/2}`) and 2(2) `y'=1/x+y/x` (`y=-1+Cx`; she wrote `-1+A`,
+    the `x` must stay). **Open: redo of 2(2), Exercises 2(3)-(6), and a solid
+    independent solve** (suggested: 2(4) `s'+2st=t`). She also asked what the
+    topic is called (English/Russian names were given).
+  - Not started: 7.4 exercises (she did the order-2 part earlier), 7.5.
 - **Supplementary (from her own course, not in our decks):**
   - 2nd-order linear homogeneous ODEs with constant coefficients (her slide
     from the course): what "order" and "linear" mean; why we guess `y=e^{rx}`
@@ -232,6 +291,23 @@ order-2 constant coefficients already covered and solved correctly (see
   product check of the answer (`n·PQ=0`) catches these; she accepts it as a
   tool when I show it on her own wrong answer.
 
+- **She asks "why" about procedure steps** ("зачем переносить", "почему
+  степень стала 2", "зачем мы что-то меняем", "а почему там деление"). Short
+  concrete justifications with a tiny numeric check worked; abstract
+  explanations got "не понятно". She also wants formulas **verbatim as written
+  in her slides** ("дай точно так же как в презентации") and exercises in the
+  style of the slides, with my own made-up ones only as an addition.
+- **Under time pressure** (exam day) she asks for the method shown outright
+  ("мало времени, скажи как делать, покажи"); then give a compact worked
+  solution, and flag in the handover that it was shown, not her work.
+- **Algebra and calculus recall slips, not concept gaps, drive most errors in
+  differential equations**: moving terms across `=` with the wrong sign,
+  dividing one term instead of the whole equation, `e^{a+b}`, `∫1 dx`,
+  `∫dy/y`, `ln 1`, removing roots by squaring, forgetting `u`-substitution
+  mechanics. She fixes a pointed-out line quickly. Check these specific
+  places first in 7.2 and 7.3, and keep her checklist ("shift = flip sign",
+  "square both sides to remove a root").
+
 ## Current level / notes
 
 6.1 is solid. 6.2 is mostly fine; the weak spots are setups where the axis of
@@ -249,15 +325,21 @@ subtraction with a double negative) and the length formula went well.
    26(a)(2) and 26(b), Examples 5-7 (slides 21, 24).
    8.5 (lines and planes) was just sent: expect questions on it next; the
    plane exercises (slide 18) reuse `PQ×PR` and the point-to-plane distance.
-2. The Chapter 7 reminder is fulfilled: 7.1 to 7.5 arrived 2026-11-02. Still
-   to do: write `curriculum/7.5_Nonhomogeneous_linear_equations.md` from the
-   7.5 deck (she must resend it if the PDF is no longer available to this
-   session), then note it in `navigation/NAVIGATION.md`. Not urgent: 7.5 is
-   not on the exam list.
-3. Exam priority (today): teach 7.2 separable equations and 7.3 first-order
-   linear equations, briefly the 7.1 vocabulary they need, then 6.4 surface
-   area; then close the open vectors items in step 1. 8.1 and 8.6 are not on
-   the exam list.
-4. Open Chapter 6 items to circle back to: 6.2 Exercises 3 (pyramid), 6.3
-   Exercises 1(c)/(d), 6.4 untouched.
-5. Keep checking negative signs (see learner profile).
+2. The Chapter 7 reminder is fulfilled (7.1 to 7.5 arrived 2026-11-02, all
+   transcribed). **Ask how the midterm went**, then ask what she needs next;
+   Chapter 9 (9.1 to 9.6) just arrived and is probably what her course does
+   next.
+3. Open in Chapter 7: finish 7.3 (redo 2(2), then 2(3)-(6) independently),
+   finish 7.2 (1(3), 1(4), 2, 3), revisit 7.2/7.3 error list in the learner
+   profile. 7.5 not started; its slide 6 constant is wrong (see its `.md`).
+4. 6.4 surface area of revolution is still untaught (on the midterm list);
+   6.1 area redo (`y=12-x²`, `y=x²-6`, answer `72`); 6.2 Exercises 1(a)
+   limits and 3-5.
+5. Chapter 9 teaching order suggestion (each builds on the previous): 9.1
+   functions of two variables, 9.3 partial derivatives (9.4 to 9.6 all depend
+   on it; `f_x` is "differentiate treating `y` as constant"), 9.4 chain rule, then
+   9.5 and 9.6; 9.2 limits can come after 9.3 because its Example 1 is wrong
+   on the slide (see the `.md`).
+6. Other open Chapter 6 items: 6.2 Exercises 3 (pyramid), 6.3 Exercises
+   1(c)/(d).
+7. Keep checking negative signs (see learner profile).
