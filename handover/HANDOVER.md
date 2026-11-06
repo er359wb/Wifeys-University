@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-11-04 (21.1 and 21.2 completed; starting 21.3).
+Last updated: 2026-11-06 (21.1–21.3 completed; starting 21.4).
 
 Push every update to BOTH `physics-tutoring` (the branch other sessions
 read) and the session's working branch.
@@ -31,7 +31,18 @@ read) and the session's working branch.
   conductor" plus a mapping table to the grounding case (far sphere ↔
   earth, contact point ↔ wire, separating ↔ removing wire). Then she passed
   an unscaffolded check fully.
-- **21.3 Coulomb's Law — in progress.**
+- **21.3 Coulomb's Law — DONE (2026-11-06), verified.** Covered:
+  F = k|q₁q₂|/r², direction from signs, Newton's 3rd law (equal force on
+  both, even for unequal charges); proportional reasoning ("set everything
+  to 1, write (q-factors)/(r-factor)²"); SI conversion (nC, μC, cm, mm);
+  superposition on a line (signed sum, distance = |x_other − x_ours|); in a
+  plane via components (Δ = other − ours for attraction, ours − other for
+  repulsion; Fx = F·Δx/r, Fy = F·Δy/r; F = √(Fx² + Fy²)). Independent
+  exercise: plane superposition fully correct. Slips there: dropped the
+  distance factor in a proportion question (2nd time), and the calculator
+  −0.173² trap. She passed the proportion re-check once she wrote the
+  fraction line.
+- **21.4 Electric Field and Electric Forces — in progress.**
 
 ### Curriculum and homework received
 
@@ -86,8 +97,19 @@ read) and the session's working branch.
   - over-applies a recently learned rule outside its conditions (÷2 sharing
     used with a rod nearby; "polarization" used for metals). When teaching a
     rule, state when it does NOT apply;
-  - sometimes skips a sub-question (missed 21.2 d) — check every part was
-    answered.
+  - sometimes skips a sub-question (missed 21.2 d) or gives only part of the
+    answer (principle without value/direction; no units) — check every part
+    was answered;
+  - in "several things change" proportion questions she drops one factor
+    (usually the distance) unless she writes the fraction line
+    (q-factors)/(r-factor)² — insist on writing it;
+  - calculator: typed −0.173² (calculator does −(0.173²)); square of a
+    negative needs brackets, or drop the sign;
+  - sometimes reads extra conditions into a question (thought r also
+    changed) — remind her to reread what changes and what stays;
+  - wrote "+" instead of "×" between charges (result was right).
+- **Works well:** drawing a quick sketch of the charge positions herself,
+  and filling a table (pair | attract/repel | Δ | r | F | Fx | Fy).
 - **Prerequisites:** she needed SI prefixes (nano, micro) and the rule for
   dividing powers of ten explained; she now handles them fine.
 - **Before any teaching** she answered "a free negative charge moves away
@@ -100,7 +122,7 @@ read) and the session's working branch.
 
 ## Current level / notes
 
-21.1 and 21.2 solid. The course assumes vectors (components, unit vectors, dot/cross
+21.1–21.3 solid. The course assumes vectors (components, unit vectors, dot/cross
 product), Newton's laws, constant-acceleration kinematics, energy
 conservation, and basic calculus (integration over a charge distribution,
 partial derivatives in 23.5). Check these prerequisites as they come up —
@@ -108,10 +130,10 @@ the prefix/powers-of-ten gap suggests math basics may need short refreshers.
 
 ## Next steps
 
-1. Continue 21.3 Coulomb's law: proportional reasoning and Newton's 3rd
-   law → single-pair calculation → superposition on a line → in a plane
-   with components → independent exercise. Then 21.4 onward in curriculum
-   order.
+1. Continue 21.4 Electric field: E = F/q₀ → field of a point charge →
+   vector form → charge in a uniform field (a = qE/m + kinematics; needed
+   for homework 21.33) → independent exercise. Then 21.5 onward in
+   curriculum order.
 2. Her class is ahead (Ch 23–24 already). Ch 23 worksheet reasoning and the
    Ch 24 test answers are not verified — revisit when the course order
    reaches them, or earlier if she asks.
