@@ -327,6 +327,21 @@ mixed mock and a one-page formula sheet before Monday.
    whether they are examined).
 4. **After the exam:** ask how it went and what was on it, then re-plan
    from her answer.
+5. **Lab 1 (adders), report due Nov 10.** Teacher requires half adder
+   (VHDL) + full adder built from two half adders + OR2 (BDF schematic),
+   and a full-adder simulation; the DE10-Lite board is not required.
+   Done 2026-11-07 in Quartus Prime Lite 25.1std (project C:\DL\FA,
+   fulladder): ha.vhd compiles, fulladder.bdf compiles (5 pins),
+   functional simulation correct for all 8 inputs (adder_in = x y cin,
+   Count Value every 10 ns). Fixes she needed: extra `;` after the last
+   port and "behabior" typo; VWF saved under the wrong name; Questa
+   2025.2 rejects `-novopt` (remove it in Simulation Settings, per VWF
+   file). She asked Claude to write the report; a filled .docx (teacher's
+   template + her screenshots) was sent to her, not committed (public
+   repo). Open: Figure 3 shows the output pin as pin_name1 because her
+   schematic screenshot predates the rename to sum; she needs a new
+   screenshot to swap in. Lab template/guide are not saved in the repo
+   (location question unanswered).
 Per CLAUDE.md: nothing above is "done" unless it says verified with her
 own correct answers. Consensus, canonical SOP from a truth table, K-map
 and the circuit-building topic are explicitly not done.
