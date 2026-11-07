@@ -5,6 +5,20 @@ Last updated: 2026-11-06 (21.1–21.3 completed; starting 21.4).
 Push every update to BOTH `physics-tutoring` (the branch other sessions
 read) and the session's working branch.
 
+## EXAM: about 2026-11-13
+
+On 2026-11-07 she said her exam is in 6 days. Scope and format not yet
+confirmed (assumed Ch 21–24, mixed multiple-choice/true-false and
+calculations like her worksheets). Plan agreed for speed: bigger steps,
+fewer check rounds, exam-style checks, focus on formulas and common traps.
+- 11-07: finish Ch 21 (21.4 rest, 21.5 field superposition, 21.6 field
+  lines, 21.7 dipoles)
+- 11-08: Ch 22 Gauss's law
+- 11-09: Ch 23 potential (her Ch 23 worksheet as practice)
+- 11-10: Ch 24 capacitance (her Ch 24 test as practice)
+- 11-11: mixed exam-style practice across 21–24
+- 11-12: weak spots + short review; 11-13 exam
+
 ## Progress so far
 
 ### Topics taught (curriculum order)
