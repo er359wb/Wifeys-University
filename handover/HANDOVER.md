@@ -337,10 +337,12 @@ mixed mock and a one-page formula sheet before Monday.
    port and "behabior" typo; VWF saved under the wrong name; Questa
    2025.2 rejects `-novopt` (remove it in Simulation Settings, per VWF
    file). She asked Claude to write the report; a filled .docx (teacher's
-   template + her screenshots) was sent to her, not committed (public
-   repo). Open: Figure 3 shows the output pin as pin_name1 because her
-   schematic screenshot predates the rename to sum; she needs a new
-   screenshot to swap in. Lab template/guide are not saved in the repo
+   template + her screenshots, Figure 3 updated to her renamed schematic)
+   was sent to her, not committed (public repo). Report is finished
+   except Student Name/ID, which she fills in. When she is in
+   "get the deliverable done" mode she wants the file, not concept
+   explanations (asked "just make the report" after an explanation of
+   what a pin is). Lab template/guide are not saved in the repo
    (location question unanswered).
 Per CLAUDE.md: nothing above is "done" unless it says verified with her
 own correct answers. Consensus, canonical SOP from a truth table, K-map
