@@ -75,7 +75,11 @@ read) and the session's working branch.
 
 - **Language:** writes in Russian (sometimes answers in short English).
   Explain in Russian, but write units and abbreviations in English (C, nC,
-  μC, N, m) — she asked for this, to match her course.
+  μC, N, m) — she asked for this, to match her course. She also asked
+  (2026-11-07) for key terms and the check/practice problems themselves in
+  English (source charge, test charge, field point, toward/away from, …),
+  so she can read her English problem sheets. Write practice problems in
+  English and give an English–Russian glossary for each new topic's terms.
 - **Pace and style:** answers fast and tersely, often as a numbered list.
   Good at chained sign logic (A repels B, B attracts C(+) → A negative) and
   picks up a procedure quickly once shown.
