@@ -7,9 +7,19 @@ read) and the session's working branch.
 
 ## EXAM: about 2026-11-13
 
-On 2026-11-07 she said her exam is in 6 days. Scope and format not yet
-confirmed (assumed Ch 21–24, mixed multiple-choice/true-false and
-calculations like her worksheets). Plan agreed for speed: bigger steps,
+On 2026-11-07 she said her exam is in 6 days. Format: she sent photos of
+a 20-question Ch 21 multiple-choice test (not committed) and said exam
+questions look like that. Its question types: induction with touching
+spheres; proportion questions (F with q and r changes, solve for new d);
+Newton's 3rd law; motion of a released charge (speed vs acceleration);
+equilibrium (kq²/d² = mg; q₂ balanced between charges); zero-field /
+zero-force points on a line; net field direction from 2–4 charges (square
+symmetry); reading signs from field lines; uniform field between plates
+(independent of position and d); electron trajectory in a uniform field;
+counting protons/electrons; solving Coulomb for an unknown charge;
+sharing charge via a wire then new force. Some answers were pencilled on
+Q8–Q20 (unclear whose; at least Q10 and Q14 pencil marks are wrong).
+Scope assumed Ch 21–24. Plan agreed for speed: bigger steps,
 fewer check rounds, exam-style checks, focus on formulas and common traps.
 - 11-07: finish Ch 21 (21.4 rest, 21.5 field superposition, 21.6 field
   lines, 21.7 dipoles)
