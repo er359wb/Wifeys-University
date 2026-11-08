@@ -139,6 +139,10 @@ fewer check rounds, exam-style checks, focus on formulas and common traps.
   English (source charge, test charge, field point, toward/away from, …),
   so she can read her English problem sheets. Write practice problems in
   English and give an English–Russian glossary for each new topic's terms.
+  From 2026-11-08 she wants explanations BILINGUAL: each point in English
+  first, then Russian underneath. For test review she wants ONE question
+  at a time, and for every option: right/wrong, why, and when it would be
+  right.
 - **Pace and style:** answers fast and tersely, often as a numbered list.
   Good at chained sign logic (A repels B, B attracts C(+) → A negative) and
   picks up a procedure quickly once shown.
