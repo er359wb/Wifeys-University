@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-11-06 (21.1–21.3 completed; starting 21.4).
+Last updated: 2026-11-08 (Ch 21 test worked through; next Ch 22).
 
 Push every update to BOTH `physics-tutoring` (the branch other sessions
 read) and the session's working branch.
@@ -66,7 +66,30 @@ fewer check rounds, exam-style checks, focus on formulas and common traps.
   distance factor in a proportion question (2nd time), and the calculator
   −0.173² trap. She passed the proportion re-check once she wrote the
   fraction line.
-- **21.4 Electric Field and Electric Forces — in progress.**
+- **21.4 Electric Field and Electric Forces — basics verified (2026-11-07):**
+  E = F/q₀ (N on top, C below), F = qE with the sign rule, field of a
+  point charge, field direction set by the SOURCE only (fixed the
+  field-vs-force mix-up with a 4-row table), vector form with r̂.
+- **Rest of Ch 21 (motion in a uniform field, superposition of fields,
+  field lines, plates, dipole) — covered only through her Ch 21 test
+  (2026-11-08), mostly guided, not independently verified.** The test took
+  the whole day, all 20 questions. Weak spots it showed:
+  - inverse square: answered "5× farther → 5× bigger". After the
+    spray-paint picture and a bar chart ("farther → weaker; how many
+    times? N × N") she got "2× closer → 4× bigger, 10× farther → 100×
+    smaller" right. Recheck;
+  - forgets x² on the calculator (7/2.99 instead of 7/2.99²);
+  - again treated "connected by a wire" as making the spheres neutral
+    (same 21.1 misconception), then redid it correctly;
+  - assumed equal charges balance regardless of distance (Q20);
+  - could not tell what a question asked (Q8) or where numbers not in the
+    text come from (distances from the drawing). Gave her the 4-step
+    strategy (understand → draw → solve, or plug in the options → check)
+    plus a keyword → tool table;
+  - useful for multiple choice: "plug in each option" for zero-force and
+    equilibrium questions; "put an imaginary + at P" for field direction.
+  Test answers for reference: 1D 2C 3C 4C 5D 6B 7B 8A 9C 10C 11A 12C 13C
+  14D 15A 16D 17D 18D 19D 20A.
 
 ### Curriculum and homework received
 
@@ -172,7 +195,7 @@ the prefix/powers-of-ten gap suggests math basics may need short refreshers.
 
 ## Next steps
 
-1. Continue 21.4 Electric field: E = F/q₀ → field of a point charge →
+1. Next: Ch 22 Gauss's law (behind the exam plan by about one day). Teach exam-style: concepts and short calculations, pictures, Russian translation of each English question.
    vector form → charge in a uniform field (a = qE/m + kinematics; needed
    for homework 21.33) → independent exercise. Then 21.5 onward in
    curriculum order.
