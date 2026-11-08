@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-11-08 (Ch 21 test worked through; next Ch 22).
+Last updated: 2026-11-08 (Ch 21 test done; Ch 22 crash block + test answers).
 
 Push every update to BOTH `physics-tutoring` (the branch other sessions
 read) and the session's working branch.
@@ -70,6 +70,18 @@ fewer check rounds, exam-style checks, focus on formulas and common traps.
   E = F/q₀ (N on top, C below), F = qE with the sign rule, field of a
   point charge, field direction set by the SOURCE only (fixed the
   field-vs-force mix-up with a 4-row table), vector form with r̂.
+- **Ch 22 (2026-11-08, evening):** taught one compact block (Gauss's law:
+  flux = Q_inside/ε₀, outside charges give zero net flux, zero flux ≠ zero
+  field; E vs distance — point 1/r², line 1/r, sheet constant; conductors:
+  E = 0 inside, charge on the surface, field perpendicular, cavity charge
+  −q inside / +q outside). Ex 22.1: she solved (a)–(c) once the calculator
+  was fixed. It was in RADIAN mode (cos 30 → 0.154); she also thought
+  cos 30° = ½. Taught the sin/cos table (√0/2 … √4/2) and the cos(60) = 0.5
+  mode check. She sent a Ch 22 test (7 MC + 1 T/F, photos, not committed),
+  got frustrated ("просто запомнить ответы?") and asked for the answers:
+  given with a one-line rule each — 1D 2D 3D 4D 5D 6D 7C, T/F1 False.
+  Understanding of Ch 22 NOT verified. Under exam pressure she prefers
+  "answer + one-line rule to memorize" over guided derivation.
 - **Rest of Ch 21 (motion in a uniform field, superposition of fields,
   field lines, plates, dipole) — covered only through her Ch 21 test
   (2026-11-08), mostly guided, not independently verified.** The test took
@@ -195,7 +207,7 @@ the prefix/powers-of-ten gap suggests math basics may need short refreshers.
 
 ## Next steps
 
-1. Next: Ch 22 Gauss's law (behind the exam plan by about one day). Teach exam-style: concepts and short calculations, pictures, Russian translation of each English question.
+1. Next: Ch 23 potential, then Ch 24, then mixed practice. Ch 22 only got a crash block and the test answers — spend 10 minutes rechecking its 4 rules before Ch 23. Teach exam-style: concepts and short calculations, pictures, Russian translation of each English question, answer + one-line rule.
    vector form → charge in a uniform field (a = qE/m + kinematics; needed
    for homework 21.33) → independent exercise. Then 21.5 onward in
    curriculum order.
