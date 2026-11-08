@@ -80,8 +80,22 @@ fewer check rounds, exam-style checks, focus on formulas and common traps.
   mode check. She sent a Ch 22 test (7 MC + 1 T/F, photos, not committed),
   got frustrated ("просто запомнить ответы?") and asked for the answers:
   given with a one-line rule each — 1D 2D 3D 4D 5D 6D 7C, T/F1 False.
-  Understanding of Ch 22 NOT verified. Under exam pressure she prefers
-  "answer + one-line rule to memorize" over guided derivation.
+  Under exam pressure she prefers "answer + one-line rule to memorize" over
+  guided derivation. She then asked to go through the test option by option
+  (why right/wrong, when it would be right), bilingual, one question at a
+  time — done for all 8. Mini-check results:
+  - got right: flux trap B → "net flux" wording; line zero closer to the
+    weaker line (missed the "how many times" part); sheet charge ×3 → E ×3;
+    "inside the metal the field is perpendicular?" → False;
+  - wrong, then fixed: sheet at 2 cm → said 500 (used line rule; the sheet
+    field doesn't depend on distance; picture: point/line/sheet spreading);
+    cavity with conductor's own +4 μC → said inner −6 (correct −10, outer
+    +14 she got). Rule: the inner wall = −(cavity charge); everything else
+    goes to the outer surface;
+  - she needed a picture to understand "Gaussian surface around the
+    cavity" (sent a 3-step image: an imaginary bag inside the metal).
+  Ch 22 understanding: partial, the core traps covered. Recheck before the
+  exam: flux vs field; E vs distance for point, line, sheet; cavity charges.
 - **Rest of Ch 21 (motion in a uniform field, superposition of fields,
   field lines, plates, dipole) — covered only through her Ch 21 test
   (2026-11-08), mostly guided, not independently verified.** The test took
