@@ -138,6 +138,20 @@ fewer check rounds, exam-style checks, focus on formulas and common traps.
   - wrote "+" instead of "×" between charges (result was right).
 - **Works well:** drawing a quick sketch of the charge positions herself,
   and filling a table (pair | attract/repel | Δ | r | F | Fx | Fy).
+- **Wants pictures** (asked 2026-11-08 "а можно картинками"): for vector
+  and direction topics, send diagrams. Hand-written SVG → PNG via headless
+  Chromium at /opt/pw-browsers/chromium-1194/chrome-linux/chrome (no
+  matplotlib installed); send with SendUserFile (display: render).
+- **Reading the English question is a real barrier**: on test Q8 she
+  didn't know what was being asked. For each exam-style question, first
+  give a short Russian translation and say exactly what to find.
+- **For direction-of-field questions** the trick "put an imaginary small +
+  at P; where is it pushed or pulled? that's E" was introduced for this
+  (2026-11-07); check whether it works for her.
+- When stuck she says so bluntly ("не ебу") — then switch to a fully
+  worked example plus a small variant, not more Socratic steps.
+- Copied an answer from the slide's solution page while asking a question
+  — confirm whether written work is hers before praising it.
 - **Prerequisites:** she needed SI prefixes (nano, micro) and the rule for
   dividing powers of ten explained; she now handles them fine.
 - **Before any teaching** she answered "a free negative charge moves away
