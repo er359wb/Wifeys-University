@@ -120,6 +120,10 @@ fewer check rounds, exam-style checks, focus on formulas and common traps.
   She asked why V isn't squared in ½QV → showed ½CV² = ½(CV)V = ½QV.
   A night-before checklist for Ch 21–24 was also given. Ch 24 groups
   2–4 are not verified by her own answers.
+- **Cheat sheet (2026-11-12):** made a 2-page A4 PDF cheat sheet for Ch 21–24
+  (constants and tools, one box per topic, red traps, exam method), mostly
+  English with Russian hints. Built from HTML with headless Chromium in the
+  scratchpad; not committed (scratchpad is lost after the session).
 - **Rest of Ch 21 (motion in a uniform field, superposition of fields,
   field lines, plates, dipole) — covered only through her Ch 21 test
   (2026-11-08), mostly guided, not independently verified.** The test took
