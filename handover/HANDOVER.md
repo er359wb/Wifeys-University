@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-11-08 (Ch 21 test done; Ch 22 crash block + test answers).
+Last updated: 2026-11-12 (exam eve; Ch 23 reviewed, Ch 24 partly, checklist given).
 
 Push every update to BOTH `physics-tutoring` (the branch other sessions
 read) and the session's working branch.
@@ -96,6 +96,25 @@ fewer check rounds, exam-style checks, focus on formulas and common traps.
     cavity" (sent a 3-step image: an imaginary bag inside the metal).
   Ch 22 understanding: partial, the core traps covered. Recheck before the
   exam: flux vs field; E vs distance for point, line, sheet; cavity charges.
+- **Ch 23 (2026-11-09):** sent her a writable PDF of her Ch 23 worksheet
+  (8 MC + 5 T/F, with Russian translations; built from the October photos,
+  kept in the scratchpad, not committed). Went through it option by option,
+  bilingual. Mini-checks correct: proton direction and U; field up → order
+  of V; electron against E (V↑ U↓ K↑); opposite charges approaching (U↓
+  K↑); pushing like charges together (U↑, needs work); insulating-sphere
+  centre (E = 0, V max); conducting sphere V centre = 300 V, at 2R 150 V;
+  equipotential zig-zag work 0; V constant → E = 0. Wrong: midpoint of +q
+  and −q → she said E = 0, V ≠ 0 (swapped with the like-charges case).
+  Taught the table "same signs → field cancels; opposite signs → potential
+  cancels". She asked what K is → taught K vs U (roller coaster) and the
+  three k's (Coulomb k, kinetic K, dielectric K).
+- **Ch 24 (2026-11-12, exam eve):** group 1 (Q7–Q11) done together: Q = CV,
+  C = Q/V (she wrote μC for a capacitance once), C = ε₀A/d (1 F is huge),
+  E = V/d plus direction, σ → E = σ/ε₀. Her "d × 2 → E smaller, V same" was
+  the battery-connected answer for a Q-fixed situation → taught the
+  Q-fixed vs V-fixed table. She then had no time, so the rest of the Ch 24
+  test, Ch 23 T/F 4–5, and a night-before checklist for Ch 21–24 were given
+  as "answer + one-line rule". NOT verified.
 - **Rest of Ch 21 (motion in a uniform field, superposition of fields,
   field lines, plates, dipole) — covered only through her Ch 21 test
   (2026-11-08), mostly guided, not independently verified.** The test took
@@ -225,7 +244,7 @@ the prefix/powers-of-ten gap suggests math basics may need short refreshers.
 
 ## Next steps
 
-1. Next: Ch 23 potential, then Ch 24, then mixed practice. Ch 22 only got a crash block and the test answers — spend 10 minutes rechecking its 4 rules before Ch 23. Teach exam-style: concepts and short calculations, pictures, Russian translation of each English question, answer + one-line rule.
+1. Exam on 2026-11-13. After it: ask how it went and which question types were hard, then continue in curriculum order (Ch 25 onward) or revisit what the exam exposed.
    vector form → charge in a uniform field (a = qE/m + kinematics; needed
    for homework 21.33) → independent exercise. Then 21.5 onward in
    curriculum order.
