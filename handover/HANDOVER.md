@@ -112,9 +112,14 @@ fewer check rounds, exam-style checks, focus on formulas and common traps.
   C = Q/V (she wrote μC for a capacitance once), C = ε₀A/d (1 F is huge),
   E = V/d plus direction, σ → E = σ/ε₀. Her "d × 2 → E smaller, V same" was
   the battery-connected answer for a Q-fixed situation → taught the
-  Q-fixed vs V-fixed table. She then had no time, so the rest of the Ch 24
-  test, Ch 23 T/F 4–5, and a night-before checklist for Ch 21–24 were given
-  as "answer + one-line rule". NOT verified.
+  Q-fixed vs V-fixed table. She said she couldn't answer questions any more
+  but wanted to continue, so groups 2–4 were explained option by option
+  with no checks (series/parallel picture sent). She solved Q13 and Q14
+  herself, first forgetting the final 1/C flip and reading Fig. 3's
+  left branch as parallel; she then redid them ("перепутала знаки").
+  She asked why V isn't squared in ½QV → showed ½CV² = ½(CV)V = ½QV.
+  A night-before checklist for Ch 21–24 was also given. Ch 24 groups
+  2–4 are not verified by her own answers.
 - **Rest of Ch 21 (motion in a uniform field, superposition of fields,
   field lines, plates, dipole) — covered only through her Ch 21 test
   (2026-11-08), mostly guided, not independently verified.** The test took
