@@ -37,6 +37,20 @@ attempt to add a default-argument constructor put it **outside** the class as a
 new line (error: no type) instead of editing the existing one — the same
 write-it-again-instead-of-edit pattern recorded earlier.
 
+**Linked list and bank account, 2026-11-05 to 11-16 (details in `Linkedlist_Node_task.md`,
+`BankAccountInheritanceProblem.md`).** Linked list: she wrote, with the compiler checking each
+round, `Linkedlist()` (`Head=new Node;`) and the two-letter constructor (correct after two
+typos), and `display()` (correct structure, two logic slips fixed: the walker must start at
+`Head->getNext()`, and print before moving). `length()` is one word from correct
+(`getData` where `getNext` belongs) and was not resent. Recurring slip: putting a `char`
+where an address is expected (`setNext(d)`, then `Head->getData()`), and once she asked whether
+`Head->getNext()` would be B, holding the model where Head is the first letter rather than an
+empty head node; settled from her own constructor code. Bank account: new topic (inheritance,
+`virtual`); the sheet omits `virtual`, which check 3 needs. **On 2026-11-16 she asked me to
+write the whole program and I did (`Bank.cpp`, sent as a file, not committed). That is
+tutor-written, not evidence she can write it.** She said they would extend it in class that
+day, so the next step is to walk through it with her and have her write the pieces herself.
+
 **Fraction, what each piece cost her (so the next session aims at the real gaps):**
 
 | Piece | What went wrong, in order | What fixed it |
