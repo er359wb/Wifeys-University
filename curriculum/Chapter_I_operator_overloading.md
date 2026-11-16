@@ -62,8 +62,9 @@ the arithmetic `+` and `-` operators.
 - Operator overloading lets the programmer define versions of an operator for operands of
   class type.
 - **Rules and restrictions**
-  - All operators can be overloaded **except**: `.*`-style member dereference `*`
-    (listed as "`*` (dereference operator)"), `::`, `? :`, `sizeof`.
+  - All operators can be overloaded **except** those listed on the slide as `*` ("dereference
+    operator"), `::`, `? :` and `sizeof`. The standard list is `.`, `.*`, `::`, `?:` and
+    `sizeof`; the leading dot was most likely lost in the slide text.
   - Only operators already defined in C++ can be overloaded.
   - **Precedence and associativity are fixed.**
   - The **number of operands cannot be changed.**
@@ -194,10 +195,8 @@ Result for `Counter c, d; ++c; d = c++; --c; d = c--;` printed with `GetValue()`
 2. The counter example prints exactly `c=1`, `c=2 d=1`, `c=1`, `c=0 d=1`, and the chained
    assignment prints `d=21 e=21`.
 3. **Typos on the slides:** `Return a;` has a capital R; the `>>` example reads `is>>s.a`
-   where `c.a` is meant; the division formula contains `-+`; the first slide of the friend
-   class example prints an uninitialised number. The mismatch between the slide's "the
-   asymmetry rule" (`=`, `( )`, `[ ]`, `->` must be members) and the task sheet, where `[]` and
-   `=` are indeed members, is consistent.
+   where `c.a` is meant; the division formula contains `-+`; and the first friend-class
+   example prints an uninitialised number.
 4. **The lecture's rule and the task sheet differ on one point.** The lecture says binary
    arithmetic operators are *ordinarily* non-members. The written `Fraction` assignment
    gives `operator+` as a **const member**. Both are legal; follow the sheet for the
