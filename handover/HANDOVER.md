@@ -1,11 +1,8 @@
 # Handover
 
-Last updated: 2026-10-26 (Monday, exam day: the midterm is today.
-Earlier: Unit 2 algebraic simplification with her teacher's "add /
-split" method, canonical SOP via Σm, K-map intro, the Unit 3 coded-lock
-slide. Then she chose to go through everything in order from Ch1: Ch1
-and Ch2 done, Ch3 done up to the full adder; ended with a cheat sheet in
-chat on exam morning).
+Last updated: 2026-11-16 (Ch4 VHDL started: entity and dataflow
+verified; then she switched to Ch5 because her lecture is there.
+Earlier: midterm 2026-10-26, Lab 1 report finished 2026-11-07.)
 
 ## Progress so far
 
@@ -206,7 +203,37 @@ simplify with her pairing method; she repeats it for Alarm), then 19
 (formula -> gates, the skipped factoring, the shared OR2), trace one row
 through the circuit, then a small design she does alone.
 
-**Units 4-6: not started.**
+### Unit 4 — VHDL: started 2026-11-16, paused
+
+She said "I'm on chapter 4", worked two steps, then said her lecture is
+now on Ch5 and Ch4 can wait ("к этому придём после").
+- **4.2.1 Entity — done.** First and3 entity missed the `;` after `)`;
+  in a find-the-errors item she caught `BIT;);` but missed `END or2`
+  for `my_or`. Her next full answer had both right.
+- **4.2.2 Dataflow architecture — verified.** Wrote a full and3
+  (entity + `ARCHITECTURE dataflow OF and3`) correctly. Formula -> VHDL:
+  first try for U = A(B + C) was `U <= b and c or a` (AND/OR swapped,
+  no brackets, no `;`). Then G = (A + B)C̄ and F = AB̄ + C had the right
+  operators but no brackets; she asked "можно скобки добавлять?" and
+  fixed both. Knows line order does not matter (concurrent).
+- Taught and worth reusing: Ch2 -> VHDL table (AB -> `a AND b`,
+  A + B -> `a OR b`, B̄ -> `NOT b`, brackets stay); VHDL refuses AND/OR
+  mixed without brackets (equal priority, unlike Ch2).
+- **Behavioral (PROCESS, sensitivity list): posted, not answered.**
+  Questions waiting: and3 in behavioral style; `PROCESS(x)` with y
+  changing — does it wake up? Structural (COMPONENT, PORT MAP), 4.3-4.8
+  not started.
+- Slide quirks in `04_chapterB_vhdl.md`: the dec2to4 example declares
+  w1, w0 but uses w(1), w(0), has an extra `)` and ends with
+  `END ha_concurrent;`; the with-select mux assigns `y` though the port
+  is `f`; the PROCESS half adder uses a, b instead of x, y.
+
+### Unit 5 — Latches, Flip-Flops, Counters: started 2026-11-16
+
+Her live lecture is here. Started at 5.1 (memory, the alarm example,
+timing diagram, NOR table review).
+
+**Unit 6: not started.**
 
 ## Learner profile
 
@@ -267,6 +294,12 @@ through the circuit, then a small design she does alone.
   fixed it: each representation has a "change sign" action; writing -N =
   change the sign of +N; reading = change the sign again; then a
   one-step worked example.
+- **When correcting, point to the error, do not hand over the fix.**
+  2026-11-16 she objected strongly ("С какого фига ты мне дал ответ")
+  when an error list spelled out what goes where and then asked her to
+  rewrite the line. Agreed rule: name only where the error is (which
+  part, which rule from the earlier list); full fix only if she asks or
+  fails a second time. She then fixed both lines herself.
 - **Dense feedback shuts her down.** After a four-point correction she
   wrote "Не понимаю твои объяснения". One idea per message, a small
   table, and a tiny drill that isolates the failing sub-skill worked.
@@ -309,6 +342,12 @@ through the circuit, then a small design she does alone.
   dropped carry as a sign bit.
 
 ## Next steps
+
+0. **Current (2026-11-16): Ch5 in order from 5.1**, following her
+   lecture. Ch4 resumes later at the behavioral step (its questions are
+   unanswered); Ch5's VHDL part (5.8) needs PROCESS and IF from Ch4, so
+   teach those first when 5.8 comes. Ch3 multiplexers are a
+   prerequisite for 5.7.6 (parallel load) and the Ch4 mux examples.
 
 The agreed order is Ch1 -> Ch2 -> Ch3, example-driven, with a final
 mixed mock and a one-page formula sheet before Monday.
