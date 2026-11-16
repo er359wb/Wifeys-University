@@ -39,3 +39,18 @@ Not known. No topics list from the teacher beyond the above, and no format
 | 1.7 linked list | in progress: both constructors and `display` written by her, `length()` one word from correct |
 | operator overloading | partly: `friend +`, `==`, `<<`, `>>` written; `=`, `+=`, `<`, prefix/postfix `++`, `[]` not yet |
 | inheritance, `virtual` | explained; the whole program was written by the tutor, not by her |
+
+## Lecture slides received so far (2026-11-16)
+
+| Syllabus item | Slides |
+|---|---|
+| 1.1 | `class.md` |
+| 1.2 | `overload.md` |
+| 1.3 | `constructor.md` |
+| 1.4 | `copy_constructor.md` |
+| 1.5 | `deconstructor.md` |
+| 1.6 `this` | not received |
+| 1.7 | `construction_of_linked_list.md` |
+
+The slides say destructors and the `this` pointer are part of the course, so the
+exam can ask about them even though tutoring has not reached them yet.
