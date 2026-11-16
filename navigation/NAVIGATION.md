@@ -64,6 +64,9 @@ exists.
 | `Fraction_Class_photo_1.jpg`, `Fraction_Class_photo_2.jpg` | ✅ (`Fraction_Class_photo_1.md`) | **New semester** — `Fraction`: private `simplify`, `friend operator+`, mixed-number `display` | Started 2026-10-16. Two classroom-projector photos, no worksheet |
 | *(pasted code, no file)* | `Linkedlist_Node_task.md` | **Linked list** — teacher's `Node` and `Linkedlist` skeleton; write the four `Linkedlist` members | Received 2026-11-05. Seven open points flagged in the `.md`, chiefly whether the head node carries data |
 | *(screenshot, not committed)* | `Syllabus_Class_and_Objects.md` | **Midterm scope**, Thursday 2026-11-19: items 1.1–1.7, plus operator overloading and inheritance | Received 2026-11-16. Exam format unknown. Includes a coverage table: destructor and `this` not yet taught |
+| `linked_list.docx` | ✅ (`linked_list.md`) | **Singly linked list with a head node**: terminology and the 13-operation list (`insertAt`, `removeAt`, `clear`, destructor...) | Received 2026-11-16, syllabus 1.7. No signatures or `main`; `pos` base not stated |
+| *(.ppt not committed)* | `Chapter_I_objects_and_classes.md` | **Lecture deck, part I (90 slides)**: `this` pointer, const members, initializer list, destructor with `new`, deep copy, practice questions | Syllabus 1.1–1.6. Deck withheld: first slide names the lecturer and the school |
+| *(.ppt not committed)* | `Chapter_I_operator_overloading.md` | **Lecture deck, part II (31 slides)**: friends, operator overloading rules, member vs friend, `=`, `<<`, `>>`, `++`/`--` | The lecture behind the `Fraction` assignment. Deck withheld, same reason |
 | `constructor.pdf` | ✅ (`constructor.md`) | **Slides 4–4.1** — constructors, default constructors | Syllabus 1.3. Received 2026-11-16 |
 | `copy_constructor.pdf` | ✅ (`copy_constructor.md`) | **Slides 4.3** — copy constructor, when it is called | Syllabus 1.4. The slide says `return A;` calls it; modern g++ elides that call, flagged in the `.md` |
 | `deconstructor.pdf` | ✅ (`deconstructor.md`) | **Slides 4.2** — the destructor | Syllabus 1.5. File name misspelt; slides say destructor |
@@ -124,7 +127,7 @@ unmarked — don't fill those in with a guessed answer.
 `palindrome_practice.docx` was originally named `回文数练习.docx`; renamed for
 consistency, contents unchanged. Document metadata (author/last-modified-by
 fields embedded in the `.docx` files, not visible in the document body) has
-been stripped from all 17 `.docx` files as part of the privacy pass — see
+been stripped from all 18 `.docx` files as part of the privacy pass — see
 `handover/HANDOVER.md`'s session log / the commit history for details. The
 two legacy `.doc` files (`20260414_while_loop_2.doc`,
 `homework_on_pointers.doc`) still carry short author initials in their OLE
