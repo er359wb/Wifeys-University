@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-11-05.
+Last updated: 2026-11-16.
 
 ## Midterm exam scope (the exam was 2026-11-02, 18:30; result not known)
 
@@ -26,6 +26,43 @@ Gaps against the list as of this update: surface area of revolution (6.4)
 untouched; separable (7.2) and first-order linear (7.3) not taught yet;
 order-2 constant coefficients already covered and solved correctly (see
 "Supplementary" below); the open vectors items listed in Next steps.
+
+## Tests she has already written (blank papers sent 2026-11-16, not committed)
+
+She sent the question papers (no answers, no scores; ask her for results).
+They show the style of what her course asks. Summary, in her course's own
+wording ("Advanced Math AII"):
+
+- **Quiz 1, 2026-09-14 (Chapter 6):** areas between curves (`y=x²` and
+  `y=4-x²`; `y=-x` and `x=y²+3y`; `y=√x` and `y=x/2`; `y=|cos x|` on `[0,2π]`);
+  volumes of revolution (`y=2x,y=x,x=2` about the x-axis; `x=1+y²,y=x-3`
+  about the y-axis; `y=x,y=0,x=2,x=4` about `x=1`); volume of a regular
+  tetrahedron (equilateral-triangle base, height `h`); arc length of
+  `y=2ln(sin(x/2))` on `[π/3,π]`; surface areas of `y=∫₁ˣ√(√t-1)dt` about the
+  y-axis and `y=x³` on `[0,2]` about the x-axis.
+- **Mid-term, 2026-11-02:** area between `y=x²-2` and `y=2x+1`; volume of
+  `y=√x,y=0,x=2` about the x-axis; arc length of `y=x²/2-¼ln x` on `[1,2]`;
+  surface area of `y=x³/3` on `[0,2]` about the x-axis; orders of three
+  differential equations; vectors `a=⟨2,-1,-2⟩`, `b=3j+k` (`2a+3b`, unit vector
+  of `a-b`, `a×b`, `cosθ`, `comp_a b`, triangle area); `dy/dx=√(2xy), y(1)=4`;
+  `y'-(2/x)y=x²eˣ`; `y''+2y'+y=sin 2x`; the line through `A(2,2,-1)`
+  parallel to the intersection of two planes; the plane through three points;
+  the distance from a point to a plane.
+- **Quiz 2, 2026-11-12 (Chapter 9, 20 problems):** first partial derivatives
+  (including `e^{√(x²+y⁴)}` at `(0,0)`, `ln tan(x/y)`); the chain rule
+  (`z=u²+v²`, `dz/dt`, `dz/dx` with `y=eˣ`, unknown `f(u,v,w)`, `f(xy,x+y)`,
+  `f(sin x,cos y,arcsin(x+y))`); second and third mixed derivatives
+  (`ln(x²+y²)`, `x ln(yz)`, `f_xx(0,0,1)` and so on); `s=(u²+v²)/(uv)`;
+  `u=(2/x)ʸ(x/y)²(y/2)ˣ`; a proof that `∂y/∂t=k∂²y/∂x²` for
+  `y=e^{-kn²t}sin(nt)` (as printed; the `sin(nt)` looks like a typo for
+  `sin(nx)`); and four limits (`(1-xy)/(x²+y²)` at `(0,2)`,
+  `(2-√(xy+4))/(xy)` at `(0,0)`, `ln(x+eʸ)/√(x²+y²)` at `(1,0)`, and
+  `(1-cos(x²+y²))/((x²+y²)e^{x²y²})` at `(0,0)`).
+
+What this tells us: her quizzes and exams ask the same kinds of problems the
+slides' exercises do. Partial derivatives, chain rule (with unknown `f`), and
+mixed higher derivatives are what she has been practising and are tested.
+9.2 (limits) is tested too and has not been taught.
 
 ## Progress so far
 
@@ -169,6 +206,42 @@ order-2 constant coefficients already covered and solved correctly (see
   errors: 9.2 slide 3 Example 1 (the limit is `0`, the slide says it does not
   exist), 9.4 slide 21 (`∂z/∂x` printed twice), 9.6 slide 9 Example 3(2)
   (garbled digits), and 7.5 slide 6 (the constant `C` should be `-2`).
+- **Chapter 9 practice, 2026-11-10 to 11-16 (she sent photos of her own
+  work, I checked it line by line; no deck was "taught", she worked the
+  exercises from the 9.3 and 9.4 decks).** Result so far, with the pattern of
+  errors; each item below needed at least one pointed correction unless
+  marked "right":
+  - Basics: `with respect to x` (hold the other letters constant); chain rule
+    as outer times inner (`(e^u)'=e^u u'`, `(ln u)'=u'/u`, `(tan⁻¹u)'=u'/(1+u²)`,
+    `(arcsin u)'=u'/√(1-u²)`, `(a^u)'=a^u ln a·u'`); product vs quotient rule
+    (she asked why the product rule was not used on `3(3x+5y)^{-1}`: the
+    factor is a constant); the integral with a variable upper or lower limit
+    (derivative by the lower limit has a minus).
+  - 9.3 slide 15: 17 (`f_x` right after sign fix; `f_t` lost the minus of
+    `(e^{-t})'`), 22 (needed the product or quotient rule; done after fixing
+    cancelling `(x+y)`; `f_y` open), 23 (not shown), 24 (`w_u` right; `w_v` open),
+    27 (`R_p` right; `R_q` open), 28 (`f_x` right; `f_y` open, `x^y` by `y` is
+    `x^y ln x`), 29 (`F_x` right; `F_y` needs the minus), 30 (she
+    differentiated the integrand instead of using the upper and lower limit:
+    `F_β=√(β³+1)`, `F_α=-√(α³+1)`; not shown redone), 34 (`w_z` right, `w_x` and
+    `w_y` lost the constant factor `z`), 36 (`u_x` right; `u_y` open, needs
+    `ln x` and the factor `1/z`), 38 (right; her handwritten `γ` looks like
+    `y`), 39 (inner derivative must be `2x₁`, pending).
+  - 9.3 slide 16: 65 `f_xyz` done after fixes (lost a `z²` while factoring);
+    66 right on the first try; 67 `u_θrr` done after fixes; 68 `f_wvu` right
+    after restoring a constant factor; 69 right (`w_xyz=4(y+2z)^{-3}`,
+    `w_yxx=0`). She learned "read the denominator right to left"
+    (`∂³u/∂r²∂θ = u_θrr`).
+  - 9.4 slide 14: (1) `dz/dt` formula right (needs `√` not a square in the
+    denominator); (2) `∂z/∂s` right, `∂z/∂t` open; (3) `∂u/∂r` right,
+    `∂²u/∂r²=2 sinθcosθ+2θcosθ+2θ sinθ` right after fixes (`∂²` is a second
+    derivative, not a square), `∂u/∂θ` open; (4) `∂s/∂x` right after
+    parentheses (`f₁'·(2x+y³)`), `∂s/∂y` open; (5) `z=2^r cosθ,r=sin²θ`: tree
+    right, formula `dz/dθ=∂z/∂r·dr/dθ+∂z/∂θ` right, she mixes `d` and `∂`
+    and needs `dr/dθ=2 sinθcosθ`; unfinished. Her teacher stops at the
+    chain-rule form (leaves `x,y,θ,φ`); follow that format.
+  - 9.4 examples from the slides worked: Example 4 (`∂s/∂x` at `(2,1,0)`,
+    final sum `80` not shown), Example 5 (`∂z/∂v=u/v`, no `+x`).
 - **Other work on 2026-11-02 (exam day, short on time):**
   - 6.1: her area between `y=12-x²` and `y=x²-6` had the right limits (`±3`)
     and integrand (`18-2x²`) but the antiderivative lost the `18x` term and the
@@ -308,6 +381,17 @@ order-2 constant coefficients already covered and solved correctly (see
   places first in 7.2 and 7.3, and keep her checklist ("shift = flip sign",
   "square both sides to remove a root").
 
+- **She sends a photo for almost every step and asks "right?"**: answer with
+  the specific line that is wrong (or "all correct") and one short numeric
+  check. Long explanations make her swear ("ты дохуя пишешь, нихуя не
+  понимаю"): keep each message to a few lines, one step, one question. She
+  uses her teacher's format and wants to know what the teacher would write.
+- **Handwriting and notation traps (Chapter 9)**: Greek `γ` looks like `y`;
+  `ln t²` and `cos t²` instead of `(ln t)²`, `cos²t`; mixes `d` and `∂` in one
+  fraction; writes `f(x)` for a derivative; forgets parentheses around a sum
+  that is multiplied (`f₁'·(2x+y³)`); loses a constant factor or a power when
+  factoring (`z²`, `2z`). Reading `f_xyz` order right to left was new to her.
+
 ## Current level / notes
 
 6.1 is solid. 6.2 is mostly fine; the weak spots are setups where the axis of
@@ -335,6 +419,10 @@ subtraction with a double negative) and the length formula went well.
 4. 6.4 surface area of revolution is still untaught (on the midterm list);
    6.1 area redo (`y=12-x²`, `y=x²-6`, answer `72`); 6.2 Exercises 1(a)
    limits and 3-5.
+5a. Chapter 9 open items to close next: 9.4 slide 14 (2) `∂z/∂t`, (3)
+   `∂u/∂θ`, (4) `∂s/∂y`, (5) `dz/dθ` (finish `∂z/∂r`, `dr/dθ`, `∂z/∂θ`), and
+   the "open" ones in the 9.3 list above. Then limits (9.2: Quiz 2 has four of
+   them, and 9.2 slide 3 Example 1 is wrong), then 9.5 and 9.6.
 5. Chapter 9 teaching order suggestion (each builds on the previous): 9.1
    functions of two variables, 9.3 partial derivatives (9.4 to 9.6 all depend
    on it; `f_x` is "differentiate treating `y` as constant"), 9.4 chain rule, then
