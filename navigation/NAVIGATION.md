@@ -64,6 +64,7 @@ exists.
 | `Fraction_Class_photo_1.jpg`, `Fraction_Class_photo_2.jpg` | ✅ (`Fraction_Class_photo_1.md`) | **New semester** — `Fraction`: private `simplify`, `friend operator+`, mixed-number `display` | Started 2026-10-16. Two classroom-projector photos, no worksheet |
 | *(pasted code, no file)* | `Linkedlist_Node_task.md` | **Linked list** — teacher's `Node` and `Linkedlist` skeleton; write the four `Linkedlist` members | Received 2026-11-05. Seven open points flagged in the `.md`, chiefly whether the head node carries data |
 | *(screenshot, not committed)* | `Syllabus_Class_and_Objects.md` | **Midterm scope**, Thursday 2026-11-19: items 1.1–1.7, plus operator overloading and inheritance | Received 2026-11-16. Exam format unknown. Includes a coverage table: destructor and `this` not yet taught |
+| `class.pdf` | ✅ (`class.md`) | **Lecture slides, ch. 3** — defining a class, access labels, data hiding, defining objects | Received 2026-11-16; syllabus item 1.1. The PDF here is a re-rendered copy with the original properties removed (they held a real name). Five slide-versus-compiler points flagged in the `.md` |
 | `BankAccountInheritanceProblem.docx` | ✅ | **Inheritance** — `Account`, `SavingAccount`, `CreditCardAccount`; overriding `withdraw`; base-class pointer | Received 2026-11-16. Not started. Six open points flagged in the `.md`, chiefly that `virtual` is not mentioned but is required |
 | `Operator_Overloading_Comprehensive.docx` | ✅ | **The written assignment** — full `Fraction` class: `=`, `+`, `+=`, `==`, `<`, `++` (prefix and postfix), `<<`, `>>`, `[]` | Received 2026-10-26. The class demos (`Fraction_Class_photo_*`) build toward it |
 | *(photo not committed)* | `Fraction_Class_photo_3.md` | `Fraction` part 2 — member `operator==` and `operator-` | Added 2026-10-19. Photo withheld: a wall poster in it names the institution. The `.md` is the only record |
@@ -102,6 +103,13 @@ compiled reference run, rather than guessing.
 (a base-class pointer calling `withdraw`) cannot work unless the base `withdraw`
 is `virtual`, which the sheet never says; the `.md` shows this with a compiled
 run both ways, and lists five other open points.
+
+`class.md` transcribes lecture slides that have no text layer. The original PDF
+carried a real person's name as its author, so the committed `class.pdf` is a
+re-rendered copy with no document properties. Two of its claims are worth
+exam attention: members of a class's own type are forbidden (pointers are fine),
+and in-class initializers such as `int year=2007;` are marked wrong on the slide
+although modern C++ allows them.
 
 `homework_on_pointers.md` is the most useful document in the folder — it is
 the only one in the exam's own format. Its MCQ section transcribes the
