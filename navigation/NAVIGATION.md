@@ -63,6 +63,7 @@ exists.
 | `String_Class-_copy_constructordestructor.docx` | ✅ | **New semester** — `MyString`: `new[]`/`delete[]`, `char*`, 7 member functions | Started 2026-10-08 |
 | `Fraction_Class_photo_1.jpg`, `Fraction_Class_photo_2.jpg` | ✅ (`Fraction_Class_photo_1.md`) | **New semester** — `Fraction`: private `simplify`, `friend operator+`, mixed-number `display` | Started 2026-10-16. Two classroom-projector photos, no worksheet |
 | *(pasted code, no file)* | `Linkedlist_Node_task.md` | **Linked list** — teacher's `Node` and `Linkedlist` skeleton; write the four `Linkedlist` members | Received 2026-11-05. Seven open points flagged in the `.md`, chiefly whether the head node carries data |
+| `BankAccountInheritanceProblem.docx` | ✅ | **Inheritance** — `Account`, `SavingAccount`, `CreditCardAccount`; overriding `withdraw`; base-class pointer | Received 2026-11-16. Not started. Six open points flagged in the `.md`, chiefly that `virtual` is not mentioned but is required |
 | `Operator_Overloading_Comprehensive.docx` | ✅ | **The written assignment** — full `Fraction` class: `=`, `+`, `+=`, `==`, `<`, `++` (prefix and postfix), `<<`, `>>`, `[]` | Received 2026-10-26. The class demos (`Fraction_Class_photo_*`) build toward it |
 | *(photo not committed)* | `Fraction_Class_photo_3.md` | `Fraction` part 2 — member `operator==` and `operator-` | Added 2026-10-19. Photo withheld: a wall poster in it names the institution. The `.md` is the only record |
 
@@ -96,6 +97,11 @@ build toward it. The sheet gives no expected output and no output format for
 `operator<<`; the `.md` lists seven unspecified or inconsistent points and a
 compiled reference run, rather than guessing.
 
+`BankAccountInheritanceProblem.md` is the inheritance assignment. Its check 3
+(a base-class pointer calling `withdraw`) cannot work unless the base `withdraw`
+is `virtual`, which the sheet never says; the `.md` shows this with a compiled
+run both ways, and lists five other open points.
+
 `homework_on_pointers.md` is the most useful document in the folder — it is
 the only one in the exam's own format. Its MCQ section transcribes the
 source's own answer key exactly, including the questions the source leaves
@@ -104,7 +110,7 @@ unmarked — don't fill those in with a guessed answer.
 `palindrome_practice.docx` was originally named `回文数练习.docx`; renamed for
 consistency, contents unchanged. Document metadata (author/last-modified-by
 fields embedded in the `.docx` files, not visible in the document body) has
-been stripped from all 16 `.docx` files as part of the privacy pass — see
+been stripped from all 17 `.docx` files as part of the privacy pass — see
 `handover/HANDOVER.md`'s session log / the commit history for details. The
 two legacy `.doc` files (`20260414_while_loop_2.doc`,
 `homework_on_pointers.doc`) still carry short author initials in their OLE
