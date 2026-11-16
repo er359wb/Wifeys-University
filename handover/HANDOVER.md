@@ -51,6 +51,15 @@ write the whole program and I did (`Bank.cpp`, sent as a file, not committed). T
 tutor-written, not evidence she can write it.** She said they would extend it in class that
 day, so the next step is to walk through it with her and have her write the pieces herself.
 
+**MIDTERM: Thursday 2026-11-19 (stated 2026-11-16, three days away).** Scope per her: the
+syllabus list in `Syllabus_Class_and_Objects.md` (1.1 classes, 1.2 overloading member functions,
+1.3 constructors, 1.4 copy constructor, 1.5 destructor, 1.6 `this`, 1.7 linked list) plus operator
+overloading and inheritance. **Format unknown; ask.** Not yet taught at all: destructor, `this`,
+overloading member functions. Plan agreed in outline: day 1 finish `length()` then destructor and
+`this` (the linked list gives a natural destructor); day 2 copy constructor and the `Fraction`
+operators `=`, `+=`, `<`, `++`, `[]`; day 3 inheritance review and mixed trace practice. She
+has said her time is short, so keep messages brief.
+
 **Fraction, what each piece cost her (so the next session aims at the real gaps):**
 
 | Piece | What went wrong, in order | What fixed it |
