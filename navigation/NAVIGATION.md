@@ -19,7 +19,8 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
 ├── README.md              — subject overview
 ├── CLAUDE.md               — rules for sessions working in this branch
 ├── handover/
-│   └── HANDOVER.md         — live progress record, updated after every session
+│   ├── HANDOVER.md         — live progress record, updated after every session
+│   └── MIDTERM_BRIEF.md    — self-contained summary for handing to another AI tutor (2026-11-17)
 ├── navigation/
 │   └── NAVIGATION.md       — this file
 ├── curriculum/             — course worksheets, the syllabus and the goal
