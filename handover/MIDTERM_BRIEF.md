@@ -21,10 +21,6 @@ Syllabus "1 CLASS AND OBJECTS":
 1.1 Define a class & objects · 1.2 Overload member functions · 1.3 Constructors ·
 1.4 Copy constructor · 1.5 Destructor · 1.6 Implicit `this` pointer · 1.7 Case study: linked list.
 She also said the exam includes **operator overloading** and **inheritance**, which are not in that list.
-She also says that everything she has sent since 2026-08-31 belongs to this semester. That includes the
-earlier topics (if/else, loops, arrays, 2-D arrays, functions, struct, recursion, pointers, overloaded
-functions) and a June mock paper, whose file names carry April-June 2026 dates. Whether the midterm
-tests those older topics is **unconfirmed**; the class and object topics above are the main scope.
 
 ## 3. The student
 
