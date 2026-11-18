@@ -8,7 +8,7 @@ otherwise. It is information only: no tests, no exercises.
 
 - C++ course, second semester, unit "Class and Objects". **Midterm: Thursday 2026-11-19.**
 - She has little time and wants short messages. She reads Russian and English; she writes
-  mostly Russian with English code. **Answer in Russian, keep code in English.**
+  mostly Russian with English code. **Explain in Russian, but write every exercise, test question and exam-style task in English** (she studies in English and will be tested in English); keep code in English.
 - She told us she did not pass last semester's exam, so this is a high-stakes retake-style
   situation for her.
 - **The exam format is not known.** Ask her. Evidence: the teacher's lecture deck ends with
