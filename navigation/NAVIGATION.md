@@ -36,7 +36,8 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
 │   ├── 9.4_Chain_Rules.md                            (22 slides; no PDF in repo, see below)
 │   ├── 9.5_Directional_Derivatives_and_the_Gradient_Vector.md  (25 slides; no PDF in repo, see below)
 │   ├── 9.6_Tangent_Plane_and_Differentials.md        (10 slides; no PDF in repo, see below)
-│   └── 10.1_Double_Integral_over_rectangles.md       (17 slides; no PDF in repo, see below)
+│   ├── 10.1_Double_Integral_over_rectangles.md       (17 slides; no PDF in repo, see below)
+│   └── 10.2_Double_Integral_over_general_regions.md  (22 slides; no PDF in repo, see below)
 ├── handover/
 │   └── HANDOVER.md        — progress so far, current level, next steps
 ├── navigation/
@@ -68,8 +69,10 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
   `8.6_Cylinders_and_Quadric_Surfaces.md`, and the Chapter 9 files
   `9.1_Functions_of_Several_Variables_1.md` to
   `9.6_Tangent_Plane_and_Differentials.md`, and the Chapter 10 file
-  `10.1_Double_Integral_over_rectangles.md` are the exception to the PDF +
-  `.md` pairing: they are Chapters 7, 8, 9 and 10 of the same course (read
+  `10.1_Double_Integral_over_rectangles.md` and
+  `10.2_Double_Integral_over_general_regions.md` (10.2 follows 10.1) are the
+  exception to the PDF + `.md`
+  pairing: they are Chapters 7, 8, 9 and 10 of the same course (read
   Chapter 7 in the order 7.1 to 7.5, each builds on the previous; Chapter 8 in
   the order 8.1 to 8.6; Chapter 9 in the order 9.1 to 9.6, and 9.5 also uses
   the dot product from 8.3; 10.1 uses definite integrals from Chapter 6 and
@@ -223,6 +226,16 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
   iterated integrals (partial integration, `∫∫ dy dx` vs `∫∫ dx dy`);
   Examples 2-4 posed without solutions on the slides (answers noted in the
   `.md` for the tutor). No exercise slide.
+
+- **10.2_Double_Integral_over_general_regions.md** (22 slides, original PDF
+  not in repo) — extending the double integral to a bounded region `D` via the
+  zero-extension `F`; Type I (`g1(x)≤y≤g2(x)`, `∫∫ dy dx`) and Type II
+  (`h1(y)≤x≤h2(y)`, `∫∫ dx dy`) regions and the arrow-in-a-diagram tip;
+  Examples 1-4 (parabola region, region split into two parts vs Type II, a
+  volume done both ways, changing the order of integration for `sin(y²)`);
+  properties; 1 exercise slide with 5 problems. (Typos noted in the `.md`:
+  slide 10's integrand `2x+y` vs `x+2y`, slide 16's `x²≤x≤2x`, and exercise
+  5's missing third boundary.)
 
 ## Progress and history
 

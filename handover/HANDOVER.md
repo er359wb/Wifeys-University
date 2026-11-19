@@ -268,6 +268,14 @@ mixed higher derivatives are what she has been practising and are tested.
   the letter being integrated; the inner integral's answer still contains `x`.
   Not yet done: integrating in the other order (`dx dy`) as a check; slides
   10-11 (Riemann sum estimate, Example 1) not worked by her.
+- **10.2 Double Integral over general regions received 2026-11-19**
+  (`curriculum/10.2_Double_Integral_over_general_regions.md`, PDF not
+  committed). Nothing taught yet. The `.md` flags source errors: slide 10's
+  solution integrates `x+2y` while the statement says `2x+y`; slide 16's
+  `x²≤x≤2x` should be `x²≤y≤2x`; exercise 5 (`y=1`, `y=x³`) lacks a third
+  boundary. Teaching plan: exercise-style problems with variable inner
+  limits first (slide 21 exercises 1-3), then Type I and Type II regions with
+  the arrow trick, then Examples 1-3 and changing the order (Example 4).
 - **Other work on 2026-11-02 (exam day, short on time):**
   - 6.1: her area between `y=12-x²` and `y=x²-6` had the right limits (`±3`)
     and integrand (`18-2x²`) but the antiderivative lost the `18x` term and the
