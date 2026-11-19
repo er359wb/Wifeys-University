@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-11-16.
+Last updated: 2026-11-19.
 
 ## Midterm exam scope (the exam was 2026-11-02, 18:30; result not known)
 
@@ -242,6 +242,23 @@ mixed higher derivatives are what she has been practising and are tested.
     chain-rule form (leaves `x,y,θ,φ`); follow that format.
   - 9.4 examples from the slides worked: Example 4 (`∂s/∂x` at `(2,1,0)`,
     final sum `80` not shown), Example 5 (`∂z/∂v=u/v`, no `+x`).
+- **9.4 and 9.5 follow-up, 2026-11-16 to 11-19.** 9.4 slide 22 (3) and (4)
+  implicit differentiation: (4) fully right; (3) right after a sign
+  clarification (the two minuses give a plus). 9.5 (directional derivatives):
+  Example 1 done by her (`u=⟨cosθ,sinθ⟩`, `f_x`, `f_y`, formula, point
+  substitution; one arithmetic slip `-3+16=14`, fixed) answer
+  `(13-3√3)/2`. Example 2(b) right (`√2/2`). Example 2(a): `u` needs
+  `cos(2π/3)=-1/2` (she had `+1/2`; I explained the 3-step reference-angle
+  method and asked for `cos(5π/6)`, `sin(5π/6)`, not answered), and she added
+  `4/2+√3/2` as `4√3/2` twice (fractions add numerators); correct answer
+  `(4+√3)/2` NOT confirmed redone. Example 6 started (`v=⟨1,2,-1⟩`,
+  `|v|=√6`, `u=v/|v|` right after she first used the point as `v`); the
+  gradient `∇f` of `x sin(yz)` is the next step. 9.4 slide 14(5) and the
+  other open items above are still open.
+- **Chapter 10 received 2026-11-19: `10.1_Double_Integral_over_rectangles`**
+  (`.md` saved, PDF not committed). She asked for help solving it; the
+  slides' Examples 2-4 have no solutions. Plan: teach partial integration and
+  iterated integrals in small steps, starting with Example 2.
 - **Other work on 2026-11-02 (exam day, short on time):**
   - 6.1: her area between `y=12-x²` and `y=x²-6` had the right limits (`±3`)
     and integrand (`18-2x²`) but the antiderivative lost the `18x` term and the

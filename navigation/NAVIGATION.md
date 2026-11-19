@@ -35,7 +35,8 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
 │   ├── 9.3_Partial_Derivatives.md                    (16 slides; no PDF in repo, see below)
 │   ├── 9.4_Chain_Rules.md                            (22 slides; no PDF in repo, see below)
 │   ├── 9.5_Directional_Derivatives_and_the_Gradient_Vector.md  (25 slides; no PDF in repo, see below)
-│   └── 9.6_Tangent_Plane_and_Differentials.md        (10 slides; no PDF in repo, see below)
+│   ├── 9.6_Tangent_Plane_and_Differentials.md        (10 slides; no PDF in repo, see below)
+│   └── 10.1_Double_Integral_over_rectangles.md       (17 slides; no PDF in repo, see below)
 ├── handover/
 │   └── HANDOVER.md        — progress so far, current level, next steps
 ├── navigation/
@@ -66,11 +67,13 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
   `8.5_Equations_of_Lines_and_Planes.md` and
   `8.6_Cylinders_and_Quadric_Surfaces.md`, and the Chapter 9 files
   `9.1_Functions_of_Several_Variables_1.md` to
-  `9.6_Tangent_Plane_and_Differentials.md` are the exception to the PDF + `.md`
-  pairing: they are Chapters 7, 8 and 9 of the same course (read Chapter 7 in
-  the order 7.1 to 7.5, each builds on the previous; Chapter 8 in the order 8.1
-  to 8.6; Chapter 9 in the order 9.1 to 9.6, and 9.5 also uses the dot product
-  from 8.3; no dependency on Chapter 6 beyond integration skills). Their original PDFs are deliberately not
+  `9.6_Tangent_Plane_and_Differentials.md`, and the Chapter 10 file
+  `10.1_Double_Integral_over_rectangles.md` are the exception to the PDF +
+  `.md` pairing: they are Chapters 7, 8, 9 and 10 of the same course (read
+  Chapter 7 in the order 7.1 to 7.5, each builds on the previous; Chapter 8 in
+  the order 8.1 to 8.6; Chapter 9 in the order 9.1 to 9.6, and 9.5 also uses
+  the dot product from 8.3; 10.1 uses definite integrals from Chapter 6 and
+  the "hold the other variable fixed" idea from 9.3). Their original PDFs are deliberately not
   committed (every slide carries the university's logo and name, and the
   title slides name the lecturer; see CLAUDE.md's privacy rule), so there
   is no PDF to fall back to. If one of these `.md` files looks wrong, ask
@@ -211,6 +214,15 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
   total differential `dz=f_x dx+f_y dy`; Examples 1-4 posed without solutions
   on the slides. No exercise slide. (Slide 9's Example 3(2) is garbled in the
   source; see the `.md`.)
+
+- **10.1_Double_Integral_over_rectangles.md** (17 slides, original PDF not in
+  repo) — recall of the one-variable definite integral; volume under a surface
+  over a rectangle `R=[a,b]×[c,d]` via subrectangles and double Riemann sums;
+  the double integral and its geometric meaning; Example 1 (estimating a
+  volume with 4 squares, `V≈34`, exact `48`); linearity and comparison;
+  iterated integrals (partial integration, `∫∫ dy dx` vs `∫∫ dx dy`);
+  Examples 2-4 posed without solutions on the slides (answers noted in the
+  `.md` for the tutor). No exercise slide.
 
 ## Progress and history
 
