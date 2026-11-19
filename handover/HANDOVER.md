@@ -257,8 +257,17 @@ mixed higher derivatives are what she has been practising and are tested.
   other open items above are still open.
 - **Chapter 10 received 2026-11-19: `10.1_Double_Integral_over_rectangles`**
   (`.md` saved, PDF not committed). She asked for help solving it; the
-  slides' Examples 2-4 have no solutions. Plan: teach partial integration and
-  iterated integrals in small steps, starting with Example 2.
+  slides' Examples 2-4 have no solutions. **Examples 2, 3, 4 all solved by
+  her with pointed corrections** (answers `2`, `2e-2+2 sin 1`, `-8`, each
+  confirmed by a numerical check). Her errors, in order: `∫y dy` as `y²`
+  (needs `y²/2`); `∫ eˣ dy` as `eˣ` (needs `eˣ·y`, a number integrates to
+  number times `y`); substituting the `y`-limits into `x` (`e²`, `e⁰`);
+  `sin 1` replaced by `1` (it is `≈0.84`, radians); the outer integral's
+  limits taken from the wrong variable (`4` instead of `[-2,1]`); subtracting
+  a bracket as an addition (`40/3+64/3`). Rule that worked: limits belong to
+  the letter being integrated; the inner integral's answer still contains `x`.
+  Not yet done: integrating in the other order (`dx dy`) as a check; slides
+  10-11 (Riemann sum estimate, Example 1) not worked by her.
 - **Other work on 2026-11-02 (exam day, short on time):**
   - 6.1: her area between `y=12-x²` and `y=x²-6` had the right limits (`±3`)
     and integrand (`18-2x²`) but the antiderivative lost the `18x` term and the
