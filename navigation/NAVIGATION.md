@@ -37,7 +37,9 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
 │   ├── 9.5_Directional_Derivatives_and_the_Gradient_Vector.md  (25 slides; no PDF in repo, see below)
 │   ├── 9.6_Tangent_Plane_and_Differentials.md        (10 slides; no PDF in repo, see below)
 │   ├── 10.1_Double_Integral_over_rectangles.md       (17 slides; no PDF in repo, see below)
-│   └── 10.2_Double_Integral_over_general_regions.md  (22 slides; no PDF in repo, see below)
+│   ├── 10.2_Double_Integral_over_general_regions.md  (22 slides; no PDF in repo, see below)
+│   ├── 11.1_Sequences.md                             (12 slides; no PDF in repo, see below)
+│   └── 11.2_Series.md                                (12 slides; no PDF in repo, see below)
 ├── handover/
 │   └── HANDOVER.md        — progress so far, current level, next steps
 ├── navigation/
@@ -70,8 +72,9 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
   `9.1_Functions_of_Several_Variables_1.md` to
   `9.6_Tangent_Plane_and_Differentials.md`, and the Chapter 10 file
   `10.1_Double_Integral_over_rectangles.md` and
-  `10.2_Double_Integral_over_general_regions.md` (10.2 follows 10.1) are the
-  exception to the PDF + `.md`
+  `10.2_Double_Integral_over_general_regions.md` (10.2 follows 10.1), and the
+  Chapter 11 files `11.1_Sequences.md` and `11.2_Series.md` (11.2 uses 11.1's
+  limits of sequences) are the exception to the PDF + `.md`
   pairing: they are Chapters 7, 8, 9 and 10 of the same course (read
   Chapter 7 in the order 7.1 to 7.5, each builds on the previous; Chapter 8 in
   the order 8.1 to 8.6; Chapter 9 in the order 9.1 to 9.6, and 9.5 also uses
@@ -236,6 +239,20 @@ hand instead. See CLAUDE.md's "Repo navigation map" section.
   properties; 1 exercise slide with 5 problems. (Typos noted in the `.md`:
   slide 10's integrand `2x+y` vs `x+2y`, slide 16's `x²≤x≤2x`, and exercise
   5's missing third boundary.)
+
+- **11.1_Sequences.md** (12 slides, original PDF not in repo) — a sequence as
+  a list / a function on the positive integers, notation `{a_n}`; Examples 1-2
+  (formulas, a sequence starting at `n=3`, digits of `e`, Fibonacci); limit of a
+  sequence, convergent/divergent, "diverges to ∞"; Examples 3-5; limit laws,
+  Squeeze Theorem, `lim|a_n|=0 ⇒ lim a_n=0`; bounded and monotonic sequences;
+  1 exercise slide (list terms; convergence and limits of five sequences).
+- **11.2_Series.md** (12 slides, original PDF not in repo) — infinite series as
+  the limit of partial sums `s_n`; convergent series, its sum, divergent;
+  Example 1 (given `s_n`); geometric series, harmonic series; the divergence
+  test (`lim a_n ≠ 0 ⇒ divergent`) and linearity of convergent series;
+  Examples 2-4 posed without solutions (the `.md` adds answers and teaching
+  notes: geometric `|r|<1`, telescoping `1/(n(n+1))`, harmonic divergence).
+  Typos/glitches noted in the `.md` (slide 6 "In the sequence", slide 11's box).
 
 ## Progress and history
 

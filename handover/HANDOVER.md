@@ -1,6 +1,6 @@
 # Handover
 
-Last updated: 2026-11-19.
+Last updated: 2026-11-20.
 
 ## Midterm exam scope (the exam was 2026-11-02, 18:30; result not known)
 
@@ -276,6 +276,23 @@ mixed higher derivatives are what she has been practising and are tested.
   boundary. Teaching plan: exercise-style problems with variable inner
   limits first (slide 21 exercises 1-3), then Type I and Type II regions with
   the arrow trick, then Examples 1-3 and changing the order (Example 4).
+- **10.2 practice, 2026-11-19 to 11-20 (slide 21 exercises).** Ex. 1
+  (`∫₀⁴∫₀^{√y} xy² dx dy = 32`): done after fixing a lost power
+  (`x²y²/2`, not `x²y/2`). Ex. 2 (`∫₀¹∫ₓ^{x²}(1+2y)dy dx = -3/10`): done fully
+  correct, first try. Ex. 3 (`∫₀¹∫₀^{s²}cos(s³)dt ds`): inner part right
+  (`s²cos(s³)`); for `∫₀¹ s²cos(s³)ds` she first wrote `(s³/3)·sin s³` (the
+  final number `sin1/3` was right by coincidence at `s=0` and `s=1`), then
+  tried multiplying separate antiderivatives (`s³/3·sin s³·s⁴/4`). I showed
+  that the integral of a product is not the product of integrals and gave the
+  substitution `u=s³`, `du=3s²ds`; **waiting for `∫(1/3)cos u du = (1/3)sin u`,
+  then back to `(1/3)sin(s³)` and `sin(1)/3`.** Exercises 4 and 5 open (5
+  needs the missing third boundary).
+- **Chapter 11 received 2026-11-20: `11.1_Sequences`, `11.2_Series`** (`.md`
+  saved, PDFs not committed). Nothing taught yet. Both decks look
+  independent of the 9.x and 10.x work; her exercises will probably be slide
+  12 of 11.1 (terms and limits of sequences). Series Example 2-4 on the
+  slides have no solutions; answers and a note on the geometric series
+  `|r|<1` rule (not on the slides) are in the `.md`.
 - **Other work on 2026-11-02 (exam day, short on time):**
   - 6.1: her area between `y=12-x²` and `y=x²-6` had the right limits (`±3`)
     and integrand (`18-2x²`) but the antiderivative lost the `18x` term and the
