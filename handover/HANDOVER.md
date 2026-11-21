@@ -383,6 +383,25 @@ mixed mock and a one-page formula sheet before Monday.
    explanations (asked "just make the report" after an explanation of
    what a pin is). Lab template/guide are not saved in the repo
    (location question unanswered).
+6. **Lab 2 (third project per her teacher): 4-bit ripple-carry adder,
+   any method allowed.** Deadline and report requirements still unknown
+   (asked, not answered). Concept verified: she asked what the chain of
+   full adders is for; a vertical FA0..FA3 table confused her ("table is
+   a bit odd"), written column addition with a carry row clicked, and she
+   then solved 0101 + 0011 correctly (carries 1110, sum 1000). Built in
+   the same project C:\DL\FA: fulladder.bsf symbol, adder4.bdf with four
+   fulladder blocks FA0-FA3, carries c1-c3 drawn as wires, pins x0-x3,
+   y0-y3, cin, s0-s3, cout (first attempt had duplicate pin names x/y/s2,
+   fixed after explaining same name = same wire). Compiled: 0 errors,
+   14 pins. Simulation (Waveform3.vwf): groups x, y, s in Binary; she
+   used Reverse Group or Bus Bit Order and a 0001 test confirmed x0 is
+   the LSB. Count Value on groups crashed Quartus (known bug on buses,
+   Altera community thread); workaround: Overwrite Clock per bit (x0 20,
+   x1 40, x2 80, x3 160, y0 320, y1 640, y2 1280, y3 2560, cin 5120 ns)
+   with End Time 5.12 us; clocks start low. Clocks set before extending
+   End Time stopped at 1 us and had to be re-applied. Final simulation
+   checked correct on 0-440 ns (incl. 1111 + 0001 -> s 0000, cout 1) and
+   earlier run showed cin = 1 cases correct.
 Per CLAUDE.md: nothing above is "done" unless it says verified with her
 own correct answers. Consensus, canonical SOP from a truth table, K-map
 and the circuit-building topic are explicitly not done.
