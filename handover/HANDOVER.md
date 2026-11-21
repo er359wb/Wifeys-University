@@ -1,6 +1,7 @@
 # Handover
 
-Last updated: 2026-11-16 (Ch4 VHDL started: entity and dataflow
+Last updated: 2026-11-21 (Lab 2 4-bit adder built and simulated; see
+Next steps 6. Before that, 2026-11-16: Ch4 VHDL started: entity and dataflow
 verified; then she switched to Ch5 because her lecture is there.
 Earlier: midterm 2026-10-26, Lab 1 report finished 2026-11-07.)
 
